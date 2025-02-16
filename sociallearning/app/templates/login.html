@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Social Learning App</title>
+    <link rel="stylesheet" href="{% static 'styles/forms.css' %}">
+</head>
+
+<body>
+    <div class="form-container">
+        <div class="app-title">
+            Social Learning App with Enhanced Q-Learning
+        </div>
+
+        <div class="card-wrapper">
+            <form method="POST">
+                {% csrf_token %}
+                <h2>Login</h2>
+
+                {% if messages %}
+                    <div class="messages">
+                        {% for message in messages %}
+                            <p class="{{ message.tags }}">{{ message }}</p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+
+                <div class="input-wrapper">
+                    <label for="username">Username</label>
+                    <div class="input-container">
+                        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zM2 14s0-2 6-2 6 2 6 2H2z"/>
+                        </svg>
+                        <input id="username" type="text" name="username" required>
+                    </div>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="password">Password</label>
+                    <div class="input-container">
+                        <svg class="input-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 1a4 4 0 0 0-4 4v2H2a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V8a1 1 0 0 0-1-1h-2V5a4 4 0 0 0-4-4zM6 5a2 2 0 1 1 4 0v2H6V5zm8 9H2V8h12v6z"/>
+                        </svg>
+                        <input id="password" type="password" name="password" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="submit-button">Login</button>
+
+                <p class="login-link">
+                    Don't have an account? <a href="/register">Register here</a>
+                </p>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+
+</script>
+</html>

@@ -1,0 +1,81 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Social Learning App</title>
+    <link rel="stylesheet" href="{% static 'styles/forms.css' %}">
+</head>
+<body>
+    <div class="form-container" style="background-image: url('{% static 'images/background.jpg' %}');">
+    
+        <!-- Centered title -->
+        <div class="app-title">
+            Register your Account!
+        </div>
+    
+        <div class="card-wrapper">
+            <form method="POST" novalidate>
+                {% csrf_token %}
+                <h2>Create Account</h2>
+    
+                <!-- Username Input -->
+                <div class="input-wrapper">
+                    <label for="username">Username</label>
+                    <div class="input-container">
+                        <input 
+                            id="username" 
+                            type="text" 
+                            name="username" 
+                            required 
+                            minlength="3" 
+                            class="{% if form.username.errors %}input-error{% endif %}"
+                        />
+                    </div>
+                    {% if form.username.errors %}
+                        <p class="input-hint error">{{ form.username.errors.0 }}</p>
+                    {% endif %}
+                </div>
+    
+                <!-- Password Input -->
+                <div class="input-wrapper">
+                    <label for="password">Password</label>
+                    <div class="input-container">
+                        <input 
+                            id="password" 
+                            type="password" 
+                            name="password" 
+                            required 
+                            minlength="8" 
+                            class="{% if form.password.errors %}input-error{% endif %}"
+                        />
+                    </div>
+                    {% if form.password.errors %}
+                        <p class="input-hint error">{{ form.password.errors.0 }}</p>
+                    {% endif %}
+                </div>
+    
+                <button type="submit" class="submit-button">
+                    Register
+                </button>
+    
+                {% if messages %}
+                    <div class="message-container">
+                        {% for message in messages %}
+                            <p class="{% if 'success' in message.tags %}success-message{% else %}error-message{% endif %}">
+                                {{ message }}
+                            </p>
+                        {% endfor %}
+                    </div>
+                {% endif %}
+    
+                <p class="login-link">
+                    Already have an account? <a href="/">Login here</a>
+                </p>
+    
+            </form>
+        </div>
+    </div>
+</body>
+</html>
