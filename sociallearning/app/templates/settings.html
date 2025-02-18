@@ -1,0 +1,113 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Profile</title>
+    <link rel="stylesheet" href="{% static 'styles/settings.css' %}">
+    {% include "partials/sidebar.html"%}
+</head>
+<body>
+    <div class="centered-box">
+        <div class="update-profile-wrapper">
+            <h2 class="form-title">Account Settings</h2>
+            <div class="update-profile-container">
+                <!-- Profile Section (Left) -->
+                <div class="profile-section">
+                    <form method="POST" enctype="multipart/form-data" class="update-profile-form">
+                        {% csrf_token %}
+                        
+                        <label>Upload Profile Picture</label>
+                        <div class="file-input-container">
+                            <input type="file" name="profile_picture" id="profilePictureInput" accept="image/*">
+                        </div>
+                        <div class="preview-container">
+                            {% if user.profile.profile_picture %}
+                                <img id="profilePreview" src="{{ user.profile.profile_picture.url }}" alt="Profile Picture" class="profile-preview">
+                            {% else %}
+                                <img id="profilePreview" src="{% static 'assets/default.png' %}" alt="Profile Preview" class="profile-preview" style="display: none;">
+                            {% endif %}
+                        </div>
+                        <button type="submit" class="upload-button">Upload</button>
+                    </form>
+                </div>
+                
+                <!-- Form Section (Right) -->
+                <div class="fields-section">
+                    <form method="POST" enctype="multipart/form-data" class="update-profile-form">
+                        {% csrf_token %}
+    
+                        {% if message %}
+                        <div class="message {% if message.type == 'success' %}success{% else %}error{% endif %}">
+                            {% if message.type == 'success' %}
+                                ✅ {{ message.text }}
+                            {% else %}
+                                ❌ {{ message.text }}
+                            {% endif %}
+                        </div>
+                        {% endif %}
+    
+                        <div class="input-wrapper">
+                            <label for="username">Username</label>
+                            <div class="input-container">
+                                <input id="username" type="text" name="username" value="{{ user.username }}">
+                            </div>
+                        </div>
+    
+                        <div class="input-divider"></div>
+    
+                        <div class="input-wrapper">
+                            <label for="newPassword">New Password</label>
+                            <div class="input-container">
+                                <input id="newPassword" type="password" name="new_password">
+                            </div>
+                        </div>
+                        
+                        <div class="input-wrapper">
+                            <label for="confirmPassword">Confirm New Password</label>
+                            <div class="input-container">
+                                <input id="confirmPassword" type="password" name="confirm_password">
+                            </div>
+                        </div>
+    
+                        <button type="submit" class="submit-button" id="submitButton">Save Changes</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script>
+        document.getElementById("profilePictureInput").addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            const preview = document.getElementById("profilePreview");
+
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                    preview.style.display = "block";
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+
+        document.getElementById("profilePreview").addEventListener("click", function() {
+            this.classList.toggle("expanded");
+        });
+
+        document.getElementById("submitButton").addEventListener("click", function(event) {
+            const newPassword = document.getElementById("newPassword").value;
+            const confirmPassword = document.getElementById("confirmPassword").value;
+        
+            if (newPassword !== confirmPassword) {
+                event.preventDefault();
+                alert("Passwords do not match. Please confirm your password.");
+            }
+        });
+    </script>
+    
+</body>
+</html>
