@@ -1,0 +1,32 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    background-image: url('/static/assets/BG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.centered-box {
+    width: 1400px;  
+    height: 600px; 
+    background: rgba(128, 128, 128, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+
+.centered-box h2,
+.centered-box p {
+    color: white;
+    margin: 0;
+}

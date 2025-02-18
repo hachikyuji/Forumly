@@ -1,0 +1,74 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'styles/sidebar.css' %}">
+</head>
+<body>
+
+<div class="sidebar-container {% if is_open %}open{% endif %}">
+    <div class="sidebar {% if is_open %}open{% endif %}">
+        <button class="close-btn" id="toggleSidebarBtn" onclick="toggleSidebar()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 700 960" width="20px" fill="#e8eaed">
+                <path id="toggleIcon" d="{% if is_open %}M391.65-88.35 0-480l391.65-391.65L467.3-796l-316 316 316 316-75.65 75.65Z{% else %}M288-88.35 212.35-164l316-316-316-316L288-871.65 679.65-480 288-88.35Z{% endif %}"/>
+            </svg>
+        </button>
+
+        <div class="user-info">
+            {% if profile_picture %}
+                <img src="{{ profile_picture.url }}" alt="Profile" class="profile-pic">
+            {% else %}
+                <div class="placeholder-pic">👤</div>
+            {% endif %}
+            <span>{{ username }}</span>
+        </div>
+
+        <nav class="sidebar-links">
+            <ul>
+                <li>
+                    <a href="#">Forums</a>
+                </li>
+                <li>
+                    <a href="#">Update Profile</a>
+                </li>
+                <li>
+                    <a href="#">Q-Learning Settings</a>
+                </li>
+                <li>
+                    <form method="post" action="{% url 'logout' %}">
+                        {% csrf_token %}
+                        <button class="logout-btn" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
+                                <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h280v80H200Zm440-160-55-58 102-102H360v-80h327L585-622l55-58 200 200-200 200Z"/>
+                            </svg> 
+                            Logout
+                        </button>
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="sidebar-overlay {% if is_open %}active{% endif %}" onclick="toggleSidebar()"></div>
+</div>
+
+<script>
+    function toggleSidebar() {
+        const sidebarContainer = document.querySelector('.sidebar-container');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.querySelector('.sidebar-overlay');
+        const toggleIcon = document.getElementById('toggleIcon');
+
+        sidebarContainer.classList.toggle('open');
+        sidebar.classList.toggle('open');
+        overlay.classList.toggle('active');
+
+        if (sidebarContainer.classList.contains('open')) {
+            toggleIcon.setAttribute('d', 'M391.65-88.35 0-480l391.65-391.65L467.3-796l-316 316 316 316-75.65 75.65Z'); // Close icon
+        } else {
+            toggleIcon.setAttribute('d', 'M288-88.35 212.35-164l316-316-316-316L288-871.65 679.65-480 288-88.35Z'); // Open icon
+        }
+    }
+</script>
+
+</body>
+</html>
