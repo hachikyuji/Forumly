@@ -109,7 +109,7 @@ body {
 .fields-section {
     flex: 1; 
     max-width: 45%;
-    margin-top: 150px;
+    margin-top: 100px;
     font-family: 'Roboto';
 }
 
@@ -154,4 +154,59 @@ body {
 .input-container input:focus {
     border-color: #1e90ff;
     outline: none; /
+}
+
+.icon-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.icon-divider svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    fill: #333; /* You can adjust the color here */
+}
+
+.icon-divider span {
+    font-weight: bold;
+}
+
+.divider {
+    margin-top: 30px;
+}
+
+.message {
+    font-family: 'Roboto', sans-serif;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.message.success {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+.message.error {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+.message svg {
+    margin-right: 10px;
 }
