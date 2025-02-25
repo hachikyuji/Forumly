@@ -20,7 +20,7 @@
             {% else %}
                 <div class="placeholder-pic">👤</div>
             {% endif %}
-            <div class="username-box">{{ username }}</div>
+            <div class="username-box"><u>{{ username }}</u></div>
         </div>        
 
         <nav class="sidebar-links">
@@ -35,7 +35,7 @@
                     <a href="/logout">Logout</a>
                 </li>
                 <li>
-                    <a href="/homepage">Forumly</a><a href="#">About Us</a>
+                    <a href="/homepage">Forumly</a>|<a href="#"><u>About Us</u></a>
                 </li>
             </ul>
         </nav>
@@ -61,6 +61,23 @@
         }
     }
 </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const sidebarLinks = document.querySelectorAll(".sidebar-links li");
+
+        sidebarLinks.forEach((link) => {
+            link.addEventListener("click", function () {
+                // Remove 'active' class from all links
+                sidebarLinks.forEach((item) => item.classList.remove("active"));
+                
+                // Add 'active' class to the clicked link
+                this.classList.add("active");
+            });
+        });
+    });
+</script>
+
 
 </body>
 </html>

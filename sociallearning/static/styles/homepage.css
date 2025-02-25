@@ -19,11 +19,12 @@ body {
     height: 600px; 
     background: rgba(128, 128, 128, 0.7); 
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
     margin-left: 40px;
     margin-top: 20px;
 }
+
 
 .centered-box h2,
 .centered-box p {

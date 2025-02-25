@@ -26,7 +26,7 @@ html, body {
     text-align: center;
     color: #ffffff;
     margin-bottom: 40px;
-    text-transform: uppercase;
+    text-transform: none;
     letter-spacing: 4px;
     font-family: 'Inter', 'Arial Black', sans-serif;
     margin-top: 20px;
@@ -38,8 +38,8 @@ html, body {
     
     /* 3D Shadow Effect */
     text-shadow: 
-        3px 3px 0 #000,
-        5px 5px 0 var(--primary-color);
+        1px 1px 0 #000,
+        4px 3px 0 var(--primary-color);
     
     /* Dynamic Border Animation */
     animation: border-pulse 3s infinite alternate;
@@ -60,6 +60,15 @@ html, body {
         0 0 10px rgba(255, 0, 255, 0.5),
         0 0 20px rgba(0, 255, 255, 0.3),
         inset 0 0 15px rgba(255, 255, 0, 0.2);
+}
+
+.app-title h1 {
+    font-size: 38px;
+    font-weight: 1000; /* Makes the title extra bold */
+}
+
+.app-title h3 {
+    font-weight: 900; /* Makes the title extra bold */
 }
 
 /* Border Pulse Animation */
