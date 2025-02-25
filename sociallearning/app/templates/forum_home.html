@@ -1,0 +1,67 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum - Social Learning App</title>
+    <link rel="stylesheet" href="{% static 'styles/forum.css' %}">
+</head>
+<body>
+
+    <div class="forum-container">
+        <h2>Forum</h2>
+
+        <button onclick="openThreadPopup()" class="create-thread-btn">Create New Thread</button>
+
+        <div id="threads">
+            {% for thread in threads %}
+                <div class="thread">
+                    <a href="{% url 'thread_detail' thread.id %}">{{ thread.title }}</a>
+                    <p>Created by: {{ thread.created_by.username }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div id="threadPopup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closeThreadPopup()">&times;</span>
+            <h3>Create a New Thread</h3>
+            <input type="text" id="threadTitle" placeholder="Thread title">
+            <button onclick="submitThread()">Submit</button>
+        </div>
+    </div>
+
+    <script>
+    function openThreadPopup() {
+        document.getElementById("threadPopup").style.display = "block";
+    }
+
+    function closeThreadPopup() {
+        document.getElementById("threadPopup").style.display = "none";
+    }
+
+    function submitThread() {
+        let title = document.getElementById("threadTitle").value;
+        fetch("{% url 'create_thread' %}", {
+            method: "POST",
+            headers: { "X-CSRFToken": "{{ csrf_token }}", "Content-Type": "application/x-www-form-urlencoded" },
+            body: "title=" + encodeURIComponent(title)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.status === "success") {
+                let threadsDiv = document.getElementById("threads");
+                let newThread = `<div class="thread"><a href="/forum/thread/${data.thread_id}/">${data.title}</a><p>Created by: ${data.username}</p></div>`;
+                threadsDiv.innerHTML = newThread + threadsDiv.innerHTML;
+                closeThreadPopup();
+            } else {
+                alert(data.message);
+            }
+        });
+    }
+    </script>
+
+</body>
+</html>
