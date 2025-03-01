@@ -1,4 +1,4 @@
-from .models import UserProfile
+from .models import UserProfile, ForumCategory
 
 def user_profile_context(request):
     if request.user.is_authenticated:
@@ -8,3 +8,7 @@ def user_profile_context(request):
             "profile_picture": profile.profile_picture.url if profile and profile.profile_picture else None,
         }
     return {}
+
+def forum_categories(request):
+    categories = ForumCategory.objects.all()
+    return {'categories': categories}

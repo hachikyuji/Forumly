@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{% static 'styles/forums.css' %}">
+    {% include "partials/sidebar.html"%}
+</head>
+
+<body>
+<h2>Forum Categories</h2>
+<ul>
+    {% for category in categories %}
+        <li class="forum-categories"><a href="{% url 'forum_threads' category.id %}">{{ category.name }}</a></li>
+    {% endfor %}
+</ul>
+
+</body>
+</html>

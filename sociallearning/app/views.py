@@ -4,8 +4,13 @@ from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth import logout, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
-from .models import UserProfile, Thread, Post
+from django.utils.decorators import method_decorator
+from django.db.models import Count
+from .models import UserProfile, ForumThread, ForumCategory
 from django.http import JsonResponse
+from django.views.generic import ListView, CreateView
+from django.views import View
+from django.urls import reverse_lazy
 # Create your views here.
 
 # Forms
@@ -78,33 +83,45 @@ def update_profile(request):
     return render(request, 'settings.html')
 
 # Forums
-@login_required
-def forum_home(request):
-    threads = Thread.objects.all().order_by('-created_at')
-    return render(request, 'forum_home.html', {'threads': threads})
+@method_decorator(login_required, name='dispatch')
+class ForumCategoryListView(ListView):
+    model = ForumCategory
+    template_name = 'forum_categories.html'
+    context_object_name = 'categories'
 
-@login_required
-def create_thread(request):
-    if request.method == 'POST':
-        title = request.POST.get("title", "").strip()
-        if title:
-            thread = Thread.objects.create(title=title, created_by=request.user)
-            return JsonResponse({"status": "success", "thread_id": thread.id, "title": thread.title, "username": request.user.username})
-        return JsonResponse({"status": "error", "message": "Title cannot be empty."})
-    return JsonResponse({"status": "error", "message": "Invalid request."})
+@method_decorator(login_required, name='dispatch')
+class ForumThreadListView(ListView):
+    model = ForumThread
+    template_name = 'forum_threads.html'
+    context_object_name = 'threads'
 
-def thread_detail(request, thread_id):
-    thread = get_object_or_404(Thread, id=thread_id)
-    posts = thread.posts.all().order_by("created_at")
-    return render(request, "thread_detail.html", {"thread": thread, "posts": posts})
+    def get_queryset(self):
+        category_id = self.kwargs.get('category_id')
+        return ForumThread.objects.filter(category__id=category_id) if category_id else ForumThread.objects.all()
 
-@login_required
-def add_post(request, thread_id):
-    if request.method == "POST":
-        thread = get_object_or_404(Thread, id=thread_id)
-        content = request.POST.get("content", "").strip()
-        if content:
-            post = Post.objects.create(thread=thread, created_by=request.user, content=content)
-            return JsonResponse({"status": "success", "content": post.content, "username": request.user.username})
-        return JsonResponse({"status": "error", "message": "Reply cannot be empty."})
-    return JsonResponse({"status": "error", "message": "Invalid request."})
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        category_id = self.kwargs.get('category_id')
+        context['category'] = get_object_or_404(ForumCategory, id=category_id)
+        return context
+    
+class ForumThreadCreateView(View):
+    def get(self, request, category_id):
+        category = get_object_or_404(ForumCategory, id=category_id)
+        return render(request, 'new_thread.html', {'category': category})
+
+    def post(self, request, category_id):
+        category = get_object_or_404(ForumCategory, id=category_id)
+        title = request.POST.get('title')
+        content = request.POST.get('content')
+
+        if title and content:
+            ForumThread.objects.create(
+                category=category,
+                user=request.user,
+                title=title,
+                content=content
+            )
+            return redirect('forum_threads', category_id=category.id)
+
+        return render(request, 'new_thread.html', {'category': category, 'error': 'All fields are required'})

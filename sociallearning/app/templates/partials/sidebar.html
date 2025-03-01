@@ -21,13 +21,21 @@
                 <div class="placeholder-pic">👤</div>
             {% endif %}
             <div class="username-box"><u>{{ username }}</u></div>
-        </div>        
+        </div>
+        
+        <li class="forum-links">
+            <button class="toggle-btn" onclick="toggleForum()">Forum</button>
+            <div class="sidebar-categories" id="forumCategories">
+                <ul>
+                    {% for category in categories %}
+                        <li class="forum-categories"><a href="{% url 'forum_threads' category.id %}">{{ category.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </li>
 
         <nav class="sidebar-links">
             <ul>
-                <li>
-                    <a href="/forums">Forums</a>
-                </li>
                 <li>
                     <a href="/profile/update">Account Settings</a>
                 </li>
@@ -60,6 +68,11 @@
             toggleIcon.setAttribute('d', 'M288-88.35 212.35-164l316-316-316-316L288-871.65 679.65-480 288-88.35Z'); // Open icon
         }
     }
+
+    function toggleForum() {
+        const forumCategories = document.getElementById('forumCategories');
+        forumCategories.classList.toggle('open'); 
+    }
 </script>
 
 <script>
@@ -68,16 +81,14 @@
 
         sidebarLinks.forEach((link) => {
             link.addEventListener("click", function () {
-                // Remove 'active' class from all links
+                
                 sidebarLinks.forEach((item) => item.classList.remove("active"));
                 
-                // Add 'active' class to the clicked link
                 this.classList.add("active");
             });
         });
     });
 </script>
-
 
 </body>
 </html>

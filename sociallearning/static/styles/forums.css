@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    background-image: url('/static/assets/BG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .popup {
     display: none;
@@ -15,3 +32,106 @@
     cursor: pointer;
     float: right;
 }
+
+
+.forum-container {
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 40px;
+    width: 1400px;  
+    height: 650px;
+    background-color: rgba(128, 128, 128, 0.7);
+}
+
+.forum-title {
+    font-family: 'Inter';
+    font-weight: bold;
+    background-color: #fa5252;
+    color: white;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.forum-title button {
+    font-family: 'Inter';
+    font-weight: bold;
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    background-color: transparent; 
+    border: none; 
+    color: white;
+}
+
+.forum-title p {
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.forum-title button {
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.thread {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 10px;
+    background-color: white;
+    font-family: 'Inter';
+    border: 3px solid #ff6b6b   ;
+    margin-top: 10px;
+}
+
+.view-thread-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #fa5252;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.thread-info {
+    position: absolute;
+    left: 40px;
+    text-align: left;
+}
+.thread-info a {
+    text-decoration: none;
+    color: #ff6b6b;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.threads-info p {
+    font-size: 12px;
+    font-family: 'Inter';
+}
+
+#threads {
+    max-height: 650px; 
+    overflow-y: auto; 
+    margin: 10px;
+    gap: 10px;
+}
+
+#searchInput {
+    width: 95%;
+    padding: 8px;
+    margin: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Inter'; 
+}
+

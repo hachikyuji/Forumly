@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+    <link rel="stylesheet" href="{% static 'styles/forums.css' %}">
+    {% include "partials/sidebar.html"%}
+</head>
+
+<body>
+    <h1>Threads in {{ category.name }}</h1>
+
+    <a href="{% url 'new_forum_thread' category_id=category.id %}" class="btn btn-primary">
+        New Thread
+    </a>
+
+    <ul>
+        {% for thread in threads %}
+            <li><a href="#">{{ thread.title }}</a> by {{ thread.user.username }}</li>
+        {% empty %}
+            <li>No threads yet. Be the first to post!</li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

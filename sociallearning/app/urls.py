@@ -16,10 +16,9 @@ urlpatterns = [
     path('profile/update', views.update_profile, name="update_profile"),
     
     # Forums
-    path("forums/", views.forum_home, name="forum_home"),
-    path("forums/create_thread/", views.create_thread, name="create_thread"),
-    path("forums/thread/<int:thread_id>/", views.thread_detail, name="thread_detail"),
-    path("forums/thread/<int:thread_id>/add_post/", views.add_post, name="add_post"),   
+    path('forums/', views.ForumCategoryListView.as_view(), name='forum_categories'),
+    path('forums/<int:category_id>/', views.ForumThreadListView.as_view(), name='forum_threads'),
+    path('forums/<int:category_id>/new-thread/', views.ForumThreadCreateView.as_view(), name='new_forum_thread'),
 ]
 
 
