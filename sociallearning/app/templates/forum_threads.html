@@ -10,19 +10,45 @@
 </head>
 
 <body>
-    <h1>Threads in {{ category.name }}</h1>
+    <div class='post-btn'>
+        <div class='forum-title'>
+            <h1> Forumly: {{ category.name }} Forum</h1>
+        </div>
+        <button class='add-topic-btn'>
+            <div class='new-thread'>
+                <a href="{% url 'new_forum_thread' category_id=category.id %}" class="btn btn-primary">
+                    Add Topic +
+                </a>
+        </button>
+        </div>
+    </div>
 
-    <a href="{% url 'new_forum_thread' category_id=category.id %}" class="btn btn-primary">
-        New Thread
-    </a>
-
-    <ul>
-        {% for thread in threads %}
-            <li><a href="#">{{ thread.title }}</a> by {{ thread.user.username }}</li>
-        {% empty %}
-            <li>No threads yet. Be the first to post!</li>
-        {% endfor %}
-    </ul>
-
+    <div class="forum-container">
+        <div class="threads-container">
+            <ul>
+                {% for thread in threads %}
+                    <li>
+                        <div class="thread-content">
+                            <p class="thread-description">User:</p>
+                            <p class="thread-info">{{ thread.user.username }}</p>
+                        </div>
+                        <div class="thread-content">
+                            <p class="thread-description">Topic:</p>
+                            <p class="thread-info">{{ thread.title }}</p>
+                        </div>
+                        <div class="thread-footer">
+                            <p class="thread-date">Posted: {{ thread.created_at }}</p>
+                            <button class="view-btn">
+                                <a href="#">View</a>
+                            </button>
+                        </div>
+                    </li>
+                {% empty %}
+                    <li>No threads yet. Be the first to post!</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+    
 </body>
 </html>
