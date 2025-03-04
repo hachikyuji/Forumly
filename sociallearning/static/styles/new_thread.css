@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url('/static/assets/BG.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.post-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 60px;
+    padding: 20px;
+}
+
+.forum-title h1 {
+    font-family: 'Inter';
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px rgba(250, 82, 82, 0.7);
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+}
+
+.add-topic-btn {
+    background-color: #FF6B6B;
+    padding: 10px 30px;
+    border-radius: 50px;
+    border: none;
+}
+
+.add-topic-btn a {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.add-topic-btn:hover {
+    background-color: #FF4D4D;
+}
+
+.new-forum-container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+    text-align: left;
+}
+
+.new-forum-container h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.error {
+    color: red;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.add-thread {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.submit-btn {
+    align-self: flex-end; /* Aligns the button to the right side */
+    background-color: #FF6B6B;
+    color: white;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.add-thread label {
+    font-weight: bolder;
+    font-size: 18px;
+    color: #FF6B6B;
+    font-family: 'Inter';
+}
+
+.add-thread input,
+.add-thread textarea {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    outline: none;
+}
+
+.add-thread input:focus,
+.add-thread textarea:focus {
+    border-color: #FF6B6B;
+}
+
+.add-thread button {
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-thread button:hover {
+    background-color: #FF4D4D;
+}
+
+@media (max-width: 768px) {
+    .post-btn {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .forum-title h1 {
+        font-size: 26px;
+    }
+
+    .new-forum-container {
+        width: 95%;
+        padding: 20px;
+    }
+}
+
+.forum-container {
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 63px;
+    margin-top: 30px;
+    width: 90%;  
+    height: auto;
+    background-color: #D9D9D9;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    height: 200px;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+}
+
+input[type="text"] {
+    width: 100%; 
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-family: 'Inter', sans-serif;
+}
+
+.nueva-forum-container {
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 60px;
+    margin-top: -30px;
+    width: 90%;  
+    height: 580px;
+    background-color: #A5A4A4;
+    box-shadow: 0 0 0 2px #FF4D4D;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}

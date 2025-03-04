@@ -19,6 +19,10 @@ urlpatterns = [
     path('forums/', views.ForumCategoryListView.as_view(), name='forum_categories'),
     path('forums/<int:category_id>/', views.ForumThreadListView.as_view(), name='forum_threads'),
     path('forums/<int:category_id>/new-thread/', views.ForumThreadCreateView.as_view(), name='new_forum_thread'),
+    path('thread/<int:pk>/', views.ForumThreadDetailView.as_view(), name='forum_thread_detail'),
+    path('thread/<int:thread_id>/reply/', views.ForumReplyCreateView.as_view(), name='forum_reply_create'),
+    path('thread/<int:thread_id>/like/', views.LikeThreadView.as_view(), name='like_thread'),
+    path('thread/<int:thread_id>/dislike/', views.DislikeThreadView.as_view(), name='dislike_thread'),
 ]
 
 

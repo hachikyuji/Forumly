@@ -1,0 +1,127 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ thread.title }}</title>
+    <link rel="stylesheet" href="{% static 'styles/thread_detail.css' %}">
+    {% include "partials/sidebar.html" %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class='post-btn'>
+        <div class='forum-title'>
+            <h1> Forumly: {{ category.name }} Forum</h1>
+        </div>
+        <button class='add-topic-btn'>
+            <div class='new-thread'>
+                <a href="{% url 'new_forum_thread' category_id=category.id %}" class="btn btn-primary">
+                    Add Topic +
+                </a>
+        </button>
+        </div>
+    </div>
+
+    <div class="forum-container">
+        <div class="thread-content">
+            <p class="thread-description">User:</p>
+            <p class="thread-info">{{ thread.user.username }}</p>
+        </div>
+        <div class="thread-content">
+            <p class="thread-description">Topic:</p>
+            <p class="thread-info">{{ thread.title }}</p>
+        </div>
+        
+        <div class="content">
+            <p>{{ thread.content }}</p>
+        </div>
+
+        <div class="thread-footer">
+            <p class="thread-date">Posted: {{ thread.created_at }}</p>  
+
+            <form>
+                {% csrf_token %}
+                <button class="like-btn" data-thread-id="{{ thread.id }}">
+                    👍 Like | <span id="like-count">{{ thread.total_likes }}</span>
+                </button>
+                <button class="dislike-btn" data-thread-id="{{ thread.id }}">
+                    👎 Dislike | <span id="dislike-count">{{ thread.total_dislikes }}</span>
+                </button>
+            </form>
+        </div>
+
+        <div class="replies-container">
+            <ul>
+                {% for reply in replies %}
+                    <li class="reply-item">
+                        <div class="reply-user-info">
+                            <img src="{{ reply.user.profile.profile_picture.url }}" alt="Profile Picture" class="profile-pic">
+                            <span class="user-name">{{ reply.user.username }}</span> - 
+                            <span class="reply-date">{{ reply.created_at }}</span>
+                        </div>
+                        <p class="reply-content">{{ reply.content }}</p>
+                    </li>
+                {% empty %}
+                    <p>No replies yet. Be the first to reply!</p>
+                {% endfor %}
+            </ul>
+        </div>
+        
+
+        <div class="replies-form">
+            <form method="post" action="{% url 'forum_reply_create' thread.id %}">
+                {% csrf_token %}
+                <textarea name="content" required placeholder="Comment..."></textarea>
+                <button type="submit">Reply</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            function getCSRFToken() {
+                return document.querySelector("[name=csrfmiddlewaretoken]").value;
+            }
+    
+            $(".like-btn").click(function() {
+                var threadId = $(this).data("thread-id");
+                var likeCount = $("#like-count");
+                var dislikeCount = $("#dislike-count");
+    
+                $.ajax({
+                    type: "POST",
+                    url: "{% url 'like_thread' 0 %}".replace('0', threadId),
+                    data: {},
+                    beforeSend: function(xhr) {
+                        xhr.setRequestHeader("X-CSRFToken", getCSRFToken());
+                    },
+                    success: function(data) {
+                        likeCount.text(data.total_likes);
+                        dislikeCount.text(data.total_dislikes);
+                    }
+                });
+            });
+    
+            $(".dislike-btn").click(function() {
+                var threadId = $(this).data("thread-id");
+                var likeCount = $("#like-count");
+                var dislikeCount = $("#dislike-count");
+    
+                $.ajax({
+                    type: "POST",
+                    url: "{% url 'dislike_thread' 0 %}".replace('0', threadId),
+                    data: {},
+                    beforeSend: function(xhr) {
+                        xhr.setRequestHeader("X-CSRFToken", getCSRFToken());
+                    },
+                    success: function(data) {
+                        likeCount.text(data.total_likes);
+                        dislikeCount.text(data.total_dislikes);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

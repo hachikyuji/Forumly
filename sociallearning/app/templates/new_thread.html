@@ -5,28 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
-    <link rel="stylesheet" href="{% static 'styles/forums.css' %}">
-    {% include "partials/sidebar.html"%}
+    <link rel="stylesheet" href="{% static 'styles/new_thread.css' %}">
+    {% include "partials/sidebar.html" %}
+    <link rel="shortcut icon" href="#">
 </head>
 <body>
-    <h2>Create a New Thread in {{ category.name }}</h2>
+    <div class='post-btn'>
+        <div class='forum-title'>
+            <h1>Forumly: {{ category.name }} Forum</h1>
+        </div>
+        <button class='add-topic-btn'>
+            <a href="{% url 'new_forum_thread' category_id=category.id %}" class="btn btn-primary">
+                Add Topic +
+            </a>
+        </button>
+    </div>
 
-    {% if error %}
-        <p style="color: red;">{{ error }}</p>
-    {% endif %}
-    
-    <form method="post">
-        {% csrf_token %}
-        <label>Title:</label>
-        <input type="text" name="title" required>
-    
-        <label>Content:</label>
-        <textarea name="content" required></textarea>
-    
-        <button type="submit">Create Thread</button>
-    </form>
-    
-    <a href="{% url 'forum_threads' category_id=category.id %}">Back to Threads</a>    
+    <div class='nueva-forum-container'>
+        <div class='forum-container'>
+            <div class="new-forum-container">
+                {% if error %}
+                    <p class="error">{{ error }}</p>
+                {% endif %}
+                <form method="post" class="add-thread">
+                    {% csrf_token %}
+                    <label for="title">Topic:</label>
+                    <input type="text" name="title" id="title" required placeholder="Enter the topic title">
 
+                    <label for="content">Content:</label>
+                    <textarea name="content" id="content" required placeholder="Enter the content"></textarea>
+
+                    <button type="submit" class="submit-btn">Add +</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

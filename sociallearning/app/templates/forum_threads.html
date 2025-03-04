@@ -39,7 +39,7 @@
                         <div class="thread-footer">
                             <p class="thread-date">Posted: {{ thread.created_at }}</p>
                             <button class="view-btn">
-                                <a href="#">View</a>
+                                <a href="{% url 'forum_thread_detail' thread.id %}">View</a>
                             </button>
                         </div>
                     </li>

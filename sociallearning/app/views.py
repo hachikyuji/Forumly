@@ -6,9 +6,9 @@ from django.contrib.auth import logout, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.db.models import Count
-from .models import UserProfile, ForumThread, ForumCategory
+from .models import UserProfile, ForumThread, ForumCategory, ForumReply
 from django.http import JsonResponse
-from django.views.generic import ListView, CreateView
+from django.views.generic import ListView, DetailView
 from django.views import View
 from django.urls import reverse_lazy
 # Create your views here.
@@ -125,3 +125,57 @@ class ForumThreadCreateView(View):
             return redirect('forum_threads', category_id=category.id)
 
         return render(request, 'new_thread.html', {'category': category, 'error': 'All fields are required'})
+    
+@method_decorator(login_required, name='dispatch')
+class ForumThreadDetailView(DetailView):
+    model = ForumThread
+    template_name = 'forum_thread_detail.html'
+    context_object_name = 'thread'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['replies'] = self.object.replies.select_related('user').all()
+        context['category'] = self.object.category
+        return context
+
+    
+class ForumReplyCreateView(View):
+    def post(self, request, thread_id):
+        thread = get_object_or_404(ForumThread, id=thread_id)
+        content = request.POST.get('content')
+
+        if content:
+            ForumReply.objects.create(
+                thread=thread,
+                user=request.user,
+                content=content
+            )
+            return redirect('forum_thread_detail', pk=thread.id)
+
+        return redirect('forum_thread_detail', pk=thread.id)
+
+class LikeThreadView(View):
+    def post(self, request, thread_id):
+        thread = get_object_or_404(ForumThread, id=thread_id)
+        if request.user in thread.likes.all():
+            thread.likes.remove(request.user)
+            liked = False
+        else:
+            thread.likes.add(request.user)
+            thread.dislikes.remove(request.user)  
+            liked = True
+
+        return JsonResponse({"liked": liked, "total_likes": thread.total_likes(), "total_dislikes": thread.total_dislikes()})
+
+class DislikeThreadView(View):
+    def post(self, request, thread_id):
+        thread = get_object_or_404(ForumThread, id=thread_id)
+        if request.user in thread.dislikes.all():
+            thread.dislikes.remove(request.user)
+            disliked = False
+        else:
+            thread.dislikes.add(request.user)
+            thread.likes.remove(request.user)  
+            disliked = True
+
+        return JsonResponse({"disliked": disliked, "total_likes": thread.total_likes(), "total_dislikes": thread.total_dislikes()})

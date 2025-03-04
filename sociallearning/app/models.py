@@ -24,6 +24,24 @@ class ForumThread(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+    likes = models.ManyToManyField(User, related_name='like_threads', blank=True)
+    dislikes = models.ManyToManyField(User, related_name='dislike_threads', blank=True)
     
     def __str__(self):
         return self.title
+    
+    def total_likes(self):
+        return self.likes.count()
+
+    def total_dislikes(self):
+        return self.dislikes.count()
+
+class ForumReply(models.Model):
+    thread = models.ForeignKey(ForumThread, on_delete=models.CASCADE, related_name="replies")
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    content = models.TextField()
+    created_at = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return self.content
+    
