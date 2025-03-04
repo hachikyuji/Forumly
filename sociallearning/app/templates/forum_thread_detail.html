@@ -73,7 +73,7 @@
             <form method="post" action="{% url 'forum_reply_create' thread.id %}">
                 {% csrf_token %}
                 <textarea name="content" required placeholder="Comment..."></textarea>
-                <button type="submit">Reply</button>
+                <button type="submit" class="replies-form">Reply</button>
             </form>
         </div>
     </div>

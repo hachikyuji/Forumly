@@ -7,7 +7,7 @@ html, body {
 }
 
 body {
-    background-image: url('/static/assets/BG.jpg');
+    background-image: url('/static/assets/BG1.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

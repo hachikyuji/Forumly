@@ -11,7 +11,7 @@ html, body {
 }
 
 body {
-    background-image: url('/static/assets/BG.jpg');
+    background-image: url('/static/assets/BG1.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -42,7 +42,7 @@ body {
     margin-top: 10px;
     width: 1400px;  
     height: 600px;
-    background-color: #A5A4A4;
+    background-color: rgba(165, 164, 164, 0.7); 
     box-shadow: 0 0 0 2px #008CFF;
     display: flex;
     flex-direction: column;
@@ -96,7 +96,7 @@ body {
 }
 
 .add-topic-btn {
-    border-radius: 8px;
+    border-radius: 20px;
     background-color: #FF6B6B;
     padding: 10px 40px;
 }
@@ -127,7 +127,7 @@ body {
     background-color: #D9D9D9;
     box-shadow: 0 0 0 2px #FF6B6B;
     border-radius: 8px;
-    max-width: 1200px;
+    max-width: 1270px;
     width: 100%;  
     margin: 10px auto;
 }
@@ -170,9 +170,10 @@ body {
 }
 
 .view-btn {
-    border-radius: 8px;
+    border-radius: 20px;
     background-color: #FF6B6B;
-    padding: 5px 30px;
+    padding: 8px;
+    width: 140px;
     border: none;
 }
 
@@ -180,5 +181,5 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 24px;
 }
