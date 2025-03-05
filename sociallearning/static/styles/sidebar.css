@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .sidebar-container {
     position: relative;
@@ -9,7 +10,7 @@
     top: 0;
     left: -300px;
     width: 250px;
-    height: 100%;
+    height: 700px;
     background-color: #1a1a1a;
     transition: left 0.3s ease;
     padding: 20px;
@@ -61,41 +62,46 @@
     margin-left: -5px; 
 }
 
-
-.sidebar-links li:last-child {
-    background-color: transparent !important;
-    border: none;
-    margin-top: 400px;
-    display: flex;
-    justify-content: center;
-    gap: -200px; 
-}
-
-.sidebar-links li:last-child a:first-child {
-    font-size: 14px;
-    color: white;
-    margin-right: -50px;
-}
-
-.sidebar-links li:last-child a:first-child:hover {
-    color: rgb(166, 166, 247);
-}
-
-.sidebar-links li:last-child a:last-child {
-    font-size: 14px;
-    color: #ff6b6b;
-}
-
-.sidebar-links li:last-child a:last-child:hover {
-    color: #fa9999;
-}
-
 .sidebar-links li:last-child a:first-child,
 .sidebar-links li:last-child a:last-child {
     padding: 0;
     margin: 0;
     height: auto;
 }
+
+.sidebar-footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+    gap: 20px;
+    font-family: 'Inter';
+}
+
+.sidebar-footer a:first-child{
+    margin-right: 20px;
+}
+
+.sidebar-footer a {
+    font-size: 14px;
+    color: white;
+    text-decoration: none !important;
+}
+
+.sidebar-footer a:first-child:hover {
+    color: rgb(166, 166, 247);
+}
+
+.sidebar-footer a:last-child {
+    color: #ff6b6b;
+}
+
+.sidebar-footer a:last-child:hover {
+    color: #fa9999;
+}
+
 
 /* Buttons */
 .sidebar-links li button {

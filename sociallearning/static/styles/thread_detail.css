@@ -56,14 +56,28 @@ body {
 }
 
 .forum-title {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10x;
+}
+
+.forum-title svg {
+    margin-left: -30px;
+    fill: #FF6B6B;
+}
+
+.forum-title h1 {
     font-family: 'Inter';
     font-weight: bold;
     color: white;
     -webkit-text-stroke: 1px rgba(250, 82, 82, 0.7);
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    text-emphasis: none;
+}
+
+.forum-title a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .thread-content {
