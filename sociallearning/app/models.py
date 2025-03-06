@@ -8,6 +8,19 @@ class UserProfile(models.Model):
     interests = models.JSONField(default=list, null=True, blank=True)  # List of user interests
     historical_preferences = models.JSONField(default=list, null=True, blank=True)  # Previous topic preferences
     profile_picture = models.ImageField(upload_to="profile_pictures/", null=True, blank=True)
+    category_comment_count = models.JSONField(default=dict)
+    
+    def increment_category_count(self, category_name):
+        """Increase the count for a given category"""
+        if not self.category_comment_count:
+            self.category_comment_count = {}  # Ensure it's initialized
+        
+        if category_name in self.category_comment_count:
+            self.category_comment_count[category_name] += 1
+        else:
+            self.category_comment_count[category_name] = 1
+        
+        self.save()
     
     def __str__(self):
         return self.user.username
@@ -41,6 +54,7 @@ class ForumReply(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
+    category = models.CharField(max_length=200)
     
     def __str__(self):
         return self.content

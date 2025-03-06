@@ -8,7 +8,7 @@ from django.utils.decorators import method_decorator
 from django.db.models import Count
 from .models import UserProfile, ForumThread, ForumCategory, ForumReply
 from django.http import JsonResponse
-from django.views.generic import ListView, DetailView
+from django.views.generic import ListView, DetailView, TemplateView
 from django.views import View
 from django.urls import reverse_lazy
 # Create your views here.
@@ -145,11 +145,18 @@ class ForumReplyCreateView(View):
         content = request.POST.get('content')
 
         if content:
+            category_name = thread.category.name 
+            
             ForumReply.objects.create(
                 thread=thread,
                 user=request.user,
-                content=content
+                content=content,
+                category=category_name
             )
+            
+            user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+            user_profile.increment_category_count(category_name)
+            
             return redirect('forum_thread_detail', pk=thread.id)
 
         return redirect('forum_thread_detail', pk=thread.id)
@@ -179,3 +186,12 @@ class DislikeThreadView(View):
             disliked = True
 
         return JsonResponse({"disliked": disliked, "total_likes": thread.total_likes(), "total_dislikes": thread.total_dislikes()})
+
+class UserProfileView(TemplateView):
+    template_name = 'profile.html'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        user_profile = get_object_or_404(UserProfile, user=self.request.user)
+        context['profile'] = user_profile
+        return context

@@ -23,6 +23,9 @@ urlpatterns = [
     path('thread/<int:thread_id>/reply/', views.ForumReplyCreateView.as_view(), name='forum_reply_create'),
     path('thread/<int:thread_id>/like/', views.LikeThreadView.as_view(), name='like_thread'),
     path('thread/<int:thread_id>/dislike/', views.DislikeThreadView.as_view(), name='dislike_thread'),
+    
+    # Test
+    path('profile', views.UserProfileView.as_view(), name='profile'),
 ]
 
 

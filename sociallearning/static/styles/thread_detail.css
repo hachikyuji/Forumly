@@ -6,6 +6,7 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    overflow-y: auto;
     width: 100vw;
 }
 
@@ -20,16 +21,16 @@ body {
 .forum-container {
     border-radius: 20px;
     text-align: center;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: 10px;
     width: 1400px;  
-    height: 590px;
+    max-height: 120vh;
+    overflow: hidden;
     background-color: #d9d9d9;
     box-shadow: 0 0 0 2px #FF6B6B;
     display: flex;
     flex-direction: column;
     padding: 20px;
-    overflow-y: auto;
 }
 
 .post-btn {
@@ -114,6 +115,8 @@ body {
     font-family: 'Inter';
     font-size: 18px;
     text-align: left;
+    overflow-y: auto;
+    height: 500px;
 }
 
 .thread-footer {
@@ -158,6 +161,8 @@ body {
 }
 
 .replies-container {
+    flex-grow: 1; 
+    overflow-y: auto;
     max-height: 100%;
     padding: 10px;
     border-top: 2px solid black;

@@ -1,0 +1,6 @@
+<h2>Category Comment Count</h2>
+<ul>
+    {% for category, count in profile.category_comment_count.items %}
+        <li>{{ category }}: {{ count }} comments</li>
+    {% endfor %}
+</ul>
