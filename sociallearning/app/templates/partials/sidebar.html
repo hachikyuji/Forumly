@@ -20,7 +20,13 @@
             {% else %}
                 <div class="placeholder-pic">👤</div>
             {% endif %}
-            <div class="username-box"><u>{{ username }}</u></div>
+            <div class="username-box">
+                <li class="username-link">
+                  <a href="/profile/update">
+                    <u>{{ username }}</u>
+                  </a>
+                </li>
+              </div>
         </div>
         
         <li class="forum-links">
@@ -45,7 +51,7 @@
             </ul>          
         </nav>
         <div class="sidebar-footer">
-            <a href="/homepage">Forumly</a>|<a href="#"><u>About Us</u></a>
+            <a href="/homepage">Forumly</a><a href="#"><u>About Us</u></a>
         </div>  
     </div>
     <div class="sidebar-overlay {% if is_open %}active{% endif %}" onclick="toggleSidebar()"></div>
