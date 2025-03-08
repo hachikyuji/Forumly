@@ -9,11 +9,13 @@ class UserProfile(models.Model):
     historical_preferences = models.JSONField(default=list, null=True, blank=True)  # Previous topic preferences
     profile_picture = models.ImageField(upload_to="profile_pictures/", null=True, blank=True)
     category_comment_count = models.JSONField(default=dict)
+    category_like_count = models.JSONField(default=dict)
+    category_dislike_count = models.JSONField(default=dict)
     
     def increment_category_count(self, category_name):
         """Increase the count for a given category"""
         if not self.category_comment_count:
-            self.category_comment_count = {}  # Ensure it's initialized
+            self.category_comment_count = {} 
         
         if category_name in self.category_comment_count:
             self.category_comment_count[category_name] += 1
@@ -21,6 +23,34 @@ class UserProfile(models.Model):
             self.category_comment_count[category_name] = 1
         
         self.save()
+    
+    def increment_like_count(self, category_name):
+        """Increase the like count for a given category"""
+        if not self.category_like_count:
+            self.category_like_count = {}
+
+        self.category_like_count[category_name] = self.category_like_count.get(category_name, 0) + 1
+        self.save()
+
+    def decrement_like_count(self, category_name):
+        """Decrease the like count for a given category (if > 0)"""
+        if self.category_like_count and category_name in self.category_like_count and self.category_like_count[category_name] > 0:
+            self.category_like_count[category_name] -= 1
+            self.save()
+
+    def increment_dislike_count(self, category_name):
+        """Increase the dislike count for a given category"""
+        if not self.category_dislike_count:
+            self.category_dislike_count = {}
+
+        self.category_dislike_count[category_name] = self.category_dislike_count.get(category_name, 0) + 1
+        self.save()
+
+    def decrement_dislike_count(self, category_name):
+        """Decrease the dislike count for a given category (if > 0)"""
+        if self.category_dislike_count and category_name in self.category_dislike_count and self.category_dislike_count[category_name] > 0:
+            self.category_dislike_count[category_name] -= 1
+            self.save()
     
     def __str__(self):
         return self.user.username

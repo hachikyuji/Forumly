@@ -26,6 +26,7 @@ urlpatterns = [
     
     # Test
     path('profile', views.UserProfileView.as_view(), name='profile'),
+    path('likedislike', views.LikeDislikeStatsView.as_view(), name='likedislike')
 ]
 
 

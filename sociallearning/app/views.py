@@ -11,6 +11,7 @@ from django.http import JsonResponse
 from django.views.generic import ListView, DetailView, TemplateView
 from django.views import View
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import LoginRequiredMixin
 # Create your views here.
 
 # Forms
@@ -164,26 +165,59 @@ class ForumReplyCreateView(View):
 class LikeThreadView(View):
     def post(self, request, thread_id):
         thread = get_object_or_404(ForumThread, id=thread_id)
+        user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+
+        category_name = str(thread.category)
+
+        if not user_profile.category_like_count:
+            user_profile.category_like_count = {}
+
+        if not user_profile.category_dislike_count:
+            user_profile.category_dislike_count = {}
+
         if request.user in thread.likes.all():
             thread.likes.remove(request.user)
+            user_profile.category_like_count[category_name] -= 1
             liked = False
         else:
             thread.likes.add(request.user)
-            thread.dislikes.remove(request.user)  
+            thread.dislikes.remove(request.user)
+            user_profile.category_like_count[category_name] = user_profile.category_like_count.get(category_name, 0) + 1
+            user_profile.category_dislike_count[category_name] = max(user_profile.category_dislike_count.get(category_name, 0) - 1, 0)
             liked = True
 
+        thread.save()
+        user_profile.save()
+
         return JsonResponse({"liked": liked, "total_likes": thread.total_likes(), "total_dislikes": thread.total_dislikes()})
+
 
 class DislikeThreadView(View):
     def post(self, request, thread_id):
         thread = get_object_or_404(ForumThread, id=thread_id)
+        user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+
+        category_name = str(thread.category)
+
+        if not user_profile.category_like_count:
+            user_profile.category_like_count = {}
+
+        if not user_profile.category_dislike_count:
+            user_profile.category_dislike_count = {}
+
         if request.user in thread.dislikes.all():
             thread.dislikes.remove(request.user)
+            user_profile.category_dislike_count[category_name] -= 1
             disliked = False
         else:
             thread.dislikes.add(request.user)
-            thread.likes.remove(request.user)  
+            thread.likes.remove(request.user)
+            user_profile.category_dislike_count[category_name] = user_profile.category_dislike_count.get(category_name, 0) + 1
+            user_profile.category_like_count[category_name] = max(user_profile.category_like_count.get(category_name, 0) - 1, 0)
             disliked = True
+
+        thread.save()
+        user_profile.save()
 
         return JsonResponse({"disliked": disliked, "total_likes": thread.total_likes(), "total_dislikes": thread.total_dislikes()})
 
@@ -195,3 +229,14 @@ class UserProfileView(TemplateView):
         user_profile = get_object_or_404(UserProfile, user=self.request.user)
         context['profile'] = user_profile
         return context
+
+class LikeDislikeStatsView(LoginRequiredMixin, TemplateView):
+    template_name = "like_dislike_stats.html"
+
+    def get(self, request, *args, **kwargs):
+        user_profile, created = UserProfile.objects.get_or_create(user=request.user)
+        
+        return render(request, self.template_name, {
+            "category_like_count": user_profile.category_like_count,
+            "category_dislike_count": user_profile.category_dislike_count
+        })

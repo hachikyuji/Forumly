@@ -1,0 +1,19 @@
+<h2>Like and Dislike Statistics</h2>
+
+<h3>Likes per Category:</h3>
+<ul>
+    {% for category, count in category_like_count.items %}
+        <li>{{ category }}: {{ count }}</li>
+    {% empty %}
+        <li>No likes recorded.</li>
+    {% endfor %}
+</ul>
+
+<h3>Dislikes per Category:</h3>
+<ul>
+    {% for category, count in category_dislike_count.items %}
+        <li>{{ category }}: {{ count }}</li>
+    {% empty %}
+        <li>No dislikes recorded.</li>
+    {% endfor %}
+</ul>
