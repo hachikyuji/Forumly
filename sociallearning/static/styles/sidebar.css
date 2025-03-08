@@ -10,7 +10,8 @@
     top: 0;
     left: -300px;
     width: 250px;
-    height: 700px;
+    height: auto;
+    min-height: 700px;
     background-color: #1a1a1a;
     transition: left 0.3s ease;
     padding: 20px;
