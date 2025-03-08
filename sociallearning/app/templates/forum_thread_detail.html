@@ -38,7 +38,7 @@
         </div>
         
         <div class="content">
-            <p>{{ thread.content }}</p>
+            <p>{{ thread.content | linebreaksbr }}</p>
         </div>
 
         <div class="thread-footer">
@@ -64,7 +64,7 @@
                             <span class="user-name">{{ reply.user.username }}</span> - 
                             <span class="reply-date">{{ reply.created_at }}</span>
                         </div>
-                        <p class="reply-content">{{ reply.content }}</p>
+                        <p class="reply-content">{{ reply.content | linebreaksbr}}</p>
                     </li>
                 {% empty %}
                     <p>No replies yet. Be the first to reply!</p>
@@ -74,12 +74,36 @@
         
 
         <div class="replies-form">
-            <form method="post" action="{% url 'forum_reply_create' thread.id %}">
+            <form id="replyForm" method="post" action="{% url 'forum_reply_create' thread.id %}">
                 {% csrf_token %}
-                <textarea name="content" required placeholder="Comment..."></textarea>
-                <button type="submit" class="replies-form">Reply</button>
+                <textarea id="replyContent" name="content" required placeholder="Comment..." oninput="checkInput()" ></textarea>
             </form>
+            <button type="submit" id="replyButton" onclick="submitForm()" disabled>Reply</button>
         </div>
+        
+        <script>
+            //CHAT GPT THINGS
+            function checkInput() {
+                let textarea = document.getElementById("replyContent");
+                let button = document.getElementById("replyButton");
+                
+                // Enable button only if there is input
+                button.disabled = textarea.value.trim() === "";
+            }
+            
+            function submitForm() {
+                let textarea = document.getElementById("replyContent");
+                
+                // If empty, prevent submission (Django will also handle required)
+                if (textarea.value.trim() === "") {
+                    alert("Please enter a comment before replying.");
+                    return;
+                }
+            
+                document.getElementById("replyForm").submit();
+            }
+        </script>
+        
     </div>
 
     <script>

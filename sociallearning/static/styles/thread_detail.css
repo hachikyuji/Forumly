@@ -90,6 +90,7 @@ body {
 
 .thread-content p {
     margin: 0;
+
 }
 
 .thread-description {
@@ -116,7 +117,13 @@ body {
     font-size: 18px;
     text-align: left;
     overflow-y: auto;
-    height: 500px;
+    height: auto;
+    min-height: 300px;
+    max-height: 800px;
+}
+
+.content p {
+    white-space: pre-wrap;
 }
 
 .thread-footer {
@@ -168,6 +175,9 @@ body {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     margin-bottom: 10px;
+    height: auto;
+    min-height:180px;
+    max-height: 700px;
 }
 
 .replies-container ul {
@@ -286,4 +296,5 @@ body {
     margin-left: 50px;
     font-size: 14px;
     font-family: 'Inter';
+    text-align: left;
 }
