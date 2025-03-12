@@ -61,6 +61,24 @@
                         <p class="input-hint error">{{ form.password.errors.0 }}</p>
                     {% endif %}
                 </div>
+
+                <div class="input-wrapper">
+                    <label for="age">Age</label>
+                    <div class="input-container">
+                        <input 
+                            id="age"
+                            type="number"
+                            name="age"
+                            required
+                            minlength="1"
+                            maxlength="2"
+                             class="{% if form.age.errors %}input-error{% endif %}"
+                        />
+                        {% if form.age.errors %}
+                            <p class="input-hint error">{{ form.age.errors.0 }}</p>
+                        {% endif %}
+                    </div>
+                </div>
     
                 <button type="submit" class="submit-button">
                     Register

@@ -34,16 +34,25 @@ def register(request):
     if request.method == "POST":
         username = request.POST.get("username")
         password = request.POST.get("password")
-        
+        age = request.POST.get("age")
+
         if User.objects.filter(username=username).exists():
             messages.error(request, "Username already exists.")
             return render(request, "register.html")
-            
+
         user = User.objects.create_user(username=username, password=password)
+        profile, created = UserProfile.objects.get_or_create(user=user)
+
+        if age and age.isdigit():
+            profile.age = int(age)
+            profile.save()
+
+        auth_login(request, user)
+
         messages.success(request, "Registration successful!")
-        return redirect('login')
-        
-    return render(request, 'register.html')
+        return redirect("homepage")
+
+    return render(request, "register.html")
 
 # User Home
 @login_required
@@ -62,7 +71,7 @@ def update_profile(request):
         username = request.POST.get("username")
         new_password = request.POST.get("new_password")  
         profile_picture = request.FILES.get("profile_picture")
-        # Updating user info
+
         if username:
             user.username = username
 
