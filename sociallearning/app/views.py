@@ -6,12 +6,14 @@ from django.contrib.auth import logout, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.db.models import Count
-from .models import UserProfile, ForumThread, ForumCategory, ForumReply
+from .models import UserProfile, ForumThread, ForumCategory, ForumReply, ForumViewHistory
 from django.http import JsonResponse
 from django.views.generic import ListView, DetailView, TemplateView
 from django.views import View
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.decorators.csrf import csrf_exempt
+import json
 # Create your views here.
 
 # Forms
@@ -249,3 +251,19 @@ class LikeDislikeStatsView(LoginRequiredMixin, TemplateView):
             "category_like_count": user_profile.category_like_count,
             "category_dislike_count": user_profile.category_dislike_count
         })
+        
+@csrf_exempt
+def track_time_spent(request):
+    if request.method == "POST":
+        data = json.loads(request.body)
+        user = request.user
+        category_id = data.get("category_id")
+        time_spent = data.get("time_spent")
+
+        category = ForumCategory.objects.get(id=category_id)
+
+        ForumViewHistory.objects.create(user=user, category=category, time_spent=time_spent)
+
+        return JsonResponse({"message": "Time recorded"}, status=200)
+
+    return JsonResponse({"error": "Invalid request"}, status=400)

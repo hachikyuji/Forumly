@@ -150,6 +150,32 @@
                 });
             });
         });
+
+        // Timer Script
+
+        let startTime = Date.now();
+
+        function sendTimeSpent() {
+            let endTime = Date.now();
+            let timeSpent = Math.floor((endTime - startTime) / 1000); 
+
+            fetch("{% url 'track_time_spent' %}", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                    "X-CSRFToken": "{{ csrf_token }}"
+                },
+                body: JSON.stringify({
+                    category_id: {{ category.id }},
+                    time_spent: timeSpent
+                })
+            });
+        }
+
+        
+        // document.querySelector(".forum-title a").addEventListener("click", sendTimeSpent);
+
+        window.addEventListener("beforeunload", sendTimeSpent);
     </script>
 </body>
 </html>

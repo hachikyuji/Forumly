@@ -88,4 +88,12 @@ class ForumReply(models.Model):
     
     def __str__(self):
         return self.content
-    
+
+class ForumViewHistory(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    category = models.ForeignKey(ForumCategory, on_delete=models.CASCADE)
+    time_spent = models.IntegerField(default=0)
+    viewed_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.category.name} - {self.time_spent}s"

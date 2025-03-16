@@ -24,9 +24,10 @@ urlpatterns = [
     path('thread/<int:thread_id>/like/', views.LikeThreadView.as_view(), name='like_thread'),
     path('thread/<int:thread_id>/dislike/', views.DislikeThreadView.as_view(), name='dislike_thread'),
     
-    # Test
+    # Tracking
     path('profile', views.UserProfileView.as_view(), name='profile'),
-    path('likedislike', views.LikeDislikeStatsView.as_view(), name='likedislike')
+    path('likedislike', views.LikeDislikeStatsView.as_view(), name='likedislike'),
+    path('track-time/', views.track_time_spent, name="track_time_spent"),
 ]
 
 
