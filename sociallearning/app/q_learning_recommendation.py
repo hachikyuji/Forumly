@@ -9,7 +9,7 @@ from datetime import timedelta
 from django.utils import timezone
 
 #Log Rewards
-logger = logging.getLogger(__name__)
+logger = logging.getLogger('app') 
 
 class QLearningRecommender:
     def __init__(self, alpha=0.1, gamma=0.9, epsilon=0.9):
@@ -91,6 +91,8 @@ class QLearningRecommender:
             penalty  # Deduct penalty for repeat viewed recommendations
         )
 
+        print("LOGGING: About to log reward calculation")
+        logger.warning("TEST WARNING: Logging should work!")
         logger.info(f"[REWARD CALCULATION] Category: {category_name} | Likes: {like_score} | "
                     f"Dislikes: {dislike_score} | Comments: {comment_score} | "
                     f"Engagement Time: {engagement_time} | Viewed Recommendations: {viewed_recommendations} | "
@@ -119,7 +121,7 @@ class QLearningRecommender:
         ).values_list('forum_thread_id', flat=True)
 
         # Filter recommended topics excluding previously viewed ones
-        recommended_topics = ForumThread.objects.exclude(id__in=viewed_topic_ids)[action:action + 8]
+        recommended_topics = ForumThread.objects.exclude(id__in=viewed_topic_ids)[action:action + 12]
 
         # Track recommended topics in the new table
         for topic in recommended_topics:

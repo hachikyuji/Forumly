@@ -16,10 +16,23 @@ body {
 
 .post-btn {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
-    margin: 20px 60px;
-    padding: 20px;
+    width: 1400px; 
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.forum-title {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10x;
+}
+
+.forum-title svg {
+    margin-left: -30px;
+    fill: #FF6B6B;
 }
 
 .forum-title h1 {
@@ -27,10 +40,12 @@ body {
     font-weight: bold;
     color: white;
     -webkit-text-stroke: 1px rgba(250, 82, 82, 0.7);
-    text-align: left;
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    text-emphasis: none;
+}
+
+.forum-title a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .add-topic-btn {
@@ -176,7 +191,7 @@ input[type="text"] {
     border-radius: 20px;
     text-align: center;
     margin-left: 60px;
-    margin-top: -30px;
+    margin-top: 10px;
     width: 90%;  
     height: 580px;
     background-color: rgba(165, 164, 164, 0.7); 
