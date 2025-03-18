@@ -6,14 +6,21 @@ from django.contrib.auth import logout, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.db.models import Count
-from .models import UserProfile, ForumThread, ForumCategory, ForumReply, ForumViewHistory
+from .models import UserProfile, ForumThread, ForumCategory, ForumReply, ForumViewHistory, RecommendedTopicHistory
 from django.http import JsonResponse
 from django.views.generic import ListView, DetailView, TemplateView
 from django.views import View
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.decorators.csrf import csrf_exempt
+from .q_learning_recommendation import QLearningRecommender  # Import the Q-learning model
 import json
+#test
+from django.core.exceptions import ObjectDoesNotExist
+
+# Initialize Q-Learning Model
+q_learning_model = QLearningRecommender()
+
 # Create your views here.
 
 # Forms
@@ -59,7 +66,27 @@ def register(request):
 # User Home
 @login_required
 def homepage(request):
-    return render(request, 'homepage.html')
+    user_profile = UserProfile.objects.get(user=request.user)
+
+    # Step 1: Gather Data for Q-Learning Model
+    state = q_learning_model.get_state(user_profile, request.user.id)
+
+    # Step 2: Generate Recommendations
+    recommended_topics = q_learning_model.recommend_topics(user_profile, request.user.id)
+
+    # Step 3: Prepare Data for Frontend
+    recommended_data = [
+        {
+            "title": topic.title,
+            "category": topic.category.name,
+            "id": topic.id
+        }
+        for topic in recommended_topics
+    ]
+
+    return render(request, 'homepage.html', {
+        'recommended_topics': recommended_data
+    })
 
 def logoutView(request):
     logout(request)
@@ -143,6 +170,18 @@ class ForumThreadDetailView(DetailView):
     model = ForumThread
     template_name = 'forum_thread_detail.html'
     context_object_name = 'thread'
+
+    def get(self, request, *args, **kwargs):
+        response = super().get(request, *args, **kwargs)
+
+        # Track viewed recommendation
+        thread = self.get_object()
+        RecommendedTopicHistory.objects.filter(
+            user=request.user,
+            forum_thread=thread
+        ).update(viewed=True)
+
+        return response
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
@@ -267,3 +306,24 @@ def track_time_spent(request):
         return JsonResponse({"message": "Time recorded"}, status=200)
 
     return JsonResponse({"error": "Invalid request"}, status=400)
+
+#tests
+@login_required
+def test_recommendation(request):
+    try:
+        user_profile = UserProfile.objects.get(user=request.user)
+        recommendations = q_learning_model.recommend_topics(user_profile, request.user.id)
+        
+        recommendation_data = [
+            {
+                "title": topic.title,
+                "category": topic.category.name,
+                "reward": q_learning_model.calculate_reward(user_profile, request.user.id, topic.category.name, topic.id)
+            }
+            for topic in recommendations
+        ]
+        
+        return JsonResponse({"recommendations": recommendation_data})
+
+    except ObjectDoesNotExist:
+        return JsonResponse({"error": "User profile not found."}, status=404)

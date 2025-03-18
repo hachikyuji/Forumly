@@ -2,6 +2,7 @@ from django.urls import path
 from . import views
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import test_recommendation
 
 urlpatterns = [
     # Welcome Page
@@ -28,6 +29,9 @@ urlpatterns = [
     path('profile', views.UserProfileView.as_view(), name='profile'),
     path('likedislike', views.LikeDislikeStatsView.as_view(), name='likedislike'),
     path('track-time/', views.track_time_spent, name="track_time_spent"),
+    
+    #Test Q-learning
+    path('test_recommendation/', test_recommendation, name='test_recommendation'),
 ]
 
 

@@ -97,3 +97,18 @@ class ForumViewHistory(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.category.name} - {self.time_spent}s"
+
+class RecommendationHistory(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    topic = models.ForeignKey(ForumThread, on_delete=models.CASCADE)
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    
+class RecommendedTopicHistory(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    forum_thread = models.ForeignKey(ForumThread, on_delete=models.CASCADE)
+    recommended_at = models.DateTimeField(auto_now_add=True)
+    viewed = models.BooleanField(default=False)
+
+    def __str__(self):
+        return f"{self.user.username} - {self.forum_thread.title} - Viewed: {self.viewed}"

@@ -5,32 +5,132 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    overflow: hidden;
+    overflow-y: auto;
     width: 100vw;
 }
 
 body {
-    background-image: url('/static/assets/BG1.gif');
+    background-image: url('../assets/BG1.gif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
 }
 
-.centered-box {
-    width: 1400px;  
-    height: 600px; 
-    background: rgba(128, 128, 128, 0.7); 
-    padding: 20px;
+.title {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 70px;
+    padding-top: 20px;
+}
+
+.title h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px rgba(250, 82, 82, 0.7);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.recommendation-container {
     border-radius: 20px;
     text-align: center;
-    margin-left: 40px;
-    margin-top: 20px;
+    margin-left: 70px;
+    margin-top: 10px;
+    width: 1400px;
+    min-height: 80vh;
+    max-height: 120vh;
+    overflow-y: auto;
+    background-color: #d9d9d9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 0 4px #FF6B6B;
+    display: flex;
+    flex-direction: column;
+    padding: 55x;
 }
 
+.recommendation-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Inter', sans-serif;
+}
 
-.centered-box h2,
-.centered-box p {
-    color: white;
-    margin: 0;
+.recommendation-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 10px;
+    width: 90%;
+    margin-left: 61px;
+}
+
+.recommendation-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    height: 100%;
+}
+
+.recommendation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+}
+
+.recommendation-card a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    height: 100%;
+}
+
+.recommendation-card h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.category-label {
+    background-color: #0078FF;
+    color: #fff;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Responsive layout */
+@media (max-width: 1024px) {
+    .recommendation-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .recommendation-container {
+        width: calc(100% - 60px);
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .recommendation-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .recommendation-container {
+        width: calc(100% - 40px);
+        margin-left: 20px;
+    }
+    
+    .title {
+        margin-left: 20px;
+    }
 }

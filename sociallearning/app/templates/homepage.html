@@ -3,15 +3,34 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    <link rel="stylesheet" href="{% static 'styles/homepage.css' %}">
-    {% include "partials/sidebar.html"%}
+    <title>Homepage - Recommendations</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'styles/homepage.css' %}">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
-<body style="background-image: url('/static/assets/BG1.gif');">
-    <div class="centered-box">
-        <h2> This is the homepage. </h2>
-        <p> This is a paragraph on the homepage. </p>
+
+<body>
+    {% include "partials/sidebar.html" %}
+    
+    <div class="title">
+        <h1>Welcome to Forumly!</h1>
+    </div>
+
+    <div class="recommendation-container">
+        <h2>Recommended Topics for You</h2>
+        <div class="recommendation-grid">
+            {% if recommended_topics %}
+                {% for topic in recommended_topics %}
+                    <div class="recommendation-card">
+                        <a href="{% url 'forum_thread_detail' topic.id %}">
+                            <h3>{{ topic.title }}</h3>
+                            <span class="category-label">{{ topic.category }}</span>
+                        </a>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No recommendations available yet. Engage more to improve suggestions!</p>
+            {% endif %}
+        </div>
     </div>
 </body>
 </html>
