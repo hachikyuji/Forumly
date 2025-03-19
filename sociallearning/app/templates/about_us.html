@@ -1,0 +1,59 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset QL - Social Learning App</title>
+    <link rel="stylesheet" href="{% static 'styles/about_us.css' %}">
+    {% include "partials/sidebar.html" %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="post-btn">
+        <div class='aboutus-title'>
+            <a href="{% url 'homepage' %}">
+                <h1>                
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D16D6A">
+                        <path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/>
+                    </svg>
+                    About Us
+                </h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="aboutus-box-main">
+        <h2>Developers and Researchers</h2>
+    
+        <div class="developer-container">
+            <div class="developer">
+                <img src="{% static 'assets/aboutus_marlie.png' %}" alt="Marlie">
+                <p>John Marlie D. Villadores</p>
+                <a>Pamantasan ng Lungsod ng Maynila</a>
+                <br><a>Bachelor of Science in Computer Science</a>
+            </div>
+    
+            <div class="developer">
+                <img src="{% static 'assets/aboutus_sample.png' %}" alt="JC">
+                <p>John Carlo D. Muring</p>
+                <a>Pamantasan ng Lungsod ng Maynila</a>
+                <br><a>Bachelor of Science in Computer Science</a>
+            </div>
+        </div>
+    </div>
+    
+    <div class="aboutus-box">
+        <h2>About the System</h2>
+        <p>The social learning platform is heavily designed from the enhanced q-learning model from the research paper of the developers, entitled "An Enhancement of Q-learning Algorithm Applied for Social Learning Application". The system also aims to further enhance user engagement and improve content recommendations through an advanced Q-learning-based recommendation system. This system leverages a Feature-Rich State Representation to capture detailed user behaviors such as forum views, comments, likes, and dislikes. By integrating this comprehensive data, the platform creates personalized recommendations tailored to each user's interests. Additionally, the platform supports diverse discussion topics such as education, gaming, music, travel, and more, allowing users to explore various areas of knowledge while interacting with others in a social learning environment.</p>
+        <p>To improve the effectiveness of its recommendation system, the platform incorporates Dynamic Reward Engineering, a feature that optimizes the Q-learning model's reward calculation. This method assigns rewards based on user engagement, novelty of content, and satisfaction levels, while introducing a diminishing penalty factor to encourage improved decision-making over time. The model adapts to user preferences dynamically, ensuring that recommendations remain relevant and meaningful as users continue to interact with the platform. This enhanced reward system aims to accelerate learning, foster meaningful engagement, and improve content discovery.</p>
+        <p>To maintain performance and flexibility, the platform also integrates a Lightweight Neural Network that efficiently processes user data and generates recommendations. This design ensures the system remains scalable and responsive, even as user activity grows. The platform includes features for resetting Q-learning data, allowing administrators to clear accumulated data such as Q-values, reward histories, and engagement records when necessary. This reset feature helps maintain system integrity and allows for experimentation with new configurations without persistent data interference. Overall, the system is designed to deliver an engaging, effective, and scalable social learning experience.</p>
+    </div>
+     <div class="aboutus-box">
+        <h2>About the Research Paper</h2>
+        <p>The study in which this system is mainly from, "An Enhancement of Q-learning Algorithm Applied for Social Learning Application" which focuses on enhancing the traditional Q-learning algorithm by incorporating Feature-rich State Representation, Dynamic Reward Engineering, and Simplified Neural Network within a model with simulated social learning environment. Comparative experiments demonstrate that the enhanced Q-learning model significantly outperforms its unenhanced counterpart. Visual analysis of different episode counts ranging from 10-1000 shows the difference in the effectiveness in learning in a given dynamic environment. </p>
+        <p>The traditional Q-learning algorithm showed that in terms of its learning trajectory it suffers from over simplistic reward design in a dynamic environment and it tends to be incapable of providing more contexts in states leading to state-space complexity which has earlier convergence. This reflects its simplicity and incapability of having meaningful learning, as it tends to stabilize its learned Q-values after only 10 episodes. On the other hand, experimental results demonstrated that Feature-Rich State Representation and Dynamic Reward Engineering significantly outperformed traditional Q-learning methods. The lower mean Q-value in the enhanced model indicated more precise learning, while the traditional model exhibited inflated Q-values due to inadequate state differentiation. Additionally, the enhanced model demonstrated significantly lower variance (0.012) and standard deviation, ensuring consistent learning behavior over time, whereas the traditional approach showed greater fluctuations, leading to instability, while the reward design resulted in a controlled reward growth (0.49 vs. 0.53) and ensured steady progression..</p>
+        <p> Furthermore, NN-based Q-learning required higher peak memory compared to the Q-table method, but it effectively optimized memory allocation, preventing poor memory usage, making it more suitable for complex social learning environments without the full computational complexity and demands of Deep Q-Networks. This integration tests the ability of the model to handle intricate social dynamics. This study contributes to the field by presenting a robust simulation framework that bridges the gap between traditional reinforcement learning methods and the evolving demands of real-world scenarios</p>
+    </div>
+</body>
+</html>

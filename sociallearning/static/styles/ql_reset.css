@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    overflow-y: auto;
+    width: 100vw;
+}
+
+body {
+    background-image: url('/static/assets/BG1.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.post-btn {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 1400px; 
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.reset-title {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10x;
+}
+
+.reset-title svg {
+    margin-left: -30px;
+    fill: #FF6B6B;
+}
+
+.reset-title h1 {
+    font-family: 'Inter';
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px rgba(250, 82, 82, 0.7);
+    text-emphasis: none;
+}
+
+.reset-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.reset-box {
+    width: 1000px;  
+    height: 415px; 
+    background: rgba(240, 240, 240); 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid #008CFF; 
+    text-align: center;
+    margin-left: 230px;
+    margin-top: 40px;
+}
+
+
+.reset-box h2{
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-size: 32px;
+    margin: 0;
+}
+
+.reset-box button {
+    height: 58px;
+    padding: 20px; /* Reduce vertical padding */
+    width: 110px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: #FF6B6B;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.reset-box h2 {
+    font-family: 'Inter';
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+.reset-box p {
+    font-family: 'Inter';
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin-left: 90px;
+}
+
+.reset-box button:hover {
+    background-color: #ff0000;
+    transform: scale(1.05);
+}
+
+.reset-box button:active {
+    transform: scale(1);
+}

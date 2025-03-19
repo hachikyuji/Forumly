@@ -2,23 +2,30 @@ import numpy as np
 import random
 import tensorflow as tf
 from tensorflow import keras
-from app.models import ForumViewHistory, ForumThread, RecommendedTopicHistory
+from app.models import ForumViewHistory, ForumThread, RecommendedTopicHistory, ForumReply, UserProfile
 from collections import defaultdict
 import logging
-from datetime import timedelta
+from datetime import timedelta, datetime
 from django.utils import timezone
+from django.db import transaction
+import matplotlib.pyplot as plt
+import io
+import base64
+from django.core.exceptions import ObjectDoesNotExist
+import psutil
+from collections import defaultdict
 
 #Log Rewards
 logger = logging.getLogger('app') 
 
 class QLearningRecommender:
-    def __init__(self, alpha=0.1, gamma=0.9, epsilon=0.9):
+    def __init__(self, alpha=0.1, gamma=0.99, epsilon=0.05):
         self.alpha = alpha  # Learning rate
         self.gamma = gamma  # Discount factor
         self.epsilon = epsilon  # Exploration-exploitation tradeoff
-        self.q_table = defaultdict(lambda: np.zeros(10))  # 10 actions for simplicity
+        self.q_table = defaultdict(lambda: np.zeros(10, 5.0))  # 10 actions for simplicity
         
-        # Lightweight NN for Q-value approximation
+        # Lightweight NN for Q-value approximation (SOL 3)
         self.model = self.build_model()
 
     def build_model(self):
@@ -26,14 +33,14 @@ class QLearningRecommender:
             keras.layers.Input(shape=(5,)),  # 5 Features in State Representation
             keras.layers.Dense(32, activation='relu'),
             keras.layers.Dense(16, activation='relu'),
-            keras.layers.Dense(10, activation='linear')  # 10 possible actions (topics)
+            keras.layers.Dense(12, activation='linear')  # 10 possible actions (topics)
         ])
         model.compile(optimizer='adam', loss='mse')
         return model
 
     def get_state(self, user_profile, user_id):
         """
-        Create a feature-rich state based on user profile data.
+        Create a feature-rich state based on user profile data. (SOL 1)
         """
         engagement_time = sum([
             entry.time_spent 
@@ -61,7 +68,7 @@ class QLearningRecommender:
 
     def calculate_reward(self, user_profile, user_id, category_name, topic_id):
         """
-        Dynamic Reward Calculation.
+        Dynamic Reward Calculation. (SOL 2)
         """
         like_score = user_profile.category_like_count.get(category_name, 0)
         dislike_score = user_profile.category_dislike_count.get(category_name, 0)
@@ -73,26 +80,62 @@ class QLearningRecommender:
             for entry in ForumViewHistory.objects.filter(user_id=user_id, category__name=category_name)
         ])
 
-        # Penalty for repeat recommendations that have been viewed
-        penalty = 0
         viewed_recommendations = RecommendedTopicHistory.objects.filter(
             user_id=user_id, forum_thread__category__name=category_name, viewed=True
         ).count()
 
-        if viewed_recommendations > 0:
-            penalty = viewed_recommendations * 2  # Penalty value (adjust as needed)
+        # Gradually reduce reward for repeat content over time
+        decay_factor = 0.9 ** viewed_recommendations  
+        # Penalty for repeat recommendations that have been viewed
+        penalty = 0
 
-        # Dynamic Reward Calculation
+        penalty = np.log1p(viewed_recommendations) * 2  # Slower growth in penalties (gradual as "viewed" become more frequent)
+        
+        # Logarithm to dampen large values
+        normalized_time = np.log1p(engagement_time)
+
+        total_feedback = like_score + comment_score + dislike_score
+        #positive vs negative interactions
+        satisfaction_ratio = (like_score + comment_score) / total_feedback if total_feedback > 0 else 0.5
+        
+        # Retrieve topic details for freshness check
+        try:
+            topic = ForumThread.objects.get(id=topic_id)
+            days_old = (timezone.now() - topic.created_at).days
+        except ObjectDoesNotExist:
+            days_old = 0  # Treat missing topics as 'new' to avoid errors
+            topic = None  # Explicitly set `topic` to None
+
+        # New topic booster (longevity)
+        if days_old < 30:
+            new_topic_boost = 1.5
+            is_new_topic = True
+        elif days_old < 90:
+            new_topic_boost = 1.2
+            is_new_topic = False
+        elif days_old < 180:
+            new_topic_boost = 1.0
+            is_new_topic = False
+        else:
+            new_topic_boost = 0.5
+            is_new_topic = False
+
         reward = (
-            (like_score * 2) -
-            (dislike_score * 1.5) +
-            (comment_score * 1.2) +
-            (engagement_time * 0.5) -
-            penalty  # Deduct penalty for repeat viewed recommendations
+            (like_score * 2) +
+            (comment_score * 1.5) +
+            (normalized_time * satisfaction_ratio * 0.3) -
+            ((dislike_score * 2) + penalty * (decay_factor * 1.5))
+            * new_topic_boost
         )
 
-        print("LOGGING: About to log reward calculation")
-        logger.warning("TEST WARNING: Logging should work!")
+        # Log topic details if available
+        if topic:
+            logger.info(f"[TOPIC CHECK] Topic ID: {topic.id} | Created At: {topic.created_at} | "
+                        f"Days Old: {days_old} | Is New Topic: {is_new_topic} | "
+                        f"New Topic Boost: {new_topic_boost}")
+        else:
+            logger.info(f"[TOPIC CHECK] Topic ID: {topic_id} (Not Found) | Days Old: {days_old} | "
+                        f"Is New Topic: {is_new_topic} | New Topic Boost: {new_topic_boost}")
         logger.info(f"[REWARD CALCULATION] Category: {category_name} | Likes: {like_score} | "
                     f"Dislikes: {dislike_score} | Comments: {comment_score} | "
                     f"Engagement Time: {engagement_time} | Viewed Recommendations: {viewed_recommendations} | "
@@ -131,3 +174,37 @@ class QLearningRecommender:
             )
 
         return recommended_topics
+
+    # QL Data
+    def reset_q_learning_data(self):
+        """Resets Q-values, accumulated rewards, memory usage, and database entries."""
+
+        # Reset Q-values, NN weights, and in-memory data
+        self.q_table = defaultdict(lambda: np.zeros(10, 5.0))  # Reset Q-table
+        self.model.set_weights(self.build_model().get_weights())  # Reset NN weights
+        self.reward_data = defaultdict(list)
+        self.q_values = {}
+        self.memory_usage = {}
+
+        # Database Cleanup: Clear specified tables and reset profile fields
+        with transaction.atomic():
+            ForumReply.objects.all().delete()
+
+            # Clear likes and dislikes in ForumThread entries
+            for thread in ForumThread.objects.all():
+                thread.likes.clear()
+                thread.dislikes.clear()
+
+            ForumViewHistory.objects.all().delete()
+            RecommendedTopicHistory.objects.all().delete()
+
+            # Reset `UserProfile` dictionary fields to empty dicts
+            UserProfile.objects.update(
+                category_comment_count={},
+                category_like_count={},
+                category_dislike_count={}
+            )
+
+        logger.info("✅ Data successfully flushed: Tables cleared and Q-values reset.")
+
+

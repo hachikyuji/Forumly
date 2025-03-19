@@ -17,6 +17,8 @@ from .q_learning_recommendation import QLearningRecommender  # Import the Q-lear
 import json
 #test
 from django.core.exceptions import ObjectDoesNotExist
+#Visualization
+from django.shortcuts import render
 
 # Initialize Q-Learning Model
 q_learning_model = QLearningRecommender()
@@ -120,6 +122,11 @@ def update_profile(request):
         return redirect("update_profile")
     
     return render(request, 'settings.html')
+
+#About Us
+@login_required
+def about_us(request):
+    return render(request, 'about_us.html')
 
 # Forums
 @method_decorator(login_required, name='dispatch')
@@ -327,3 +334,12 @@ def test_recommendation(request):
 
     except ObjectDoesNotExist:
         return JsonResponse({"error": "User profile not found."}, status=404)
+
+@login_required
+def reset_QL(request):
+    if request.method == "POST":
+        q_learning_model.reset_q_learning_data()
+        messages.success(request, "✅ QL-related data has been successfully reset.")
+        return redirect('reset_QL')
+
+    return render(request, 'reset_QL.html')
