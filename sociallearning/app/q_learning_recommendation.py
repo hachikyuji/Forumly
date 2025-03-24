@@ -19,11 +19,11 @@ from collections import defaultdict
 logger = logging.getLogger('app') 
 
 class QLearningRecommender:
-    def __init__(self, alpha=0.1, gamma=0.99, epsilon=0.05):
+    def __init__(self, alpha=0.1, gamma=0.95, epsilon=0.05):
         self.alpha = alpha  # Learning rate
         self.gamma = gamma  # Discount factor
         self.epsilon = epsilon  # Exploration-exploitation tradeoff
-        self.q_table = defaultdict(lambda: np.zeros(10, 5.0))  # 10 actions for simplicity
+        self.q_table = defaultdict(lambda: np.zeros(12, 5.0))  
         
         # Lightweight NN for Q-value approximation (SOL 3)
         self.model = self.build_model()
@@ -61,7 +61,7 @@ class QLearningRecommender:
         Choose an action using epsilon-greedy policy.
         """
         if np.random.rand() < self.epsilon:
-            return random.choice(range(10))  # Explore
+            return random.choice(range(12))  # Explore
         else:
             q_values = self.model.predict(np.array([state]), verbose=0)
             return np.argmax(q_values[0])  # Exploit
@@ -89,7 +89,7 @@ class QLearningRecommender:
         # Penalty for repeat recommendations that have been viewed
         penalty = 0
 
-        penalty = np.log1p(viewed_recommendations) * 2  # Slower growth in penalties (gradual as "viewed" become more frequent)
+        penalty = np.log1p(viewed_recommendations) * 0.1  # Slower growth in penalties (gradual as "viewed" become more frequent)
         
         # Logarithm to dampen large values
         normalized_time = np.log1p(engagement_time)
@@ -124,7 +124,7 @@ class QLearningRecommender:
             (like_score * 2) +
             (comment_score * 1.5) +
             (normalized_time * satisfaction_ratio * 0.3) -
-            ((dislike_score * 2) + penalty * (decay_factor * 1.5))
+            ((dislike_score * 4) + penalty * (decay_factor * 1.5))
             * new_topic_boost
         )
 
@@ -206,5 +206,3 @@ class QLearningRecommender:
             )
 
         logger.info("✅ Data successfully flushed: Tables cleared and Q-values reset.")
-
-

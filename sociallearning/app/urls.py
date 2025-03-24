@@ -39,5 +39,14 @@ urlpatterns = [
     path('reset_QL/', views.reset_QL, name='reset_QL'),
 ]
 
+#403 Forbidden Error
+from django.conf.urls import handler403
+from django.shortcuts import render
+
+def custom_403_view(request, exception):
+    return render(request, "403.html", status=403)
+
+handler403 = custom_403_view  # Tells Django to use this view for 403 errors
+
 
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

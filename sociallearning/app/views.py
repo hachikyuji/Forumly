@@ -19,6 +19,8 @@ import json
 from django.core.exceptions import ObjectDoesNotExist
 #Visualization
 from django.shortcuts import render
+#Permission Denied (403)
+from django.core.exceptions import PermissionDenied
 
 # Initialize Q-Learning Model
 q_learning_model = QLearningRecommender()
@@ -337,9 +339,11 @@ def test_recommendation(request):
 
 @login_required
 def reset_QL(request):
+    if not request.user.profile.admin: 
+        raise PermissionDenied  # This will trigger Django's 403 error page
+
     if request.method == "POST":
         q_learning_model.reset_q_learning_data()
-        messages.success(request, "✅ QL-related data has been successfully reset.")
-        return redirect('reset_QL')
+        return JsonResponse({"success": "✅ QL-related data has been successfully reset."})
 
     return render(request, 'reset_QL.html')

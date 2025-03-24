@@ -11,6 +11,7 @@ class UserProfile(models.Model):
     category_comment_count = models.JSONField(default=dict)
     category_like_count = models.JSONField(default=dict)
     category_dislike_count = models.JSONField(default=dict)
+    admin = models.BooleanField(default=False)
     
     def increment_category_count(self, category_name):
         """Increase the count for a given category"""

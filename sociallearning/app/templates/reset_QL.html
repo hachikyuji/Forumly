@@ -8,14 +8,6 @@
     <link rel="stylesheet" href="{% static 'styles/ql_reset.css' %}">
     {% include "partials/sidebar.html" %}
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        function confirmFlush() {
-            const confirmed = confirm("⚠️ Are you sure you want to reset all QL-related data? This action cannot be undone.");
-            if (confirmed) {
-                document.getElementById("flush-form").submit();  // Trigger the form submission
-            }
-        }
-    </script>
 </head>
 <body>
     <div class="post-btn">
@@ -52,13 +44,29 @@
         <!-- Button outside the form, but still submits it -->
         <button type="button" id="resetButton" onclick="confirmFlush();">RESET</button>
 
-        {% if messages %}
-        <div class="alert alert-success">
-            {% for message in messages %}
-                {{ message }}
-            {% endfor %}
-        </div>
-        {% endif %}
-    </div>
+        <script>
+            async function confirmFlush() {
+                const confirmed = confirm("⚠️ Are you sure you want to reset all QL-related data? This action cannot be undone.");
+                if (confirmed) {
+                    try {
+                        const response = await fetch("{% url 'reset_QL' %}", {
+                            method: "POST",
+                            headers: { "X-CSRFToken": "{{ csrf_token }}" }, // CSRF protection
+                        });
+
+                        const data = await response.json();
+
+                        if (response.ok) {
+                            alert("✅ QL-related data has been successfully reset.");
+                        } else {
+                            alert("⛔ " + data.error); // Show error message in the same style
+                        }
+                    } catch (error) {
+                        alert("⚠️ Something went wrong. Please try again.");
+                    }
+                }
+            }
+        </script>
+
 </body>
 </html>

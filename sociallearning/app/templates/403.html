@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset QL - Social Learning App</title>
+    <link rel="stylesheet" href="{% static 'styles/403.css' %}">
+    {% include "partials/sidebar.html" %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    {% block content %}
+    <div class = "centered-box">
+        <div class="error-page">
+            <h1>🚫 403 - Forbidden</h1>
+            <p>You do not have permission to access this page.</p>
+            <p>If you believe this is a mistake, please contact the administrator.</p>
+            <a href="{% url 'homepage' %}" class="btn">Return to Homepage</a>
+        </div>
+        {% endblock %}
+    </div>
+</body>
+</html>
+

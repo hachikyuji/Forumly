@@ -48,9 +48,11 @@
                 <li>
                     <a href="/profile/update">Account Settings</a>
                 </li>
+                {% if request.user.profile.admin %}
                 <li>
                     <a href="/reset_QL">Reset QL</a>
                 </li>
+                {% endif %}
                 <li>
                     <a href="/logout">Logout</a>
                 </li>
