@@ -45,25 +45,31 @@ def user_login(request):
 
 def register(request):
     if request.method == "POST":
-        username = request.POST.get("username")
-        password = request.POST.get("password")
-        age = request.POST.get("age")
+        username = request.POST.get("username", "").strip()
+        password = request.POST.get("password", "").strip()
+        age = request.POST.get("age", "").strip()
 
+        # Validate required fields
+        if not username or not password or not age:
+            messages.error(request, "All fields are required.")
+            return render(request, "register.html")
+
+        # Check username uniqueness
         if User.objects.filter(username=username).exists():
             messages.error(request, "Username already exists.")
             return render(request, "register.html")
 
+        # Create the user
         user = User.objects.create_user(username=username, password=password)
         profile, created = UserProfile.objects.get_or_create(user=user)
+        profile.age = int(age)
+        profile.save()
 
-        if age and age.isdigit():
-            profile.age = int(age)
-            profile.save()
-
+        # Log in the user
         auth_login(request, user)
 
         messages.success(request, "Registration successful!")
-        return redirect("homepage")
+        return redirect("login")
 
     return render(request, "register.html")
 

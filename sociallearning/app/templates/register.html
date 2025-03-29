@@ -31,9 +31,9 @@
                             id="username" 
                             type="text" 
                             name="username" 
-                            required 
                             minlength="3" 
                             class="{% if form.username.errors %}input-error{% endif %}"
+                            required 
                         />
                     </div>
                     {% if form.username.errors %}
@@ -52,9 +52,9 @@
                             id="password" 
                             type="password" 
                             name="password" 
-                            required 
                             minlength="8" 
                             class="{% if form.password.errors %}input-error{% endif %}"
+                            required 
                         />
                     </div>
                     {% if form.password.errors %}
@@ -69,10 +69,10 @@
                             id="age"
                             type="number"
                             name="age"
-                            required
                             minlength="1"
                             maxlength="2"
-                             class="{% if form.age.errors %}input-error{% endif %}"
+                            class="{% if form.age.errors %}input-error{% endif %}"
+                            required
                         />
                         {% if form.age.errors %}
                             <p class="input-hint error">{{ form.age.errors.0 }}</p>
