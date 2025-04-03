@@ -37,6 +37,15 @@ urlpatterns = [
     
     #Q-learning Data
     path('reset_QL/', views.reset_QL, name='reset_QL'),
+    
+    #Check Mentioned User
+    path('check_user_exists/', views.check_user_exists, name="check_user_exists"),
+    
+    #Notifications
+    path('notifications/', views.notifications, name="notifications"),
+    path('notifications/read_all/', views.read_all_notifications, name='read_all_notifications'),
+    path('notifications/clear/', views.clear_notifications, name='clear_notifications'),
+    path('notifications/mark_read/', views.mark_notification_read, name='mark_notification_read'),
 ]
 
 #403 Forbidden Error

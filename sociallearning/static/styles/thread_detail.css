@@ -167,6 +167,26 @@ body {
     font-size: 14px;
 }
 
+.reply-input {
+    min-height: 50px;
+    max-height: 150px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 600px;
+    border-radius: 20px;
+    background-color: white;
+    outline: none;
+    white-space: pre-wrap;
+    text-align: left;
+}
+.mention {
+    color: blue;
+    font-weight: bold;
+}
+
+
 .replies-container {
     flex-grow: 1; 
     overflow-y: auto;
@@ -235,7 +255,7 @@ body {
 .replies-form button {
     height: 58px;
     padding: 20px; /* Reduce vertical padding */
-    width: 90px;
+    width: auto;
     background-color: #FF6B6B;
     color: white;
     border: none;
@@ -272,19 +292,49 @@ body {
 .reply-user-info {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 1px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 50px;
+    min-width: 180px;
+    max-width: auto;
+    border: 2px solid #FF6B6B; 
+}
+
+.user-info-reply {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent; /* Remove the pink background */
+    border-radius: 0; /* Remove the rounded effect */
+    padding: 0; /* Remove extra padding */
+}
+
+
+.user-name {
+    font-weight: bold;
+    font-size: 22px; /* Adjust as needed */
+    text-align: left;
+    margin-top: -5px; /* Adjust spacing */
+    margin-left: 10px;
     font-family: 'Inter';
     font-weight: bolder;
     color: #FF6B6B;
-    background-color: rgb(238, 238, 238);
-    border-radius: 25px;
-    border: 2px solid #FF6B6B; 
 }
+
+.reply-date {
+    font-size: 9px; /* Make it smaller */
+    color: rgb(110, 110, 110); /* Lighter color for better readability */
+    margin-top: -2px; /* Adjust spacing */
+    margin-left: 10px;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: bolder;
+}
+
 
 .profile-pic {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 20px;
     object-fit: cover;
 }
 

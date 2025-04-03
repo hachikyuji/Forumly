@@ -1,0 +1,103 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notifications</title>
+    <link rel="stylesheet" href="{% static 'styles/notification.css' %}">
+    {% include "partials/sidebar.html"%}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- For AJAX -->
+</head>
+<body>
+    <div class='post-btn'>
+        <div class='forum-title'>
+            <a href="{% url 'homepage' %}">
+                <h1>                
+                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#D16D6A"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg>
+                Notifications
+                </h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="centered-box">
+        <div class="notif-header">
+            <h2>Notifications</h2>
+            <form method="post" action="{% url 'read_all_notifications' %}">
+                {% csrf_token %}
+                <button type="submit" id="read-all-btn">Read All</button>
+            </form>          
+            <form method="post" action="{% url 'clear_notifications' %}">
+                {% csrf_token %}
+                <button type="submit" id="clear-btn">Clear</button>
+            </form>   
+        </div>
+        <div class="notification-container">
+            {% block content %}
+            <ul>
+                {% for notification in notifications %}
+                    <div class="notification-card {% if notification.is_read %}read{% endif %}">
+                        <a href="{% if notification.thread_id %}{% url 'forum_thread_detail' notification.thread.id %}{% else %}#{% endif %}" 
+                        class="notif-link" data-id="{{ notification.id }}">
+                         {{ notification.message}}  
+                         <br><small>{{ notification.created_at }}</small>
+                        </a>                              
+                    </div>
+                {% empty %}
+                    <h3>No new notifications.</h3>
+                {% endfor %}
+            </ul>
+            {% endblock %}
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {  
+        $("#read-all-btn").click(function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            $.ajax({
+                url: "{% url 'read_all_notifications' %}",
+                type: "POST",
+                data: { csrfmiddlewaretoken: "{{ csrf_token }}" }, // Ensure CSRF is included
+                success: function(response) {
+                    if (response.status === "success") {
+                        $(".notification-card").addClass("read"); // ✅ Change all card colors
+                    }
+                },
+                error: function() {
+                    alert("Failed to mark notifications as read.");
+                    }
+                });
+            });
+        }); 
+         
+        $(document).ready(function() {       
+            // Clear all notifications
+            $("#clear-btn").click(function() {
+                $.post("{% url 'clear_notifications' %}", function() {
+                    $(".notification-card").remove();
+                    $(".centered-box ul").html("<h3>No new notifications.</h3>");
+                });
+            });
+
+            // Mark a single notification as read when clicked
+            $(".notif-link").click(function() {
+                let notifId = $(this).data("id");
+            
+                $.ajax({
+                    url: "{% url 'mark_notification_read' %}",
+                    type: "POST",
+                    data: { notif_id: notifId },
+                    headers: { "X-CSRFToken": "{{ csrf_token }}" },
+                    success: function() {
+                        $(`.notif-link[data-id="${notifId}"]`).closest(".notification-card").addClass("read");
+                    }
+                });
+            });               
+        });         
+    </script>
+
+</body>
+</html>

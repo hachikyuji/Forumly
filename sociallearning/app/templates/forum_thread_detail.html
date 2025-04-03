@@ -58,14 +58,16 @@
         <div class="replies-container">
             <ul>
                 {% for reply in replies %}
-                    <li class="reply-item">
+                    <div class="reply-item">
                         <div class="reply-user-info">
                             <img src="{{ reply.user.profile.profile_picture.url }}" alt="Profile Picture" class="profile-pic">
-                            <span class="user-name">{{ reply.user.username }}</span> - 
-                            <span class="reply-date">{{ reply.created_at }}</span>
+                            <div class="user-info-reply">
+                                <span class="user-name">{{ reply.user.username }}</span>  
+                                <span class="reply-date">{{ reply.created_at }}</span>
+                            </div>
                         </div>
                         <p class="reply-content">{{ reply.content | linebreaksbr}}</p>
-                    </li>
+                    </div>
                 {% empty %}
                     <p>No replies yet. Be the first to reply!</p>
                 {% endfor %}
@@ -76,9 +78,10 @@
         <div class="replies-form">
             <form id="replyForm" method="post" action="{% url 'forum_reply_create' thread.id %}">
                 {% csrf_token %}
-                <textarea id="replyContent" name="content" required placeholder="Comment..." oninput="checkInput()" ></textarea>
+                <div id="replyContent" contenteditable="true" class="reply-input" placeholder="Comment..." oninput="checkInput()"></div>
+                <input type="hidden" name="content" id="replyHidden">
             </form>
-            <button type="submit" id="replyButton" onclick="submitForm()" disabled>Reply</button>
+            <button type="submit" id="replyButton" onclick="submitForm()" disabled>Comment</button>
         </div>
         
         <script>
@@ -106,12 +109,83 @@
     </div>
 
     <script>
-        $(document).ready(function() {
+        function checkInput() {
+            let textarea = document.getElementById("replyContent");
+            let button = document.getElementById("replyButton");
+            let hiddenInput = document.getElementById("replyHidden");
+    
+            // Sync hidden input with contenteditable div
+            hiddenInput.value = textarea.innerText.trim();
+    
+            // Enable button only if there is input
+            button.disabled = hiddenInput.value === "";
+        }
+    
+        function submitForm() {
+            let textarea = document.getElementById("replyContent");
+            let hiddenInput = document.getElementById("replyHidden");
+    
+            hiddenInput.value = textarea.innerText.trim();
+    
+            // Prevent empty submissions
+            if (hiddenInput.value === "") {
+                alert("Please enter a comment before replying.");
+                return;
+            }
+    
+            document.getElementById("replyForm").submit();
+        }
+    
+        $(document).ready(function () {
+            $("#replyContent").on("input", function () {
+                let content = $(this).text();
+                let mentionRegex = /@(\w+)/g;
+                let match;
+                let highlightedContent = content;
+    
+                while ((match = mentionRegex.exec(content)) !== null) {
+                    let username = match[1];
+    
+                    $.ajax({
+                        url: "{% url 'check_user_exists' %}",
+                        method: "GET",
+                        data: { username: username },
+                        success: function (response) {
+                            if (response.exists) {
+                                highlightedContent = highlightedContent.replace(
+                                    new RegExp(`@${username}`, "g"),
+                                    `<span class="mention">@${username}</span>`
+                                );
+                                $("#replyContent").html(highlightedContent);
+                                placeCaretAtEnd(document.getElementById("replyContent"));
+                            }
+                        }
+                    });
+                }
+    
+                // Sync hidden input with processed text
+                $("#replyHidden").val($("#replyContent").text());
+            });
+        });
+    
+        function placeCaretAtEnd(el) {
+            el.focus();
+            if (typeof window.getSelection !== "undefined" && typeof document.createRange !== "undefined") {
+                let range = document.createRange();
+                range.selectNodeContents(el);
+                range.collapse(false);
+                let sel = window.getSelection();
+                sel.removeAllRanges();
+                sel.addRange(range);
+            }
+        }
+    
+        $(document).ready(function () {
             function getCSRFToken() {
                 return document.querySelector("[name=csrfmiddlewaretoken]").value;
             }
     
-            $(".like-btn").click(function() {
+            $(".like-btn").click(function () {
                 var threadId = $(this).data("thread-id");
                 var likeCount = $("#like-count");
                 var dislikeCount = $("#dislike-count");
@@ -120,17 +194,17 @@
                     type: "POST",
                     url: "{% url 'like_thread' 0 %}".replace('0', threadId),
                     data: {},
-                    beforeSend: function(xhr) {
+                    beforeSend: function (xhr) {
                         xhr.setRequestHeader("X-CSRFToken", getCSRFToken());
                     },
-                    success: function(data) {
+                    success: function (data) {
                         likeCount.text(data.total_likes);
                         dislikeCount.text(data.total_dislikes);
                     }
                 });
             });
     
-            $(".dislike-btn").click(function() {
+            $(".dislike-btn").click(function () {
                 var threadId = $(this).data("thread-id");
                 var likeCount = $("#like-count");
                 var dislikeCount = $("#dislike-count");
@@ -139,25 +213,24 @@
                     type: "POST",
                     url: "{% url 'dislike_thread' 0 %}".replace('0', threadId),
                     data: {},
-                    beforeSend: function(xhr) {
+                    beforeSend: function (xhr) {
                         xhr.setRequestHeader("X-CSRFToken", getCSRFToken());
                     },
-                    success: function(data) {
+                    success: function (data) {
                         likeCount.text(data.total_likes);
                         dislikeCount.text(data.total_dislikes);
                     }
                 });
             });
         });
-
-        // Timer Script
-
+    
+        // Timer Script - Keeping track of time spent on the page
         let startTime = Date.now();
-
+    
         function sendTimeSpent() {
             let endTime = Date.now();
-            let timeSpent = Math.floor((endTime - startTime) / 1000); 
-
+            let timeSpent = Math.floor((endTime - startTime) / 1000);
+    
             fetch("{% url 'track_time_spent' %}", {
                 method: "POST",
                 headers: {
@@ -170,11 +243,9 @@
                 })
             });
         }
-
-        
-        // document.querySelector(".forum-title a").addEventListener("click", sendTimeSpent);
-
+    
         window.addEventListener("beforeunload", sendTimeSpent);
     </script>
+    
 </body>
 </html>

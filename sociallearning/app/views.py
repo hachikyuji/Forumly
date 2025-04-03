@@ -6,15 +6,16 @@ from django.contrib.auth import logout, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.utils.decorators import method_decorator
 from django.db.models import Count
-from .models import UserProfile, ForumThread, ForumCategory, ForumReply, ForumViewHistory, RecommendedTopicHistory
+from .models import UserProfile, ForumThread, ForumCategory, ForumReply, ForumViewHistory, RecommendedTopicHistory, Notification
 from django.http import JsonResponse
 from django.views.generic import ListView, DetailView, TemplateView
 from django.views import View
 from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.decorators.csrf import csrf_exempt
-from .q_learning_recommendation import QLearningRecommender  # Import the Q-learning model
+from .q_learning_recommendation import QLearningRecommender 
 import json
+import re
 #test
 from django.core.exceptions import ObjectDoesNotExist
 #Visualization
@@ -219,6 +220,27 @@ class ForumReplyCreateView(View):
                 content=content,
                 category=category_name
             )
+
+            # Notify the thread owner (if it's not the same user)
+            if thread.user != request.user:
+                Notification.objects.create(
+                    user=thread.user,
+                    message=f"{request.user.username} commented on your thread '{thread.title}'.",
+                    thread = thread
+                )
+            
+            # Detect mentions and notify mentioned users
+            mention_regex = r'@(\w+)'
+            mentioned_users = re.findall(mention_regex, content)
+
+            for username in mentioned_users:
+                mentioned_user = User.objects.filter(username=username).first()
+                if mentioned_user and mentioned_user != request.user:
+                    Notification.objects.create(
+                        user=mentioned_user,
+                        message=f"{request.user.username} mentioned you in a comment on '{thread.title}'.",
+                        thread = thread
+                    )
             
             user_profile, created = UserProfile.objects.get_or_create(user=request.user)
             user_profile.increment_category_count(category_name)
@@ -226,6 +248,7 @@ class ForumReplyCreateView(View):
             return redirect('forum_thread_detail', pk=thread.id)
 
         return redirect('forum_thread_detail', pk=thread.id)
+
 
 class LikeThreadView(View):
     def post(self, request, thread_id):
@@ -237,9 +260,6 @@ class LikeThreadView(View):
         if not user_profile.category_like_count:
             user_profile.category_like_count = {}
 
-        if not user_profile.category_dislike_count:
-            user_profile.category_dislike_count = {}
-
         if request.user in thread.likes.all():
             thread.likes.remove(request.user)
             user_profile.category_like_count[category_name] -= 1
@@ -250,6 +270,14 @@ class LikeThreadView(View):
             user_profile.category_like_count[category_name] = user_profile.category_like_count.get(category_name, 0) + 1
             user_profile.category_dislike_count[category_name] = max(user_profile.category_dislike_count.get(category_name, 0) - 1, 0)
             liked = True
+
+            # Send notification to thread owner
+            if request.user != thread.user:
+                Notification.objects.create(
+                    user=thread.user,
+                    message=f"{request.user.username} liked your thread '{thread.title}'.",
+                    thread = thread
+                )
 
         thread.save()
         user_profile.save()
@@ -264,9 +292,6 @@ class DislikeThreadView(View):
 
         category_name = str(thread.category)
 
-        if not user_profile.category_like_count:
-            user_profile.category_like_count = {}
-
         if not user_profile.category_dislike_count:
             user_profile.category_dislike_count = {}
 
@@ -280,6 +305,14 @@ class DislikeThreadView(View):
             user_profile.category_dislike_count[category_name] = user_profile.category_dislike_count.get(category_name, 0) + 1
             user_profile.category_like_count[category_name] = max(user_profile.category_like_count.get(category_name, 0) - 1, 0)
             disliked = True
+
+            # Send notification to thread owner
+            if request.user != thread.user:
+                Notification.objects.create(
+                    user=thread.user,
+                    message=f"{request.user.username} disliked your thread '{thread.title}'.",
+                    thread = thread
+                )
 
         thread.save()
         user_profile.save()
@@ -353,3 +386,47 @@ def reset_QL(request):
         return JsonResponse({"success": "✅ QL-related data has been successfully reset."})
 
     return render(request, 'reset_QL.html')
+
+#Comment Mentioning Checker
+def check_user_exists(request):
+    username = request.GET.get("username", "")
+    exists = User.objects.filter(username=username).exists()
+    return JsonResponse({"exists": exists})
+
+#Notification functions
+@login_required
+def notifications(request):
+    user_notifications = Notification.objects.filter(user=request.user).select_related('thread').order_by('-created_at')
+
+    return render(request, "notification.html", {"notifications": user_notifications})
+
+
+@login_required
+def read_all_notifications(request):
+    if request.method == "POST":
+        Notification.objects.filter(user=request.user, is_read=False).update(is_read=True)
+        return JsonResponse({"status": "success"})  # Return JSON instead of re-rendering
+
+    return JsonResponse({"status": "error", "message": "Invalid request"}, status=400)
+
+
+@login_required
+def mark_notification_read(request):
+    if request.method == "POST":
+        notif_id = request.POST.get("notif_id")
+        notification = get_object_or_404(Notification, id=notif_id, user=request.user)
+
+        if not notification.is_read:  # Only update if unread
+            notification.is_read = True
+            notification.save()
+        
+        return JsonResponse({"status": "success"})
+
+    return JsonResponse({"status": "error", "message": "Invalid request"}, status=400)
+
+@login_required
+def clear_notifications(request):
+    if request.method == "POST":
+        Notification.objects.filter(user=request.user).delete()
+        return render(request, 'notification.html')
+    return JsonResponse({"error": "Invalid request."}, status=400)

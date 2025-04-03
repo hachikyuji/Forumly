@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+import reverse
 # Create your models here.
 
 class UserProfile(models.Model):
@@ -113,3 +114,14 @@ class RecommendedTopicHistory(models.Model):
 
     def __str__(self):
         return f"{self.user.username} - {self.forum_thread.title} - Viewed: {self.viewed}"
+    
+class Notification(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    thread = models.ForeignKey(ForumThread, on_delete=models.CASCADE)
+    message = models.TextField()
+    is_read = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    def get_thread_url(self):
+        return reverse('forum_thread_detail', args=[self.thread.id]) if self.thread else "#"
+

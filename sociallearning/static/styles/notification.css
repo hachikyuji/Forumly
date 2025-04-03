@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    background-image: url('/static/assets/BG1.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.post-btn {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width: 1400px; 
+    margin-left: 60px;
+    margin-top: 20px;
+}
+
+.forum-title {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 10x;
+}
+
+.forum-title svg {
+    margin-left: -30px;
+    fill: #FF6B6B;
+}
+
+.forum-title h1 {
+    font-family: 'Inter';
+    font-weight: bold;
+    color: white;
+    -webkit-text-stroke: 1px rgba(250, 82, 82, 0.7);
+    text-emphasis: none;
+}
+
+.forum-title a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.centered-box {
+    width: 1000px;  
+    min-height: 300px;
+    max-height: 600px; 
+    background: rgba(240, 240, 240, 0.8); 
+    padding: 20px;
+    border-radius: 20px;
+    border: 5px solid #008CFF; 
+    text-align: center;
+    margin-left: 230px;
+    margin-top: 30px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.centered-box h2{
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-size: 32px;
+    margin: 0;
+}
+
+.centered-box h3 {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-size: 15px;
+    margin: 0;
+    text-align: center;
+}
+
+.notification-card{
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    height: 100%;
+    margin-left: -10px;
+}
+
+.notification-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8;
+}
+
+.notification-card a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+    height: 100%;
+}
+
+.notif-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #008CFF;
+}
+
+.notification-container {
+    flex: 1; /* Take up remaining space */
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 500px; /* Adjust this value as needed */
+    padding-right: 10px; /* Prevents cut-off when scrollbar appears */
+    margin-left: -30px
+}
+
+.notification-card {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 15px;
+    margin: 10px;
+}
+
+.notification-card.read {
+    background-color: #dddddd; /* Change background color for read notifications */
+}
+
+#clear-btn {
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+#read-all-btn {
+    background-color: #6b6b6b;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Inter';
+    font-weight: bold;
+    margin-left: 620px;
+}
+
+#read-all-btn:hover, #clear-btn:hover {
+    opacity: 0.8;
+}
+
+.notification-item {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 10px 0;
+    transition: background 0.3s;
+}
+
+.notification-item.read {
+    background-color: #969696; /* Gray for read notifications */
+}
+
