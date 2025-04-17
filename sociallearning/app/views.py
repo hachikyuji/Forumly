@@ -44,6 +44,15 @@ def user_login(request):
             
     return render(request, 'login.html')
 
+def is_valid_password(password):
+    return (
+        len(password) >= 8 and
+        re.search(r"[A-Z]", password) and
+        re.search(r"[a-z]", password) and
+        re.search(r"\d", password) and
+        re.search(r"[!@#$%^&*(),.?\":{}|<>]", password)
+    )
+
 def register(request):
     if request.method == "POST":
         username = request.POST.get("username", "").strip()
@@ -55,6 +64,10 @@ def register(request):
             messages.error(request, "All fields are required.")
             return render(request, "register.html")
 
+        if not is_valid_password(password):
+            messages.error(request, "Password must be at least 8 characters long and include uppercase, lowercase, number, and special character.") 
+            return render(request, "register.html")
+            
         # Check username uniqueness
         if User.objects.filter(username=username).exists():
             messages.error(request, "Username already exists.")
@@ -116,6 +129,9 @@ def update_profile(request):
             user.username = username
 
         if new_password:
+            if not is_valid_password(new_password):
+                messages.error(request, "Password must be at least 8 characters long and include uppercase, lowercase, number, and special character.")
+                return redirect("update_profile")
             user.set_password(new_password)
             user.save()
             update_session_auth_hash(request, user)
@@ -201,8 +217,14 @@ class ForumThreadDetailView(DetailView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        thread = self.object
+        
         context['replies'] = self.object.replies.select_related('user').all()
         context['category'] = self.object.category
+        
+        context['user_has_liked'] = thread.likes.filter(id=self.request.user.id).exists()
+        context['user_has_disliked'] = thread.dislikes.filter(id=self.request.user.id).exists()
+        
         return context
 
     

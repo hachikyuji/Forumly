@@ -1,0 +1,912 @@
+2025-04-16 16:23:14,095 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 07:56:12,270 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 07:56:21,461 [INFO] django.server: "GET / HTTP/1.1" 200 2344
+2025-04-17 07:56:21,598 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 5734
+2025-04-17 07:56:21,802 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 07:56:21,953 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 07:56:21,955 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 08:57:23,487 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 08:58:05,427 [INFO] django.server: "GET / HTTP/1.1" 200 2344
+2025-04-17 08:58:05,566 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 08:58:05,567 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:00:55,454 [INFO] django.server: "POST / HTTP/1.1" 200 2560
+2025-04-17 09:00:59,504 [INFO] django.server: "GET /register HTTP/1.1" 200 4043
+2025-04-17 09:05:48,638 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 09:05:50,216 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 09:06:48,370 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 09:06:49,629 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 09:06:54,650 [INFO] django.server: "GET /register HTTP/1.1" 200 4043
+2025-04-17 09:06:54,755 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 5734
+2025-04-17 09:06:54,768 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:06:54,968 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:06:54,969 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:07:12,755 [INFO] django.server: "POST /register HTTP/1.1" 200 4417
+2025-04-17 09:07:25,307 [INFO] django.server: "POST /register HTTP/1.1" 200 4417
+2025-04-17 09:07:45,052 [INFO] django.server: "POST /register HTTP/1.1" 302 0
+2025-04-17 09:07:45,066 [INFO] django.server: "GET / HTTP/1.1" 200 2557
+2025-04-17 09:07:52,059 [INFO] django.server: "POST / HTTP/1.1" 302 0
+2025-04-17 09:07:52,429 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9251
+2025-04-17 09:07:52,469 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3450
+2025-04-17 09:07:52,470 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:08:00,554 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 8851
+2025-04-17 09:08:00,594 [WARNING] django.server: "GET /static/assets/default.png HTTP/1.1" 404 1868
+2025-04-17 09:08:00,594 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 4678
+2025-04-17 09:08:01,572 [INFO] django.server: "POST /profile/update HTTP/1.1" 302 0
+2025-04-17 09:08:01,583 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 9023
+2025-04-17 09:08:01,615 [WARNING] django.server: "GET /static/assets/default.png HTTP/1.1" 404 1868
+2025-04-17 09:08:48,490 [INFO] django.server: "POST /profile/update HTTP/1.1" 302 0
+2025-04-17 09:08:48,502 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 9023
+2025-04-17 09:08:48,548 [WARNING] django.server: "GET /static/assets/default.png HTTP/1.1" 404 1868
+2025-04-17 09:08:59,630 [INFO] django.server: "POST /profile/update HTTP/1.1" 302 0
+2025-04-17 09:08:59,642 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 9069
+2025-04-17 09:08:59,693 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:09:07,740 [INFO] django.server: "GET /homepage HTTP/1.1" 200 8848
+2025-04-17 09:09:07,773 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 304 0
+2025-04-17 09:13:43,445 [INFO] django.server: "GET /homepage HTTP/1.1" 200 8848
+2025-04-17 09:13:43,537 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:13:43,600 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:13:43,662 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3450
+2025-04-17 09:13:43,811 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:13:44,012 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:13:44,013 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:13:58,873 [INFO] django.server: "GET /homepage HTTP/1.1" 200 8848
+2025-04-17 09:13:58,906 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:13:58,909 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:13:58,918 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3450
+2025-04-17 09:13:59,022 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:13:59,125 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:13:59,126 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:14:10,087 [INFO] django.server: "GET /thread/4/ HTTP/1.1" 200 13921
+2025-04-17 09:14:10,122 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 6923
+2025-04-17 09:29:48,022 [INFO] django.server: "GET / HTTP/1.1" 200 2344
+2025-04-17 09:29:53,649 [INFO] django.server: "POST / HTTP/1.1" 302 0
+2025-04-17 09:29:53,774 [INFO] django.server: "GET /homepage HTTP/1.1" 200 8982
+2025-04-17 09:29:53,826 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 304 0
+2025-04-17 09:29:53,828 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 304 0
+2025-04-17 09:30:02,605 [INFO] django.server: "GET /thread/3/ HTTP/1.1" 200 15254
+2025-04-17 09:30:02,647 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:30:02,647 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:30:04,868 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=Mnt5oHpQjKkzaOaMh0yVffhYrzHzyuWtJHAs1eMRI1S0nSvF8m5LJX9GHV5J4uHs HTTP/1.1" 200 15254
+2025-04-17 09:30:04,911 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:30:04,913 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:30:04,915 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:30:04,919 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:30:08,859 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:30:08,866 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:30:08,885 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=YNwQJAYSh3FpoWkE81kK7eL4vdDHZxReV7Ddm7lTGkdQB0FxZnRABWDMLz1RvxCd HTTP/1.1" 200 15254
+2025-04-17 09:30:08,929 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:30:08,930 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:30:11,321 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:30:11,328 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:30:11,345 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=DTxACXTI80w3HA0GNbrnerP1jxWxUrEPAdEXfugJxh4uUElzExYdI9HJzTkHqrpO HTTP/1.1" 200 15254
+2025-04-17 09:30:11,391 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:30:11,392 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:30:15,160 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 09:30:15,175 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=H3ViD3I5Dn7sTqAMdwAYFvxAU5huIc17En2FgA562EFT6uVF4S7O9dpiarFEecM6 HTTP/1.1" 200 15254
+2025-04-17 09:30:15,190 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:30:15,221 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:30:15,222 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:31:41,412 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:31:41,730 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=H3ViD3I5Dn7sTqAMdwAYFvxAU5huIc17En2FgA562EFT6uVF4S7O9dpiarFEecM6 HTTP/1.1" 200 15430
+2025-04-17 09:31:41,768 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:31:41,769 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:31:42,494 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:31:42,518 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=H3ViD3I5Dn7sTqAMdwAYFvxAU5huIc17En2FgA562EFT6uVF4S7O9dpiarFEecM6 HTTP/1.1" 200 15430
+2025-04-17 09:31:42,560 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:31:42,568 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:31:42,569 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:31:42,576 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:31:42,578 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7364
+2025-04-17 09:31:42,725 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:31:43,101 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:31:43,101 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:31:44,253 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:31:47,603 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:31:48,415 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 09:31:49,309 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 58
+2025-04-17 09:32:59,468 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:32:59,510 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=H3ViD3I5Dn7sTqAMdwAYFvxAU5huIc17En2FgA562EFT6uVF4S7O9dpiarFEecM6 HTTP/1.1" 200 15427
+2025-04-17 09:32:59,551 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7364
+2025-04-17 09:32:59,552 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:32:59,561 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:32:59,562 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:32:59,565 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:32:59,712 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:32:59,926 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:32:59,927 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:33:01,463 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:33:06,582 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:34:52,472 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:35:29,974 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 09:35:31,547 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 09:35:40,025 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 09:35:41,410 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 09:44:11,649 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:44:11,717 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=H3ViD3I5Dn7sTqAMdwAYFvxAU5huIc17En2FgA562EFT6uVF4S7O9dpiarFEecM6 HTTP/1.1" 200 14477
+2025-04-17 09:44:11,763 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:44:11,763 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 304 0
+2025-04-17 09:44:11,764 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:44:11,810 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7111
+2025-04-17 09:44:11,862 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:44:11,862 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:48:47,908 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:48:47,971 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=H3ViD3I5Dn7sTqAMdwAYFvxAU5huIc17En2FgA562EFT6uVF4S7O9dpiarFEecM6 HTTP/1.1" 200 14741
+2025-04-17 09:48:48,001 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7111
+2025-04-17 09:48:48,002 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:48:48,010 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:48:48,011 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:48:48,013 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:48:48,111 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:48:48,212 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:48:48,214 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:48:49,112 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:48:49,126 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=Gm9BZeyrv7ZD0Z8zkJgi5wucXdmJgoSNDGgYCLVsUox4d3tsb5N8zemUdzKTMoDM HTTP/1.1" 200 14741
+2025-04-17 09:48:49,139 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:48:49,169 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:48:49,170 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:48:49,869 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:48:49,892 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:48:49,910 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=1xoQ62NSpbHqepkQtj8IFySqa35sAeF2YRvdJzaTOsfRrtFJkFFy9gK8qptC6eq1 HTTP/1.1" 200 14741
+2025-04-17 09:48:49,953 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:48:49,953 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:48:50,803 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:48:50,810 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:48:50,827 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=xRP0a8HquXaxycUFViYOU0SkiNmq7BHlubWnNF4rTeIYLgfyMEvEoIK2y9KADBsk HTTP/1.1" 200 14741
+2025-04-17 09:48:50,865 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:48:50,866 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:48:52,876 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:48:52,897 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=wLgglouWovbVifzcMo95pntQMKfokJR8t5nDYVRXNMJmvjU5DKGVT5ly26DyQJC7 HTTP/1.1" 200 14741
+2025-04-17 09:48:52,924 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:48:52,941 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:48:52,942 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:49:09,219 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:49:09,236 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:49:09,251 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=HGYrR3cY9rBQMbwxUfqEDAihCHjqvDHME05OuAzZyI9hZfRqLBXu7iaZS3HA1DsL HTTP/1.1" 200 14741
+2025-04-17 09:49:09,293 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:49:09,294 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:49:11,860 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:49:11,867 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:49:11,883 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=j1DnHfeX5uWca8dD0UFqpkKoSpWTEjh5glKKkMBYuLuDncywRgcgT2C68Lk3aj24 HTTP/1.1" 200 14741
+2025-04-17 09:49:11,924 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:49:11,925 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:50:02,125 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 09:50:02,131 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:50:02,149 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=ekHvwjBn6wZ5tDVE0vvno4U9xSWKoP9DbEOS9QYovNxwGHgxRR2dSMMRNekUUPUC HTTP/1.1" 200 14741
+2025-04-17 09:50:02,193 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:50:02,198 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:50:02,198 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:50:06,339 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:50:06,356 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=otHRATUKIbAqDewTCfK2koVFFnE9zxCvlNOedqhL7s8RQiRMtBhSO6NnVJ2j5xnu HTTP/1.1" 200 14741
+2025-04-17 09:50:06,371 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:50:06,402 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:50:06,402 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:50:09,633 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:50:09,641 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:50:09,658 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=ry3pZwVxCTjg16TXV1H1h7gAhFVXo8CxoSaMC3iy1aRHeaeQMneRLP8ix1j7U8nw HTTP/1.1" 200 14741
+2025-04-17 09:50:09,701 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:50:09,701 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:50:10,644 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:50:10,654 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=CbdeOzI5yE2w7hRdE5yAPY2OBO8yFBzUzvkBr656XVAXklc6vr5qjGUwRawIbBkT HTTP/1.1" 200 14741
+2025-04-17 09:50:10,668 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:50:10,696 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:50:10,697 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:51:17,761 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:51:17,826 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=CbdeOzI5yE2w7hRdE5yAPY2OBO8yFBzUzvkBr656XVAXklc6vr5qjGUwRawIbBkT HTTP/1.1" 200 14744
+2025-04-17 09:51:17,867 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:51:17,867 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:51:17,868 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:51:18,580 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:51:18,592 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=CbdeOzI5yE2w7hRdE5yAPY2OBO8yFBzUzvkBr656XVAXklc6vr5qjGUwRawIbBkT HTTP/1.1" 200 14744
+2025-04-17 09:51:18,631 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:51:18,632 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7111
+2025-04-17 09:51:18,632 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:51:18,633 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:51:18,635 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:51:18,761 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:51:18,852 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:51:18,854 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:51:20,032 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 09:51:20,055 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=Q83nDlq0TJEMaBihspABX82MhZjtq0iSNsaKgSN1i0cdnFDajL7rrQUuxlHDW03R HTTP/1.1" 200 14744
+2025-04-17 09:51:20,070 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:51:20,099 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:51:20,100 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:51:38,803 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:51:38,824 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=Q83nDlq0TJEMaBihspABX82MhZjtq0iSNsaKgSN1i0cdnFDajL7rrQUuxlHDW03R HTTP/1.1" 200 14744
+2025-04-17 09:51:38,866 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:51:38,866 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:51:38,867 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:51:38,873 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:51:38,876 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7393
+2025-04-17 09:51:38,944 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:51:39,014 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:51:39,015 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:51:39,799 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:51:39,809 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=iUtO8Ix7y66RfEZdxRp24O7XWPzpkJHffeAbLfU8XnEisIk6odWSywZFcbXzQJse HTTP/1.1" 200 14744
+2025-04-17 09:51:39,825 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:51:39,853 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:51:39,854 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:51:39,854 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:51:40,831 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:51:40,839 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:51:40,853 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=SqTrUaKWfdInwALv6TSuHUnygSfBtp18PK0OxH7XEugOJE6oXfpkbCfgweDLZpM7 HTTP/1.1" 200 14744
+2025-04-17 09:51:40,890 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:51:40,895 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:51:40,896 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:51:41,676 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:51:41,695 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=npGoLBZTt9OqYNQEH8OT12eos5qnqeGAkJNLo8mUSqmRbRbxyulJvK66IrOxWerz HTTP/1.1" 200 14744
+2025-04-17 09:51:41,709 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:51:41,738 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:51:41,738 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:51:41,738 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:51:53,514 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:51:53,537 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=npGoLBZTt9OqYNQEH8OT12eos5qnqeGAkJNLo8mUSqmRbRbxyulJvK66IrOxWerz HTTP/1.1" 200 14744
+2025-04-17 09:51:53,571 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:51:53,577 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:51:53,578 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:51:53,581 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:51:53,584 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7205
+2025-04-17 09:51:53,773 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:51:53,824 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:51:53,825 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:51:55,065 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:51:55,086 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=3nR4Lt5FFCMk7LTyHMwSkv1B24wYpvvY0HYro0sG4TkLkPery83IOdTjiqU8VvgX HTTP/1.1" 200 14744
+2025-04-17 09:51:55,119 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 09:51:55,127 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:51:55,132 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:51:55,133 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:53:26,906 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:53:26,977 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=3nR4Lt5FFCMk7LTyHMwSkv1B24wYpvvY0HYro0sG4TkLkPery83IOdTjiqU8VvgX HTTP/1.1" 200 15475
+2025-04-17 09:53:27,021 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:53:27,022 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7393
+2025-04-17 09:53:27,027 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:53:27,027 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:53:27,030 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:53:27,171 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:53:27,257 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:53:27,258 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:53:28,117 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:53:28,138 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:53:28,153 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=R0zrztJj2qnRi7wMQvOewzVadLRxRrpUOkGOc06krHVivbRFHRl40hNSt7fHnraT HTTP/1.1" 200 15475
+2025-04-17 09:53:28,194 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:53:28,195 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:53:29,106 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:53:29,121 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=UINPzhf4bW6kzkaxfSbedzokUl0B5j3LR2UccOC5AdELMovq6eI4Hhg2aHoLBjOK HTTP/1.1" 200 15475
+2025-04-17 09:53:29,136 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:53:29,165 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:53:29,166 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:53:29,764 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:53:29,771 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:53:29,792 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=fCMFmAp4jW8C1mZZkQ7ZFGIVFEHYfV5qcWT2Z7M5IdG3eqkSbcEP9oADV058LVQp HTTP/1.1" 200 15475
+2025-04-17 09:53:29,832 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:53:29,833 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:53:30,785 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:53:30,803 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=3kPc70U48WI23bsYEl2FDhXfwwu2Ktxd0EWzKxh5xdgtgfNRvHzv7ZPXMSScgtic HTTP/1.1" 200 15475
+2025-04-17 09:53:30,816 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:53:30,845 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:53:30,846 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:53:40,964 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:53:51,373 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:53:51,383 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:53:51,400 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=nMMnlcbn5sjxj3bXjFSk7MPEILffDICLk6TKYJyouJRYw7wQa1paBuHmY7Dp9InK HTTP/1.1" 200 15475
+2025-04-17 09:53:51,437 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:53:51,444 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:53:51,444 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:53:52,491 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:53:52,510 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=uUrgCSoAX8wRTbPsp9pG5XE9a6q8eFC9reyDfpLBmp4i6falgvWwzFwRqsOiKFn8 HTTP/1.1" 200 15475
+2025-04-17 09:53:52,522 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:53:52,551 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:53:52,552 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:54:18,808 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:54:18,869 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=uUrgCSoAX8wRTbPsp9pG5XE9a6q8eFC9reyDfpLBmp4i6falgvWwzFwRqsOiKFn8 HTTP/1.1" 200 15459
+2025-04-17 09:54:18,903 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:54:18,904 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:54:18,904 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7393
+2025-04-17 09:54:18,905 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:54:18,907 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:54:19,011 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:54:19,118 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:54:19,119 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:54:20,403 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=mQ5rWqxeam8RVia110JqrsJGPa3pXQ23jacOzXUfzDGi8mvUSmggVaBo5wrztQN2 HTTP/1.1" 200 15459
+2025-04-17 09:54:20,442 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:54:20,443 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:54:21,313 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=z7maimTdaJYQmExUpiT98fytgZQI3KZQwrtxVTgez0whzISNgEqZCXqbwleSzKKP HTTP/1.1" 200 15459
+2025-04-17 09:54:21,352 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:54:21,352 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:54:22,564 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=zXIsDbJkZjPKAtSqf7cMWPlfupoqofP9whPPgI6loAnbNxdj6tJCqxdXKLMAUfA8 HTTP/1.1" 200 15459
+2025-04-17 09:54:22,606 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:54:22,607 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:54:31,420 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=zXIsDbJkZjPKAtSqf7cMWPlfupoqofP9whPPgI6loAnbNxdj6tJCqxdXKLMAUfA8 HTTP/1.1" 200 15412
+2025-04-17 09:54:31,456 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7393
+2025-04-17 09:54:31,461 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:54:31,462 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:54:31,462 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:54:31,465 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:54:31,584 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:54:31,641 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:54:31,642 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:54:32,822 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:54:32,856 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:54:32,873 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=em3syJUrjgsEPQNT197J0U3p77hYzFu6bGaPbghsIx052U8MSvEzuCV7ntF85Ff5 HTTP/1.1" 200 15412
+2025-04-17 09:54:32,918 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:54:32,918 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:54:33,645 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:54:33,667 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:54:33,686 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=4m78Ekayfh92HyfmPfZq4zFQVm7FrbN91GevhRxzEyHtUCAfGBwgyhxybIvPXby8 HTTP/1.1" 200 15412
+2025-04-17 09:54:33,727 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:54:33,727 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:54:56,406 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:54:56,429 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:54:56,445 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=xIOEMwOl9gszQeFuS3vf6ixJLb44OZT6u2V1p3bmyx003i0nJp25A0pr1xsekZE5 HTTP/1.1" 200 15412
+2025-04-17 09:54:56,486 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:54:56,487 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:54:56,487 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:54:57,617 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:54:57,641 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=04uF4txVDqQ6dDgSN8BF2alAFqJvUo0WXoB2H0UW2HoxqHBLEu8vwSdiVM7FqoLV HTTP/1.1" 200 15412
+2025-04-17 09:54:57,654 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:54:57,684 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:54:57,685 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:55:03,380 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:55:03,397 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:55:03,415 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=lKbUHYMQqkh1xC32iJq8L3lL3FhXuBIJi4ihkv9RPBPsKGoV95XYfLdtj1F70BtI HTTP/1.1" 200 15412
+2025-04-17 09:55:03,458 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:55:03,458 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:56:55,508 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:56:55,570 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=lKbUHYMQqkh1xC32iJq8L3lL3FhXuBIJi4ihkv9RPBPsKGoV95XYfLdtj1F70BtI HTTP/1.1" 200 15829
+2025-04-17 09:56:55,613 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7393
+2025-04-17 09:56:55,615 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:56:55,619 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:56:55,620 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:56:55,623 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:56:55,810 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:56:55,917 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:56:55,917 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:56:57,483 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 09:56:57,503 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=CUyddQ15lmc9uffOuJDw9sGpg3CH9owyzeFAQno6KDKAHjAHl5amDay7wp0RFohx HTTP/1.1" 200 15829
+2025-04-17 09:56:57,517 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:56:57,547 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:56:57,547 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:57:09,216 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:57:09,262 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=CUyddQ15lmc9uffOuJDw9sGpg3CH9owyzeFAQno6KDKAHjAHl5amDay7wp0RFohx HTTP/1.1" 200 15494
+2025-04-17 09:57:09,296 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:57:09,297 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:57:09,297 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:57:09,298 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7393
+2025-04-17 09:57:09,300 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:57:09,489 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:57:09,544 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:57:09,546 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:57:10,914 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:57:10,950 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:57:10,963 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=ZmlYo59uOEEh5USnMbaOU8IjRjFjk0xHWGsl1CwvdVcIiYdgDxHEoQA17F3tQ0iG HTTP/1.1" 200 15494
+2025-04-17 09:57:10,999 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:57:10,999 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:58:22,758 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:58:22,818 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=ZmlYo59uOEEh5USnMbaOU8IjRjFjk0xHWGsl1CwvdVcIiYdgDxHEoQA17F3tQ0iG HTTP/1.1" 200 15436
+2025-04-17 09:58:22,858 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7393
+2025-04-17 09:58:22,858 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:58:22,862 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:58:22,863 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:58:22,865 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:58:23,054 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:58:23,151 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:58:23,151 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:58:24,536 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 09:58:24,555 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=o5XXTRl1a4cC5yICzMW1bxxnMuGftli6lp4kwoI2zlK3iC3vq8tRFfp52Q4pZl35 HTTP/1.1" 200 15436
+2025-04-17 09:58:24,567 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:58:24,595 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:58:24,596 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:58:25,872 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:58:25,910 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:58:25,922 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=rgt71hyzQCJyvbcUj5PcW9D8vZHqH4haoAAuEOVAfThZIfxNarm2qRvQLl5Ad429 HTTP/1.1" 200 15436
+2025-04-17 09:58:25,959 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:58:25,960 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:58:48,095 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:58:48,114 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=rgt71hyzQCJyvbcUj5PcW9D8vZHqH4haoAAuEOVAfThZIfxNarm2qRvQLl5Ad429 HTTP/1.1" 200 15436
+2025-04-17 09:58:48,147 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:58:48,153 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:58:48,154 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:58:48,156 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:58:48,161 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7396
+2025-04-17 09:58:48,216 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:58:48,268 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:58:48,269 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:58:50,270 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 09:58:50,284 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=OvCn5mJMFNoyun8CejiwvfAyfINqXJyeLPJKIT6N44WZHrtv5FPmZXsgv4bAtJjd HTTP/1.1" 200 15436
+2025-04-17 09:58:50,298 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:58:50,322 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:58:50,328 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:58:50,329 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:58:51,073 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:58:51,093 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:58:51,110 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=ktvYm04M6lw6UEPsrZoyBIXRWjZb0TL0hNClZxrNvC4x7IalilVo5qPzcFnlwTwZ HTTP/1.1" 200 15436
+2025-04-17 09:58:51,147 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:58:51,147 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:58:51,148 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:59:03,287 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 09:59:03,303 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=k0Eg7fWA1PC4iApB3L4LD8YJA8Rj9clHhkLDKMjBq6avvEKuU7BB7QQrQuftFc6G HTTP/1.1" 200 15436
+2025-04-17 09:59:03,317 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:59:03,345 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:59:03,346 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:59:03,346 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:59:03,594 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:59:03,625 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 58
+2025-04-17 09:59:03,632 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=hoG6RITemepDVJNLCPqNF4oysfWyMWKzeINtufgfLvX48N8EtbXD9MggIBkIiWvy HTTP/1.1" 200 15436
+2025-04-17 09:59:03,673 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:59:03,673 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:59:04,288 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:59:04,319 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:59:04,342 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=eUmL7FhfAPE0Lba6zeIzpalzBApksPEJbet8KcEgZ6crYfvZqAfpTSdhRWNuYPpI HTTP/1.1" 200 15436
+2025-04-17 09:59:04,386 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:59:04,387 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:59:38,360 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:59:38,372 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=eUmL7FhfAPE0Lba6zeIzpalzBApksPEJbet8KcEgZ6crYfvZqAfpTSdhRWNuYPpI HTTP/1.1" 200 15436
+2025-04-17 09:59:38,411 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 09:59:38,418 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:59:38,419 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:59:38,421 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 09:59:38,424 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7425
+2025-04-17 09:59:38,650 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 09:59:38,733 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 09:59:38,733 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 09:59:40,164 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:59:40,192 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 09:59:40,199 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=AD05ssThQdsV7DvAehWEBHqOv7LDJwf5xX7s5Zgifu0mkHQt5Dtu5piwLt9Nfw04 HTTP/1.1" 200 15436
+2025-04-17 09:59:40,236 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:59:40,237 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:59:40,237 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 09:59:42,803 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 09:59:42,849 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=Xbyo3zGMloX00gIcbmQaQ8iwlKiunijWUvFLG63NKFvrdk352In0kQaeB6GETi4V HTTP/1.1" 200 15436
+2025-04-17 09:59:42,862 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 09:59:42,887 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 09:59:42,891 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 09:59:42,892 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:00:02,869 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:00:02,882 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:00:02,904 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=7Me5PPDNxTmtEoa79f3zTtUsrX620HQ946lssm0OWaUURsv00BApnbMaHjucwHB8 HTTP/1.1" 200 15436
+2025-04-17 10:00:02,947 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:00:02,948 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:00:02,954 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7447
+2025-04-17 10:00:10,520 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:00:10,538 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=7Me5PPDNxTmtEoa79f3zTtUsrX620HQ946lssm0OWaUURsv00BApnbMaHjucwHB8 HTTP/1.1" 200 15436
+2025-04-17 10:00:10,572 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:00:10,573 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:00:10,574 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:00:10,576 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:00:10,580 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7448
+2025-04-17 10:00:10,750 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:00:10,838 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:00:10,838 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:00:11,358 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:00:11,370 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=Q1MpRjW9nKjvkEXPkNdE1JYSbtkMWJ0BNlTMuQjaM1RWxIiIb9KuvrQArPIWsJLA HTTP/1.1" 200 15436
+2025-04-17 10:00:11,383 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:00:11,410 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:00:11,410 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:00:11,411 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:00:18,444 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=Q1MpRjW9nKjvkEXPkNdE1JYSbtkMWJ0BNlTMuQjaM1RWxIiIb9KuvrQArPIWsJLA HTTP/1.1" 200 15436
+2025-04-17 10:00:18,484 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:00:18,485 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:00:18,485 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:00:18,487 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:00:18,489 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:00:18,620 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:00:18,669 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:00:18,670 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:00:19,018 [INFO] django.server: - Broken pipe from ('127.0.0.1', 2717)
+2025-04-17 10:00:20,101 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:00:20,134 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=mzOIWeP1PD93gmmT4TpZHlPcKDZK5YBWjTV5zLc2eUHutqHMVfWPb3HU0ZnUBYmV HTTP/1.1" 200 15436
+2025-04-17 10:00:20,161 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:00:20,171 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:00:20,175 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:00:20,176 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:00:24,813 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:00:24,831 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=mzOIWeP1PD93gmmT4TpZHlPcKDZK5YBWjTV5zLc2eUHutqHMVfWPb3HU0ZnUBYmV HTTP/1.1" 200 15436
+2025-04-17 10:00:24,863 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:00:24,867 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:00:24,868 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:00:24,872 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:00:24,877 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:00:25,012 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:00:25,061 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:00:25,061 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:00:25,442 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:00:25,462 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=YEf40CComBC8CjFy87Aw19mNDSjxhcg1VYmrD9ZpLSazPn0rZt7mvRevTeHHNc10 HTTP/1.1" 200 15436
+2025-04-17 10:00:25,490 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:00:25,501 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:00:25,504 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:00:25,505 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:00:27,951 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=YEf40CComBC8CjFy87Aw19mNDSjxhcg1VYmrD9ZpLSazPn0rZt7mvRevTeHHNc10 HTTP/1.1" 200 15436
+2025-04-17 10:00:27,963 [INFO] django.server: - Broken pipe from ('127.0.0.1', 2782)
+2025-04-17 10:00:27,985 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:00:27,991 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:00:27,992 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:00:27,994 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:00:27,998 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:00:28,144 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:00:28,199 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:00:28,200 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:00:28,629 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:00:28,656 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:00:28,664 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=cRVnvkW9Ey3BV893CIEqNpzSXxz8wbXy9b2K8Rja3PB28cuWt4bgh7rAdTXi2bIx HTTP/1.1" 200 15436
+2025-04-17 10:00:28,706 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:00:28,706 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:00:28,706 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:01:57,970 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:01:58,040 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=cRVnvkW9Ey3BV893CIEqNpzSXxz8wbXy9b2K8Rja3PB28cuWt4bgh7rAdTXi2bIx HTTP/1.1" 200 15597
+2025-04-17 10:01:58,081 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:01:58,083 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:01:58,086 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:01:58,087 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:01:58,093 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:01:58,196 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:01:58,408 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:01:58,408 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:01:59,385 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=hk7nBeXR99ssjNrcOD5qDKVZNgWolML2eEeKeLkSyq0TwRM5FZCg7sNH3CkyRMw1 HTTP/1.1" 200 15597
+2025-04-17 10:01:59,398 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:01:59,428 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:01:59,429 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:01:59,435 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:02:00,889 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:02:00,909 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=Eg12vaaCfkC7d99jyAmqKIilsNkbC8dhBA8p8HxDEBayqducpWTgeqa3I9Il88Yg HTTP/1.1" 200 15597
+2025-04-17 10:02:00,933 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 58
+2025-04-17 10:02:00,949 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:02:00,950 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:02:26,134 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:02:26,200 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=Eg12vaaCfkC7d99jyAmqKIilsNkbC8dhBA8p8HxDEBayqducpWTgeqa3I9Il88Yg HTTP/1.1" 200 15626
+2025-04-17 10:02:26,232 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:02:26,232 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:02:26,238 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:02:26,239 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:02:26,242 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:02:26,372 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:02:26,422 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:02:26,423 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:02:27,388 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:02:27,402 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:02:27,417 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=M4OypikrPXu930K5YL7JUmU86corvB5ZJoVV2PHsee2Ag45YP7Ezo4MQmyMB1BQY HTTP/1.1" 200 15626
+2025-04-17 10:02:27,456 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:02:27,456 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:02:31,859 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:02:31,871 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:02:31,888 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=ToDkpqpzUX6wSh3dzgW3SKEKDUSpFiBfQIKH2XMAjeEX5lo6qCtTmswsTggzbime HTTP/1.1" 200 15626
+2025-04-17 10:02:31,928 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:02:31,928 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:02:38,876 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:02:38,886 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=eLpd5CVLnItPjMah7kQZ771RdBMbxffjb5wAI9iMMZ1gwQvaYGnPBPTztXal3f0i HTTP/1.1" 200 15626
+2025-04-17 10:02:38,897 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:02:38,927 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:02:38,931 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:02:38,931 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:02:43,247 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:02:43,279 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:02:43,297 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=gzUPbHcC2xecGPmy04OYcDrOmPtmajECdT1cOezDrOMDTTHrRqlOGljwCbRwGjpB HTTP/1.1" 200 15626
+2025-04-17 10:02:43,337 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:02:43,338 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:02:47,698 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:02:47,715 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:02:47,732 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=Gg8tNnA7wVa0cuhAxkq9CMZWNqvlD0slDAfQqUX8VcIrpyCtoGXZ6uRE3MTv90dk HTTP/1.1" 200 15626
+2025-04-17 10:02:47,780 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:02:47,780 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:02:51,319 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:02:51,329 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:02:51,346 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=G0zVZUsMpsQR9JxdbwFx53f8D2Q5ji0UDkGiCrPNOJoimNS62ScnzL7QToefPiLT HTTP/1.1" 200 15626
+2025-04-17 10:02:51,389 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:02:51,389 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:02:51,390 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:05:47,863 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 10:05:49,653 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 10:06:07,179 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 10:06:07,730 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 10:06:53,511 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:06:53,605 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=G0zVZUsMpsQR9JxdbwFx53f8D2Q5ji0UDkGiCrPNOJoimNS62ScnzL7QToefPiLT HTTP/1.1" 200 15915
+2025-04-17 10:06:53,647 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:06:53,648 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:06:53,706 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:06:53,717 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:06:53,723 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:06:53,854 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:06:53,946 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:06:53,946 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:06:54,916 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:06:54,936 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=o4tAi7X6AXR7G7uL3VCElu07RIRwkutDloAXVEk7ZepyTbPEUh9uPcSP74fGQueC HTTP/1.1" 200 15916
+2025-04-17 10:06:54,949 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:06:54,980 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:06:54,980 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:06:57,847 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:06:57,873 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:06:57,893 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=4CFfLjohX495EUbgQYQl1RH0kruPb3o81WMCoQLimlHwRYw9HknbvzzIANSZH397 HTTP/1.1" 200 15915
+2025-04-17 10:06:57,931 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:06:57,932 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:23,486 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:23,555 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=4CFfLjohX495EUbgQYQl1RH0kruPb3o81WMCoQLimlHwRYw9HknbvzzIANSZH397 HTTP/1.1" 200 15913
+2025-04-17 10:07:23,585 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:07:23,592 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:23,593 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:07:23,594 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:23,596 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:07:23,736 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:07:23,833 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:07:23,834 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:07:24,704 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:24,732 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:07:24,739 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=fJKd704YkYTQKwrRvPPFjdEubDxXwdNTc3RAKxrZJfrhXAMKmbmvNVwcrZV72dyS HTTP/1.1" 200 15913
+2025-04-17 10:07:24,782 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:24,783 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:26,531 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:26,562 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:07:26,585 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=aAxHlP8nUIgA44umF9wYB6zr1besNlUQ7UE4YmvojZO1h8Pfwv3O5Or9hxCCjlFP HTTP/1.1" 200 15913
+2025-04-17 10:07:26,624 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:26,625 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:30,538 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:07:30,562 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=wzICZqsfJmU2xUGvEYzjkkHbk0msW7wttTPZCXPg8DstKY1ovk69O2zTAmKCs7hs HTTP/1.1" 200 15914
+2025-04-17 10:07:30,575 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:30,605 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:30,606 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:34,433 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:34,443 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=md8MGWK3Rn9Btr3CfRU9Ac9mSkzq9Jaijxf9jt74gEH2Gvov6drZ4U148GXAFJVh HTTP/1.1" 200 15914
+2025-04-17 10:07:34,473 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:07:34,484 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:34,485 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:36,535 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:07:36,562 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:36,582 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=E7fzbTL4Hlqy5IxgJHhGUMwgUknxRfvqBrmWOq856CYZiMS9A3OwouoYaGLHnfgp HTTP/1.1" 200 15914
+2025-04-17 10:07:36,624 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:36,625 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:39,061 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:39,083 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=E7fzbTL4Hlqy5IxgJHhGUMwgUknxRfvqBrmWOq856CYZiMS9A3OwouoYaGLHnfgp HTTP/1.1" 200 15914
+2025-04-17 10:07:39,119 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:39,119 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:07:39,120 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:07:39,120 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:39,125 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:07:39,205 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:07:39,262 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:07:39,262 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:07:39,965 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:40,009 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:07:40,027 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=I3wkC4UzUKtxkfVTBseVIQMcDXKUrgQBFnDHfBhAj11YxjgMsOLLcyEUTj84XgBA HTTP/1.1" 200 15914
+2025-04-17 10:07:40,070 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:40,071 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:43,867 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:07:43,875 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:43,892 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=d3CweaFa9Ty5ifiNuWQTpoT3kVlF0SMVanJTRH2bya6wvjDGlinJT6LLAhJPwSxU HTTP/1.1" 200 15913
+2025-04-17 10:07:43,935 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:43,935 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:47,888 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:47,910 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=ucPO8Dy08Hizo40msbQWwLGj9vw0N4FIrwWbLaV1xYQ0B8lfjxnM0ty1pRUaj4qH HTTP/1.1" 200 15914
+2025-04-17 10:07:47,937 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:07:47,956 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:47,957 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:49,052 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:07:49,060 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:49,082 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=9G9MjHvj8s5LubmJBtdPY2oIvKdJI37F60g9WeSkxJDcHfHCsPKFsKgqL6BTe3SE HTTP/1.1" 200 15913
+2025-04-17 10:07:49,125 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:49,125 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:50,961 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:50,976 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=3qJobKzSe22X4VeAmgOdPW2bCF4f52of0KQLOhWTDjAohZztdCl3jEUTS1spB29e HTTP/1.1" 200 15913
+2025-04-17 10:07:51,023 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:51,024 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:07:51,024 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:07:52,254 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:07:52,262 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=pHgBJxgOkfbtObjP7caMv4wGgTDw8e8Sm1nYm4DPJwJU1fEIYyHCZMoowf1GEeTR HTTP/1.1" 200 15914
+2025-04-17 10:07:52,277 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:07:52,311 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:07:52,312 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:12:47,200 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:12:47,255 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=pHgBJxgOkfbtObjP7caMv4wGgTDw8e8Sm1nYm4DPJwJU1fEIYyHCZMoowf1GEeTR HTTP/1.1" 200 16354
+2025-04-17 10:12:47,294 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:12:47,294 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:12:47,300 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:12:47,301 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:12:47,304 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:12:47,467 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:12:47,573 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:12:47,574 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:12:48,301 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=R64rOXtsnJQCAYT2AqZM8XbYW6eqqqghOqbOruQtM0o3N2eVrMwCCF3GcsCAWq1g HTTP/1.1" 200 16354
+2025-04-17 10:12:48,340 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:12:48,341 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:12:49,532 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=XVtHuMMkTlUM53xg0fTuYKesAYTcIoAxUfA47j9liCsdi7S9RBqkss6aQkhmeolw HTTP/1.1" 200 16354
+2025-04-17 10:12:49,571 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:12:49,571 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:12:50,525 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=7UgjAkfwDKNjUwea8F0VgRrVb13epHv04enGdRCx21lK7Az3Z1xLKzjDrnroVHgZ HTTP/1.1" 200 16354
+2025-04-17 10:12:50,565 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:12:50,566 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:12:51,510 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=RUmG6rVAEZ3a0J0YiuQIJgGMZYGUxacdOet3JYiB3gBBdNlR9QnydYyufk443aXc HTTP/1.1" 200 16354
+2025-04-17 10:12:51,551 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:12:51,551 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:12:52,790 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=4ln2IrGTjGySCiVb6ernt0U62PtlShds1FuplY3UIX6jPmg4XAYdXIMOibRvohYr HTTP/1.1" 200 16354
+2025-04-17 10:12:52,830 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:12:52,831 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:13:19,265 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=4ln2IrGTjGySCiVb6ernt0U62PtlShds1FuplY3UIX6jPmg4XAYdXIMOibRvohYr HTTP/1.1" 200 16494
+2025-04-17 10:13:19,298 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:13:19,302 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:13:19,305 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:13:19,307 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:13:19,311 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:13:19,500 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:13:19,590 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:13:19,591 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:13:20,183 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:13:20,206 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=IJDpKAMBXKHfFFuGLGenamRRjTANXVQwF3KMn79Cm1fGSJPzC2LdE4JzzfYXtVBv HTTP/1.1" 200 16493
+2025-04-17 10:13:20,217 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:13:20,250 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:13:20,250 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:13:21,491 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:13:21,510 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:13:21,530 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=X0n0BCzc7d43wJtbDJyfDHHOhcSy0WjvUkune9WdwuCuJNO4u5557pzwxygIwW4u HTTP/1.1" 200 16494
+2025-04-17 10:13:21,569 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:13:21,570 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:13:22,289 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:13:22,309 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=sorOJs7gKR5o1ub5cQDuJV1xrDKyRdgqpIybmZuh98DPeywY3cakdDTfHZ8Ind1p HTTP/1.1" 200 16494
+2025-04-17 10:13:22,341 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:13:22,351 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:13:22,352 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:13:23,590 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:13:23,615 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:13:23,637 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=pJ5DkorcY1maievG210hFkovNyJP0XdAm3c0XVOdniUBviQzTnx792gd3U7ZwXYz HTTP/1.1" 200 16494
+2025-04-17 10:13:23,674 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:13:23,675 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:13:24,650 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:13:24,660 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=28rSVc4or006EoyvP7VsvYQxzqiSnQkIZsyfyJrpQhyxRsToGtsiZGIfPMG2TQ5H HTTP/1.1" 200 16493
+2025-04-17 10:13:24,677 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:13:24,700 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:13:24,701 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:15:55,864 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:15:55,922 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=28rSVc4or006EoyvP7VsvYQxzqiSnQkIZsyfyJrpQhyxRsToGtsiZGIfPMG2TQ5H HTTP/1.1" 200 16400
+2025-04-17 10:15:55,957 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7446
+2025-04-17 10:15:55,958 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:15:55,965 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:15:55,966 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:15:55,969 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:15:56,144 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:15:56,229 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:15:56,229 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:15:57,598 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:15:57,641 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:15:57,650 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=yuoyRDDwNdTJKRVwAu8nBUXcksqKSo4mvOvVua0xcuraXVgprQFd5CPUAOOUooPl HTTP/1.1" 200 16400
+2025-04-17 10:15:57,691 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:15:57,692 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:15:58,788 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:15:58,802 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=xViJkjFS3Z4Uebn29r6WaBiFWRpezwS6ufp6XQ2TsgClrfIV0NDMEjancdNo5wD5 HTTP/1.1" 200 16400
+2025-04-17 10:15:58,817 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:15:58,844 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:15:58,845 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:16:00,076 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:16:00,091 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:16:00,111 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=bcDnjTJMsGXk6pSLBQIVzGSvIMMUkovO8wKKWq6NRXvLjtdEscfL3oKdY8a4QogN HTTP/1.1" 200 16400
+2025-04-17 10:16:00,157 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:16:00,157 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:16:01,549 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:16:01,568 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=QFaLZam0kAMmHn6Nx7YFHGKkGNBQv7XlNZh8CHJ1JRkNUrrGotvvboC2W9Z017Ik HTTP/1.1" 200 16400
+2025-04-17 10:16:01,581 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:16:01,612 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:16:01,613 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:17:53,340 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=QFaLZam0kAMmHn6Nx7YFHGKkGNBQv7XlNZh8CHJ1JRkNUrrGotvvboC2W9Z017Ik HTTP/1.1" 200 16400
+2025-04-17 10:17:53,352 [INFO] django.server: - Broken pipe from ('127.0.0.1', 3200)
+2025-04-17 10:17:53,387 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:17:53,395 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:17:53,396 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:17:53,399 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:17:53,403 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7538
+2025-04-17 10:17:53,491 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:17:53,574 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:17:53,575 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:17:54,889 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:17:54,896 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:17:54,913 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=M2vdiZFykoB7aqEhFXs5Tv1WdCJHUT5tJmCAVw2zJF9ynuZawjZVndTEtY7RqTQs HTTP/1.1" 200 16400
+2025-04-17 10:17:54,953 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:17:54,958 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:17:54,958 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:17:55,593 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:17:55,628 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:17:55,641 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=DPEgf3oGL6JvbZ5k9fN7gWMRp7ZSe0t7A9LDSALHanhWo3qd0BkXKEEzFtn2K0e6 HTTP/1.1" 200 16400
+2025-04-17 10:17:55,687 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:17:55,688 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:17:55,688 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:17:56,861 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:17:56,873 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:17:56,891 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=ETDC9ihlgAr7uZpdGDaLBYZeIzXxYkqsBdKZMPEmFRZyH3K6xZHB5GRWYVlHukbr HTTP/1.1" 200 16400
+2025-04-17 10:17:56,939 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:17:56,939 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:17:56,940 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:20:09,118 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:20:09,133 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=ETDC9ihlgAr7uZpdGDaLBYZeIzXxYkqsBdKZMPEmFRZyH3K6xZHB5GRWYVlHukbr HTTP/1.1" 200 16400
+2025-04-17 10:20:09,176 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:20:09,184 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:20:09,185 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:20:09,187 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:20:09,192 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7350
+2025-04-17 10:20:09,334 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:20:09,434 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:20:09,435 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:20:10,033 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:20:10,050 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=gK6kNT0VFDkTog4owpc7YopZlYGFEmbGd4dHqqnW4USkBkphnLJXs6hHBk4PamWF HTTP/1.1" 200 16400
+2025-04-17 10:20:10,062 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:20:10,093 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:20:10,094 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:20:10,983 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:20:11,013 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=ghU64nZZGDLyYuGynUF5jkqavZhWIJUadB1tHUm05UjZby1regcVN2iSLlF6eJF9 HTTP/1.1" 200 16400
+2025-04-17 10:20:11,027 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:20:11,056 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:20:11,057 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:20:12,209 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:20:12,252 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:20:12,259 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=LSMDUPohQLn7fXbRC8qzUzyhFGCP0Ii8IcT0xmLif2Vys1wKtuXpohqZV20ZwI37 HTTP/1.1" 200 16400
+2025-04-17 10:20:12,301 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:20:12,305 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:20:12,305 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:21:08,930 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:21:08,940 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=LSMDUPohQLn7fXbRC8qzUzyhFGCP0Ii8IcT0xmLif2Vys1wKtuXpohqZV20ZwI37 HTTP/1.1" 200 16400
+2025-04-17 10:21:08,982 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 10:21:08,987 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:21:08,988 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:21:08,990 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 10:21:08,997 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 10:21:09,173 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 10:21:09,261 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 10:21:09,262 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 10:21:09,730 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:21:09,736 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:21:09,756 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=62yXAdd3qTQQlVSD295oXeprfZScasGH3mFkdKA4PaohyZdwTvCerWh9vlgmGsrG HTTP/1.1" 200 16401
+2025-04-17 10:21:09,793 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:21:09,798 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:21:09,799 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:21:10,570 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:21:10,609 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:21:10,627 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=l8u3HcM1VGE8h95A2vdwtEJ0euBayUmMisBqkJ92kXczudqtTRKmXmBIuQZk4U7L HTTP/1.1" 200 16401
+2025-04-17 10:21:10,666 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:21:10,675 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:21:10,676 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:21:11,763 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:21:11,770 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:21:11,789 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=GGvzZ1ssAGGcjO4m4qiOKOml1725BtmvD0CWCyPtZXeDwSpfVMPEewe3htqf7t7u HTTP/1.1" 200 16400
+2025-04-17 10:21:11,829 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:21:11,833 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:21:11,834 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:21:23,441 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:21:23,459 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=vZX334kD2onLICsprAC2wnlZ7cp3RNs8sj4qGBHErFVcVGNiiW9S05dHnyNdnNd7 HTTP/1.1" 200 16400
+2025-04-17 10:21:23,493 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:21:23,501 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:21:23,507 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:21:23,507 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:21:25,161 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:21:25,167 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:21:25,186 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=BmWQYI2vQQD8yBoS0U6pJrVAbaasfiG8yG3dBfpwf7bzLFJLRgDfd9NirwyCLir7 HTTP/1.1" 200 16400
+2025-04-17 10:21:25,225 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:21:25,231 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:21:25,231 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:21:26,697 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:21:26,705 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:21:26,725 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=rAaNMh42bT1JPiCCTb87THcUx55nysH9oUhapOr3Aaza2mXvKxFXnp4CNrtx4ss8 HTTP/1.1" 200 16400
+2025-04-17 10:21:26,767 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:21:26,768 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:21:27,804 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 57
+2025-04-17 10:21:27,814 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=E7BzGks4ZFSlJCKVbCDRiiQMFCHhUfXABrIWjRP5oWqMWG5O2YaHM0IuVY5rqfIz HTTP/1.1" 200 16400
+2025-04-17 10:21:27,819 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:21:27,860 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:21:27,860 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:21:27,860 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:21:28,546 [INFO] django.server: "POST /thread/3/dislike/ HTTP/1.1" 200 58
+2025-04-17 10:21:28,552 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:21:28,564 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=hbzM5ifkBVGTKFxYk57lrCapTbaxBDL9evG9IPCl0cekXJSRbrEbVk279xyH7Dw8 HTTP/1.1" 200 16401
+2025-04-17 10:21:28,606 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:21:28,606 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:21:29,901 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:21:29,933 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 54
+2025-04-17 10:21:29,950 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=xHXdnEebCkQXpBMSqlbSVmUHYHsroMMhu14A0bBc1BooCF7LhHIIp4Mpe3QBUMxg HTTP/1.1" 200 16400
+2025-04-17 10:21:29,994 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:21:29,994 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:21:29,995 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:22:11,779 [INFO] django.server: "POST /thread/3/like/ HTTP/1.1" 200 55
+2025-04-17 10:22:11,795 [INFO] django.server: "GET /thread/3/?csrfmiddlewaretoken=8PrLSm4DpGGg7lv1RI0lWrxCMl3AnmIj59y8vTrEOXeHkpQUI4xbq9pk2HrKTmti HTTP/1.1" 200 16401
+2025-04-17 10:22:11,809 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:22:11,840 [WARNING] django.request: Not Found: /media/profile_pictures/klipartz.com.png
+2025-04-17 10:22:11,840 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 304 0
+2025-04-17 10:22:11,840 [WARNING] django.server: "GET /media/profile_pictures/klipartz.com.png HTTP/1.1" 404 9142
+2025-04-17 10:24:49,585 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 10:24:50,731 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 10:24:55,062 [INFO] django.server: "GET /forums/1/ HTTP/1.1" 200 9618
+2025-04-17 10:24:55,074 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 10:24:55,143 [INFO] django.server: "GET /static/styles/forums.css HTTP/1.1" 200 4040
+2025-04-17 10:24:57,164 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 8897
+2025-04-17 10:25:02,063 [INFO] django.server: "POST /profile/update HTTP/1.1" 302 0
+2025-04-17 10:25:02,074 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 9146

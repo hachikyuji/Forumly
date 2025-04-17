@@ -10,6 +10,8 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
+    <div id="toastBox" class="toast-container"></div>
+
     <div class='post-btn'>
         <div class='forum-title'>
             <a href="{% url 'forum_threads' category.id %}">
@@ -46,10 +48,10 @@
 
             <form>
                 {% csrf_token %}
-                <button class="like-btn" data-thread-id="{{ thread.id }}">
+                <button class="like-btn" data-thread-id="{{ thread.id }}" onclick ="showToastLike()">
                     👍 Like | <span id="like-count">{{ thread.total_likes }}</span>
                 </button>
-                <button class="dislike-btn" data-thread-id="{{ thread.id }}">
+                <button class="dislike-btn" data-thread-id="{{ thread.id }}" onclick="showToastDislike()">
                     👎 Dislike | <span id="dislike-count">{{ thread.total_dislikes }}</span>
                 </button>
             </form>
@@ -245,6 +247,59 @@
         }
     
         window.addEventListener("beforeunload", sendTimeSpent);
+
+        const userHasLiked = {{ user_has_liked|yesno:"true,false" }};
+        const userHasDisliked = {{ user_has_disliked|yesno:"true,false" }};
+
+        function addToastMessage(message) {
+            let toastMessages = JSON.parse(sessionStorage.getItem('toastMessages')) || [];
+            toastMessages.push(message);
+            sessionStorage.setItem('toastMessages', JSON.stringify(toastMessages));
+        }        
+
+        function showToastLike() {
+            const message = userHasLiked
+                ? "You have unliked this post."
+                : "You have liked this content!";
+            addToastMessage(message);
+        }
+        
+        function showToastDislike() {
+            const message = userHasDisliked
+                ? "You have undisliked this post."
+                : "You have disliked this content!";
+            addToastMessage(message);
+        }
+        
+        document.addEventListener("DOMContentLoaded", function () {
+            let toastMessages = JSON.parse(sessionStorage.getItem('toastMessages')) || [];
+        
+            if (toastMessages.length > 0) {
+                toastMessages.forEach((message, index) => {
+                    setTimeout(() => {
+                        displayToast(message);
+                    }, index * 3500); // 3.5s apart (3s toast + 0.5s fade)
+                });
+                sessionStorage.removeItem('toastMessages');
+            }
+        });
+        
+        function displayToast(message) {
+            let toast = document.createElement('div');
+            toast.className = 'toast';
+            toast.textContent = message;
+        
+            let toastBox = document.getElementById('toastBox');
+            toastBox.appendChild(toast);
+        
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => toast.remove(), 500);
+            }, 3000);
+        }
+        
+        
+        
     </script>
     
 </body>
