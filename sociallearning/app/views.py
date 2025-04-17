@@ -225,6 +225,12 @@ class ForumThreadDetailView(DetailView):
         context['user_has_liked'] = thread.likes.filter(id=self.request.user.id).exists()
         context['user_has_disliked'] = thread.dislikes.filter(id=self.request.user.id).exists()
         
+        next_thread = ForumThread.objects.filter(
+            category=thread.category,
+            id__gt=thread.id
+        ).order_by('id').first()
+        context['next_thread'] = next_thread
+        
         return context
 
     

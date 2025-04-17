@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-import reverse
+from django.urls import reverse
 # Create your models here.
 
 class UserProfile(models.Model):

@@ -47,13 +47,22 @@
             <p class="thread-date">Posted: {{ thread.created_at }}</p>  
 
             <form>
-                {% csrf_token %}
-                <button class="like-btn" data-thread-id="{{ thread.id }}" onclick ="showToastLike()">
-                    👍 Like | <span id="like-count">{{ thread.total_likes }}</span>
-                </button>
-                <button class="dislike-btn" data-thread-id="{{ thread.id }}" onclick="showToastDislike()">
-                    👎 Dislike | <span id="dislike-count">{{ thread.total_dislikes }}</span>
-                </button>
+                <div>
+                    {% csrf_token %}
+                    <button type="button" class="like-btn" data-thread-id="{{ thread.id }}">
+                        👍 Like | <span id="like-count">{{ thread.total_likes }}</span>
+                    </button>
+                    <button type="button" class="dislike-btn" 
+                        data-thread-id="{{ thread.id }}"
+                        {% if next_thread %}
+                            data-next-thread-url="{% url 'forum_thread_detail' next_thread.id %}"
+                        {% else %}
+                            data-next-thread-url="{% url 'forum_threads' category.id %}"
+                        {% endif %}
+                    >
+                        👎 Dislike | <span id="dislike-count">{{ thread.total_dislikes }}</span>
+                    </button>
+                </div>
             </form>
         </div>
 
@@ -188,42 +197,52 @@
             }
     
             $(".like-btn").click(function () {
-                var threadId = $(this).data("thread-id");
-                var likeCount = $("#like-count");
-                var dislikeCount = $("#dislike-count");
-    
+                const threadId = $(this).data("thread-id");
+            
                 $.ajax({
                     type: "POST",
                     url: "{% url 'like_thread' 0 %}".replace('0', threadId),
-                    data: {},
                     beforeSend: function (xhr) {
                         xhr.setRequestHeader("X-CSRFToken", getCSRFToken());
                     },
                     success: function (data) {
-                        likeCount.text(data.total_likes);
-                        dislikeCount.text(data.total_dislikes);
+                        $("#like-count").text(data.total_likes);
+                        $("#dislike-count").text(data.total_dislikes);
+            
+                        const message = data.liked
+                            ? "You have liked this content!"
+                            : "You have unliked this post.";
+                        displayToast(message);
                     }
                 });
-            });
-    
+            });            
+            
             $(".dislike-btn").click(function () {
-                var threadId = $(this).data("thread-id");
-                var likeCount = $("#like-count");
-                var dislikeCount = $("#dislike-count");
-    
+                const threadId = $(this).data("thread-id");
+                const nextThreadUrl = $(this).data("next-thread-url");
+            
                 $.ajax({
                     type: "POST",
                     url: "{% url 'dislike_thread' 0 %}".replace('0', threadId),
-                    data: {},
                     beforeSend: function (xhr) {
                         xhr.setRequestHeader("X-CSRFToken", getCSRFToken());
                     },
                     success: function (data) {
-                        likeCount.text(data.total_likes);
-                        dislikeCount.text(data.total_dislikes);
+                        $("#like-count").text(data.total_likes);
+                        $("#dislike-count").text(data.total_dislikes);
+            
+                        if (data.disliked) {
+                            // Set message to show after next load
+                            sessionStorage.setItem('toastAfterLoad', "You have disliked this content!");
+                            setTimeout(() => {
+                                window.location.href = nextThreadUrl;
+                            }, 1500);
+                        } else {
+                            displayToast("You have undisliked this post.");
+                        }
                     }
                 });
-            });
+            });            
         });
     
         // Timer Script - Keeping track of time spent on the page
@@ -272,6 +291,15 @@
         }
         
         document.addEventListener("DOMContentLoaded", function () {
+            const msg = sessionStorage.getItem('toastAfterLoad');
+            if (msg) {
+                displayToast(msg);
+                sessionStorage.removeItem('toastAfterLoad');
+            }
+        });
+        
+        
+        document.addEventListener("DOMContentLoaded", function () {
             let toastMessages = JSON.parse(sessionStorage.getItem('toastMessages')) || [];
         
             if (toastMessages.length > 0) {
@@ -297,8 +325,6 @@
                 setTimeout(() => toast.remove(), 500);
             }, 3000);
         }
-        
-        
         
     </script>
     

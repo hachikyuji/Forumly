@@ -910,3 +910,496 @@
 2025-04-17 10:24:57,164 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 8897
 2025-04-17 10:25:02,063 [INFO] django.server: "POST /profile/update HTTP/1.1" 302 0
 2025-04-17 10:25:02,074 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 9146
+2025-04-17 11:35:58,467 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 11:37:15,142 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\models.py changed, reloading.
+2025-04-17 11:37:15,894 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 11:37:23,192 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 11:38:50,710 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 11:39:02,412 [INFO] django.server: "GET / HTTP/1.1" 200 2344
+2025-04-17 11:39:02,461 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 304 0
+2025-04-17 11:39:02,575 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:39:02,576 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:39:04,685 [INFO] django.server: "POST / HTTP/1.1" 302 0
+2025-04-17 11:39:05,326 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9231
+2025-04-17 11:39:05,372 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 304 0
+2025-04-17 11:39:05,373 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 304 0
+2025-04-17 11:39:06,385 [ERROR] django.request: Internal Server Error: /thread/12/
+Traceback (most recent call last):
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\utils\decorators.py", line 48, in _wrapper
+    return bound_method(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py", line 207, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\views\generic\detail.py", line 109, in get
+    context = self.get_context_data(object=self.object)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py", line 228, in get_context_data
+    next_thread = ForumThread.objects.filter(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\query.py", line 1476, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\query.py", line 1494, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\query.py", line 1501, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\sql\query.py", line 1609, in add_q
+    clause, _ = self._add_q(q_object, self.used_aliases)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\sql\query.py", line 1641, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\sql\query.py", line 1491, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\sql\query.py", line 1303, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\sql\query.py", line 1768, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'id_gt' into field. Choices are: category, category_id, content, created_at, dislikes, id, likes, notification, recommendationhistory, recommendedtopichistory, replies, title, user, user_id
+2025-04-17 11:39:06,394 [ERROR] django.server: "GET /thread/12/ HTTP/1.1" 500 152198
+2025-04-17 11:39:24,968 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 11:39:26,119 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 11:39:29,985 [ERROR] django.request: Internal Server Error: /thread/12/
+Traceback (most recent call last):
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\core\handlers\base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\response.py", line 92, in rendered_content
+    return template.render(context, self._request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\base.py", line 1008, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'thread_detail' not found. 'thread_detail' is not a valid view function or pattern name.
+2025-04-17 11:39:29,993 [ERROR] django.server: "GET /thread/12/ HTTP/1.1" 500 147831
+2025-04-17 11:39:30,144 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:39:30,145 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:40:21,301 [INFO] django.server: "GET /thread/12/ HTTP/1.1" 200 16440
+2025-04-17 11:40:21,395 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:40:21,406 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:40:21,408 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:40:21,589 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:40:21,708 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:40:21,708 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:40:23,839 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:40:23,861 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=o38UQfCyU0dcHGOurQWdoj7ey533VUELdloHxgk6X9tUvYrbCQhn0FmGaeBqutnd HTTP/1.1" 200 16439
+2025-04-17 11:40:23,882 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
+2025-04-17 11:40:26,023 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:40:26,066 [INFO] django.server: "POST /thread/12/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:40:26,081 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=FXhCNvzOhnlQRnCb7GU5nTG2cGVZ9OjWufxpuwhmkwByFFfSiGffZfVuOPtmIn2o HTTP/1.1" 200 16439
+2025-04-17 11:41:41,026 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 11:41:42,146 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 11:41:45,851 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:41:45,884 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=FXhCNvzOhnlQRnCb7GU5nTG2cGVZ9OjWufxpuwhmkwByFFfSiGffZfVuOPtmIn2o HTTP/1.1" 200 16439
+2025-04-17 11:41:45,981 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:41:45,987 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:41:45,992 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:41:46,079 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:41:46,262 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:41:46,262 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:41:48,454 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=8UFpngFtUQfGlldnW0jJFZkn8uFPVLl1XcVc4hn1XZvo9DQ470EThlzPKDdcuk4t HTTP/1.1" 200 16439
+2025-04-17 11:41:48,463 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:41:48,487 [INFO] django.server: "POST /thread/12/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:41:53,341 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:41:53,363 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=8UFpngFtUQfGlldnW0jJFZkn8uFPVLl1XcVc4hn1XZvo9DQ470EThlzPKDdcuk4t HTTP/1.1" 200 16440
+2025-04-17 11:41:55,112 [INFO] django.server: "POST /thread/12/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:41:55,122 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:41:55,142 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=frM1klL3nkqh8X2UIPDpDDzd9kbKYZiM4J2O1mtBqtGZWfFBTPYzfZOFLtJ7xy1e HTTP/1.1" 200 16439
+2025-04-17 11:42:01,219 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
+2025-04-17 11:42:01,227 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:42:01,246 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=5keQ7kfIS3cO6VSakJ7AlwPtwnWyGq9UUCuDOlXgVcswUdvRvJsKXS4V8wuVfZSm HTTP/1.1" 200 16439
+2025-04-17 11:42:28,052 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 11:42:29,205 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 11:42:57,227 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-17 11:42:58,330 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-17 11:43:02,816 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:02,959 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=5keQ7kfIS3cO6VSakJ7AlwPtwnWyGq9UUCuDOlXgVcswUdvRvJsKXS4V8wuVfZSm HTTP/1.1" 200 16439
+2025-04-17 11:43:03,058 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:43:03,064 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:43:03,069 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:43:03,192 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:43:03,291 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:43:03,292 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:43:04,316 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:04,341 [INFO] django.server: "POST /thread/12/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:43:04,359 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=SOXBUCVu1nwPYrobiwj5rZ6PQ0uKRslJH6doBDD24wMxMJ1StwEf3llhs927q14b HTTP/1.1" 200 16439
+2025-04-17 11:43:10,401 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=mOqE9yugik0t0Oiw9qhsiIIjxKsofdE5b6GrQzcOltgbO6VdkqCCU4XL9T0LOMnx HTTP/1.1" 200 16439
+2025-04-17 11:43:10,427 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:10,460 [INFO] django.server: "POST /thread/12/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:43:14,497 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:14,519 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=mOqE9yugik0t0Oiw9qhsiIIjxKsofdE5b6GrQzcOltgbO6VdkqCCU4XL9T0LOMnx HTTP/1.1" 200 16440
+2025-04-17 11:43:16,473 [INFO] django.server: "POST /thread/12/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:43:16,494 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:16,504 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=SA4CYFXGZRbDiwl35rOVnWh35S7ogTUxHSkpFGFe20rl6OYKgr95ZiwvH1FLPsDZ HTTP/1.1" 200 16439
+2025-04-17 11:43:19,815 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
+2025-04-17 11:43:19,846 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:19,865 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=3HISTc45clqM0aumIoF6sNwGUahGHH3iSZYFAdMDfuGuOs73To0g49L8wjP3ggMK HTTP/1.1" 200 16439
+2025-04-17 11:43:20,594 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:20,618 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=Omon2J64UdKknKcWUR7aBufyaYWVXPM9DEEaJKOCXm02b2PD5RskdQu0M7uiwovB HTTP/1.1" 200 16439
+2025-04-17 11:43:20,636 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 55
+2025-04-17 11:43:21,902 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:21,923 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=jThzQi0kwe9bUGtokyPjvAgO53OGHOKz8bxmxjISznpTIY65vyat7WvgHcm3gnt1 HTTP/1.1" 200 16440
+2025-04-17 11:43:21,960 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
+2025-04-17 11:43:25,149 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 55
+2025-04-17 11:43:25,160 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=ZtLjm8jqASnFtrkgwi1KNbqYbSXuV6JKOL16391YD1DnhJXXHimUpxFqN1vRuFsc HTTP/1.1" 200 16440
+2025-04-17 11:43:25,173 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:26,197 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:26,228 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
+2025-04-17 11:43:26,249 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=peFqv0wEYJ3zzRuY0NOB8I58No4DdUtuewVdc1ec1Sjhn97FbN9LK4kApxC0MtcW HTTP/1.1" 200 16439
+2025-04-17 11:43:27,205 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=B5lSdknehoCer8V6b5dYNSLFgwNOf5IiqnBFUl5MkxSWfqyNm5y8pe07SFlbOErK HTTP/1.1" 200 16439
+2025-04-17 11:43:27,220 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:27,248 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 55
+2025-04-17 11:43:27,965 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:27,984 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=vaGHXgGgvpXAWMrEvUtCTaMgtsXNS2XRksWuEhoOyydiK44lGUOMvw1I5BvarBGj HTTP/1.1" 200 16440
+2025-04-17 11:43:28,020 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
+2025-04-17 11:43:30,623 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 55
+2025-04-17 11:43:30,634 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:30,653 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=XXIdaerpmOqAbwRXM0fslPLTPUmz5nC1MfY0Rf9XpXGiZOuEX0ACXb0lr3UWEWlt HTTP/1.1" 200 16440
+2025-04-17 11:43:31,365 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:31,386 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=XXIdaerpmOqAbwRXM0fslPLTPUmz5nC1MfY0Rf9XpXGiZOuEX0ACXb0lr3UWEWlt HTTP/1.1" 200 16440
+2025-04-17 11:43:31,419 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:43:31,420 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:43:31,425 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:43:31,488 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:43:31,540 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:43:31,541 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:43:32,466 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:32,486 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=dWLRL19pdQsFRJu5wNpXFr6sNafv78nb2e1Es2RXgZInF17MHNK7hNlUpjNSGH6D HTTP/1.1" 200 16440
+2025-04-17 11:43:32,520 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
+2025-04-17 11:43:33,987 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:33,997 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=dWLRL19pdQsFRJu5wNpXFr6sNafv78nb2e1Es2RXgZInF17MHNK7hNlUpjNSGH6D HTTP/1.1" 200 16439
+2025-04-17 11:43:35,096 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 55
+2025-04-17 11:43:35,111 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:35,131 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=0qBYxOXkUtNTcjykDcpGJp9vWegOEovMPIRLePFSXC3B0Bb1OcKQlLoXynObdXee HTTP/1.1" 200 16440
+2025-04-17 11:43:36,119 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:36,138 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=0qBYxOXkUtNTcjykDcpGJp9vWegOEovMPIRLePFSXC3B0Bb1OcKQlLoXynObdXee HTTP/1.1" 200 16440
+2025-04-17 11:43:36,169 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:43:36,170 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:43:36,173 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:43:36,264 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:43:36,310 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:43:36,311 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:43:36,892 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:36,929 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
+2025-04-17 11:43:36,944 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=rVt1cNguQ6CTa8MGbrzIhGaDBMkRV1iggdJOTOY2TfSBYqpnmrUST2p5dVSeuA1I HTTP/1.1" 200 16440
+2025-04-17 11:43:38,501 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=rVt1cNguQ6CTa8MGbrzIhGaDBMkRV1iggdJOTOY2TfSBYqpnmrUST2p5dVSeuA1I HTTP/1.1" 200 16439
+2025-04-17 11:43:38,513 [INFO] django.server: - Broken pipe from ('127.0.0.1', 3990)
+2025-04-17 11:43:38,537 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:43:38,537 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:43:38,540 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:43:38,605 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:43:38,656 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:43:38,656 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:43:39,867 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:39,906 [INFO] django.server: "POST /thread/12/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:43:39,914 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=szOAP2VUp2YO9VPTikBPrRrUaQrsJqaghR4nw3DssbewXdsAtkWZ3dGmMZZPiZTI HTTP/1.1" 200 16439
+2025-04-17 11:43:41,849 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=szOAP2VUp2YO9VPTikBPrRrUaQrsJqaghR4nw3DssbewXdsAtkWZ3dGmMZZPiZTI HTTP/1.1" 200 16439
+2025-04-17 11:43:41,858 [INFO] django.server: - Broken pipe from ('127.0.0.1', 3989)
+2025-04-17 11:43:41,882 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:43:41,885 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:43:41,887 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:43:42,030 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:43:42,077 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:43:42,078 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:43:43,747 [INFO] django.server: "POST /thread/12/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:43:43,769 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:43,784 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=rxT5GLta1ywbVdxVZVYtyBE3eo4Spw6RgP9SnMbI4HMTJvaCaVjDaXTvQxCfY5Pj HTTP/1.1" 200 16440
+2025-04-17 11:43:52,568 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
+2025-04-17 11:43:52,575 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:52,596 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=QoGR3kFKbPmGlJFfZKhdQpXEWssoqakzFGWEKlnieYCo91iWaKCnsLc6yB0LZJ31 HTTP/1.1" 200 16439
+2025-04-17 11:43:53,941 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:43:53,968 [INFO] django.server: "POST /thread/12/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:43:53,985 [INFO] django.server: "GET /thread/12/?csrfmiddlewaretoken=C2ihKYM8YqfGpMnp38tCYf8TnZGwDQGLrky4rZuG1zvod406e8OMABnlZ8eTcppd HTTP/1.1" 200 16439
+2025-04-17 11:45:12,987 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:45:13,005 [INFO] django.server: "GET /forums/2/ HTTP/1.1" 200 10523
+2025-04-17 11:45:16,129 [INFO] django.server: "GET /thread/8/ HTTP/1.1" 200 16289
+2025-04-17 11:45:17,766 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:45:17,781 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=0vphd05i2CFStFfyFiHqza6D6GHq2P75PNF4U1NQ5LVAhXSfQi2Abwl5IPfNBoQx HTTP/1.1" 200 16289
+2025-04-17 11:45:17,811 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:45:21,713 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:45:21,730 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=0vphd05i2CFStFfyFiHqza6D6GHq2P75PNF4U1NQ5LVAhXSfQi2Abwl5IPfNBoQx HTTP/1.1" 200 16288
+2025-04-17 11:45:21,763 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:45:21,765 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:45:21,767 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:45:21,980 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:45:22,062 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:45:22,063 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:45:24,335 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:45:24,345 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:45:24,361 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=bX2tBkEJcIb1snpo6Hp2HAD8i9XEa6xH0figilmhfRrJgF25hHKcjWSAUiv1JFg9 HTTP/1.1" 200 16289
+2025-04-17 11:45:25,755 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:45:25,765 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=5zBa9BHCCEigYjwuFIFyKwNenqrRrkUXURRXQCpaFNyYMB9bQI0ImS2GZzZe0TDp HTTP/1.1" 200 16288
+2025-04-17 11:45:25,778 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:45:33,119 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:45:33,140 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=5zBa9BHCCEigYjwuFIFyKwNenqrRrkUXURRXQCpaFNyYMB9bQI0ImS2GZzZe0TDp HTTP/1.1" 200 16288
+2025-04-17 11:45:33,174 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:45:33,174 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:45:33,176 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:45:33,252 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:45:33,303 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:45:33,304 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:46:27,244 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:27,261 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:46:27,274 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=SNXcy79qZnSjjqmdCQw9mTVBMIp9CXitH5dZf8RY2w817IZUNQRjYfa3oRXwbw1V HTTP/1.1" 200 16289
+2025-04-17 11:46:28,638 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:28,657 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=elh13cMXUnoCkLelXsOnAxIHB7bcnyvY3DxOKduvXwEk83R28s9xcTX9dgJzW7eq HTTP/1.1" 200 16289
+2025-04-17 11:46:28,686 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:46:30,757 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:30,769 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=WyJb1JPifkqugQ5cvrjUsD83SSMBDvbfLQZYIKxQitGc48ITGrE44Znvu1kYc4UH HTTP/1.1" 200 16288
+2025-04-17 11:46:30,800 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:46:33,608 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:46:33,620 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=LF2bqIGcKKsUMeJHzq83jmTwNplauHHLAXiY7JoKNTICAwmoKqtdVI8YpyTx3gqd HTTP/1.1" 200 16288
+2025-04-17 11:46:33,632 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:35,376 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:35,404 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:46:35,416 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=ae59CAUgdIrJ7zmu6N1vl0yBURgON1cOZwlWjBCOgRHrVRZbhNmFXmN3w0ObmAVg HTTP/1.1" 200 16289
+2025-04-17 11:46:40,524 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:40,553 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:46:40,575 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=8fSm55giVTsmUjdYCnUupHNDrTQRxRifXx89M6YQY2I4IBQFNnfE132532oe6q1H HTTP/1.1" 200 16288
+2025-04-17 11:46:41,614 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:41,626 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=KLDwzW2BtQHaJdUeIDzYAAkIVGSEjdiVz3TjgXK9wZXSxvxVTDU8cWzaxPq1SM1n HTTP/1.1" 200 16288
+2025-04-17 11:46:41,652 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:46:42,661 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:46:42,669 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:42,686 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=IPDBQRGfX9f769Q0GgCYMu1SRCKkPTrOx7ToxSoN0ivPUrtHRgX8oQgktLiHosag HTTP/1.1" 200 16288
+2025-04-17 11:46:43,186 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:46:43,204 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=LkX2hzYCBu1Ws0KjDwveLaFhy4O4dyI4ACdPYAGaEDhEgin0OwQonwUJadmrM7rw HTTP/1.1" 200 16289
+2025-04-17 11:46:43,218 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:43,548 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:46:43,553 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:43,570 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=FW5MPJuVVU4IOvPEJV954qCVCVsMYDpIuelzwKctY3kqCNslUVufGMRne409xc8a HTTP/1.1" 200 16288
+2025-04-17 11:46:44,096 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:46:44,103 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:44,118 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=AX3WvV0bL3LkooFeiTtNAXnJrbU9CgmXpfjJcWIJOc12cGiVtTOXcjCb3kswbP5p HTTP/1.1" 200 16289
+2025-04-17 11:46:46,230 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:46,251 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=goPiFDi9btBYm1KEc3HvJrg1vmIDk3LX5G55mE0HeCRGajnln32FlNvt7vg0TCup HTTP/1.1" 200 16289
+2025-04-17 11:46:46,284 [INFO] django.server: "POST /thread/8/like/ HTTP/1.1" 200 54
+2025-04-17 11:46:48,014 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:48,036 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=xOikrK7OTFB5IUdkbQAqOHNB9RHdSi6Cm6y78LPmWORNwcQ1mQVAq323L0fArRP4 HTTP/1.1" 200 16288
+2025-04-17 11:46:48,056 [INFO] django.server: "POST /thread/8/like/ HTTP/1.1" 200 55
+2025-04-17 11:46:48,801 [INFO] django.server: "POST /thread/8/like/ HTTP/1.1" 200 54
+2025-04-17 11:46:48,819 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=FtwBGmh6Lo0lhxhAFgirRniXJ5NoVUlzuLMonnZEOxg35PUhQgDBtJxplelLut41 HTTP/1.1" 200 16288
+2025-04-17 11:46:48,832 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:52,882 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:52,909 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:46:52,923 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=731PQ81uMe1a66Evl2doLMsFpvRPpc3YWlhCx9J2PnhSUohcw2yyn8H71EpcYLMq HTTP/1.1" 200 16288
+2025-04-17 11:46:54,499 [INFO] django.server: "POST /thread/8/like/ HTTP/1.1" 200 54
+2025-04-17 11:46:54,511 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=U0vbU0jpAXmGg8mEDgMR0UtfrdBRpcfXJiLYB11XD6Co4qZlOg71CgIH3m9eYLYp HTTP/1.1" 200 16288
+2025-04-17 11:46:54,529 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:55,974 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:46:55,994 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=o3Lr4vXiR7HFG8aZCQ6cLQPRBsTUyOzTdl1eLwFQUgXnuqNGNQrmnc4jdBrh7nil HTTP/1.1" 200 16288
+2025-04-17 11:46:56,008 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:57,652 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:57,691 [INFO] django.server: "POST /thread/8/like/ HTTP/1.1" 200 54
+2025-04-17 11:46:57,699 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=wem3lUfsWJ876hsL8PrIZ4N77E8AUCUUlwCQ2VX0ZSoPUz5sjPMSBq2zJNGXtbDm HTTP/1.1" 200 16288
+2025-04-17 11:46:58,654 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:46:58,700 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:46:58,711 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=a3WgVjWPmylmArOc49WXePNBv8cWB6YbZlc3CkEnpHB4oJrTf9h7Qb237hKjaFHD HTTP/1.1" 200 16288
+2025-04-17 11:46:59,840 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:46:59,859 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=TnQaGpO4iW0HreV7UukYSUeZyH7YdLWaIF6XnqwCl5gpfwyO5uF8ugtraQFlMkFC HTTP/1.1" 200 16289
+2025-04-17 11:46:59,870 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:47:00,975 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:47:01,004 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:47:01,027 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=srXrjIkmoG8htteVhTfPWVnvXqrMApoBhJde0J2UrPoZhLRCsTAZyhCXzzZ99Y73 HTTP/1.1" 200 16288
+2025-04-17 11:47:02,059 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:47:02,078 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=35EVjiFRUzpmfPFpY6E4cue3sbXVobHTSnUI0jnpXIF437i696ZeOQtv4kviXKql HTTP/1.1" 200 16288
+2025-04-17 11:47:02,104 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:47:02,951 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:47:02,971 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=DXe5o3vZnmq9afwxQsDKLL8dveSkfBAhsfuS54dxqvGRYx9e1sYUn7nF7nqHOajJ HTTP/1.1" 200 16289
+2025-04-17 11:47:03,000 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:47:10,753 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:47:10,772 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=RvCddJoQHJy7jpaJJTQuEMvJTe4Rv697GNS0UK6oKSOP7HNqUTbEg8KbvnCe4FSz HTTP/1.1" 200 16288
+2025-04-17 11:47:10,796 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:47:14,948 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:47:14,999 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:47:15,018 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=xvfpA8rtu89EXRl6fs9h3DJoS8ecAaWimNvch991xhpmL9YNqsurFZYQuhMz9JFK HTTP/1.1" 200 16288
+2025-04-17 11:47:17,422 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=xvfpA8rtu89EXRl6fs9h3DJoS8ecAaWimNvch991xhpmL9YNqsurFZYQuhMz9JFK HTTP/1.1" 200 16288
+2025-04-17 11:47:17,426 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:47:17,463 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:47:17,465 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:47:17,468 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:47:17,587 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:47:17,677 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:47:17,678 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:50:47,883 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:50:47,954 [INFO] django.server: "GET /thread/8/?csrfmiddlewaretoken=xvfpA8rtu89EXRl6fs9h3DJoS8ecAaWimNvch991xhpmL9YNqsurFZYQuhMz9JFK HTTP/1.1" 200 16558
+2025-04-17 11:50:47,991 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:50:47,991 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:50:47,996 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:50:48,158 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:50:48,252 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:50:48,253 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:50:49,060 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 58
+2025-04-17 11:50:50,627 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:50:50,652 [INFO] django.server: "GET /thread/9/ HTTP/1.1" 200 16634
+2025-04-17 11:50:54,486 [INFO] django.server: "POST /thread/9/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:50:56,037 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:50:56,057 [INFO] django.server: "GET /thread/10/ HTTP/1.1" 200 17192
+2025-04-17 11:50:56,104 [WARNING] django.request: Not Found: /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif
+2025-04-17 11:50:56,104 [WARNING] django.server: "GET /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif HTTP/1.1" 404 9214
+2025-04-17 11:51:16,427 [INFO] django.server: "POST /thread/10/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:51:17,959 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:51:17,977 [INFO] django.server: "GET /thread/11/ HTTP/1.1" 200 16681
+2025-04-17 11:51:22,863 [INFO] django.server: "POST /thread/11/like/ HTTP/1.1" 200 54
+2025-04-17 11:51:26,045 [INFO] django.server: "POST /thread/11/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:51:27,589 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:51:27,604 [INFO] django.server: "GET /thread/12/ HTTP/1.1" 200 16709
+2025-04-17 11:51:38,215 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
+2025-04-17 11:51:50,298 [INFO] django.server: "GET /thread/12/ HTTP/1.1" 200 16709
+2025-04-17 11:51:50,306 [INFO] django.server: - Broken pipe from ('127.0.0.1', 3993)
+2025-04-17 11:56:42,349 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:56:42,419 [INFO] django.server: "GET /thread/12/ HTTP/1.1" 200 15793
+2025-04-17 11:56:42,456 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:56:42,456 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:56:42,463 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:56:42,663 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:56:42,763 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:56:42,763 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:56:57,997 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:56:58,062 [INFO] django.server: "GET /thread/12/ HTTP/1.1" 200 16691
+2025-04-17 11:56:58,097 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:56:58,097 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:56:58,099 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:56:58,202 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:56:58,253 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:56:58,253 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:56:59,403 [INFO] django.server: "POST /thread/12/dislike/ HTTP/1.1" 200 57
+2025-04-17 11:57:00,988 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:57:00,998 [INFO] django.server: "GET /thread/48/ HTTP/1.1" 200 17248
+2025-04-17 11:57:01,042 [WARNING] django.request: Not Found: /media/profile_pictures/i_m_officially_a_college_student__png_meme_by_kylewithem_djde4mu-pre.png
+2025-04-17 11:57:01,048 [WARNING] django.request: Not Found: /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif
+2025-04-17 11:57:01,049 [WARNING] django.server: "GET /media/profile_pictures/i_m_officially_a_college_student__png_meme_by_kylewithem_djde4mu-pre.png HTTP/1.1" 404 9366
+2025-04-17 11:57:01,049 [WARNING] django.server: "GET /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif HTTP/1.1" 404 9214
+2025-04-17 11:58:25,106 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:58:25,175 [INFO] django.server: "GET /thread/48/ HTTP/1.1" 200 17205
+2025-04-17 11:58:25,215 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:58:25,216 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:58:25,224 [WARNING] django.request: Not Found: /media/profile_pictures/i_m_officially_a_college_student__png_meme_by_kylewithem_djde4mu-pre.png
+2025-04-17 11:58:25,225 [WARNING] django.server: "GET /media/profile_pictures/i_m_officially_a_college_student__png_meme_by_kylewithem_djde4mu-pre.png HTTP/1.1" 404 9366
+2025-04-17 11:58:25,230 [WARNING] django.request: Not Found: /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif
+2025-04-17 11:58:25,230 [WARNING] django.server: "GET /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif HTTP/1.1" 404 9214
+2025-04-17 11:58:25,233 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:58:25,372 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:58:25,457 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:58:25,457 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:58:26,689 [INFO] django.server: "POST /thread/48/like/ HTTP/1.1" 200 54
+2025-04-17 11:58:28,204 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:58:28,219 [INFO] django.server: "GET /thread/48/ HTTP/1.1" 200 17204
+2025-04-17 11:58:28,255 [WARNING] django.request: Not Found: /media/profile_pictures/i_m_officially_a_college_student__png_meme_by_kylewithem_djde4mu-pre.png
+2025-04-17 11:58:28,260 [WARNING] django.request: Not Found: /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif
+2025-04-17 11:58:28,260 [WARNING] django.server: "GET /media/profile_pictures/i_m_officially_a_college_student__png_meme_by_kylewithem_djde4mu-pre.png HTTP/1.1" 404 9366
+2025-04-17 11:58:28,261 [WARNING] django.server: "GET /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif HTTP/1.1" 404 9214
+2025-04-17 11:59:56,532 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:59:56,602 [INFO] django.server: "GET /thread/48/ HTTP/1.1" 200 17163
+2025-04-17 11:59:56,656 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 11:59:56,658 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 11:59:56,664 [WARNING] django.request: Not Found: /media/profile_pictures/i_m_officially_a_college_student__png_meme_by_kylewithem_djde4mu-pre.png
+2025-04-17 11:59:56,671 [WARNING] django.request: Not Found: /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif
+2025-04-17 11:59:56,672 [WARNING] django.server: "GET /media/profile_pictures/i_m_officially_a_college_student__png_meme_by_kylewithem_djde4mu-pre.png HTTP/1.1" 404 9366
+2025-04-17 11:59:56,672 [WARNING] django.server: "GET /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif HTTP/1.1" 404 9214
+2025-04-17 11:59:56,676 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 11:59:56,870 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 11:59:56,980 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 11:59:56,980 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 11:59:57,635 [INFO] django.server: "POST /thread/48/like/ HTTP/1.1" 200 55
+2025-04-17 11:59:58,871 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 11:59:58,892 [INFO] django.server: "GET /thread/48/ HTTP/1.1" 200 17164
+2025-04-17 11:59:58,932 [WARNING] django.request: Not Found: /media/profile_pictures/i_m_officially_a_college_student__png_meme_by_kylewithem_djde4mu-pre.png
+2025-04-17 11:59:58,935 [WARNING] django.request: Not Found: /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif
+2025-04-17 11:59:58,935 [WARNING] django.server: "GET /media/profile_pictures/i_m_officially_a_college_student__png_meme_by_kylewithem_djde4mu-pre.png HTTP/1.1" 404 9366
+2025-04-17 11:59:58,936 [WARNING] django.server: "GET /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif HTTP/1.1" 404 9214
+2025-04-17 12:00:00,843 [INFO] django.server: "POST /thread/48/dislike/ HTTP/1.1" 200 57
+2025-04-17 12:00:02,378 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 12:00:02,396 [INFO] django.server: "GET /forums/2/ HTTP/1.1" 200 10523
+2025-04-17 12:00:07,836 [INFO] django.server: "GET /thread/8/ HTTP/1.1" 200 16457
+2025-04-17 12:00:10,102 [INFO] django.server: "POST /thread/8/like/ HTTP/1.1" 200 54
+2025-04-17 12:00:12,777 [INFO] django.server: "POST /thread/8/like/ HTTP/1.1" 200 55
+2025-04-17 12:00:14,144 [INFO] django.server: "POST /thread/8/dislike/ HTTP/1.1" 200 57
+2025-04-17 12:00:15,696 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 12:00:15,713 [INFO] django.server: "GET /thread/9/ HTTP/1.1" 200 16531
+2025-04-17 12:02:46,367 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 12:02:46,423 [INFO] django.server: "GET /thread/9/ HTTP/1.1" 200 17123
+2025-04-17 12:02:46,460 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-17 12:02:46,460 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7558
+2025-04-17 12:02:46,465 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-17 12:02:46,618 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-17 12:02:46,729 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-17 12:02:46,730 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-17 12:02:47,774 [INFO] django.server: "POST /thread/9/like/ HTTP/1.1" 200 54
+2025-04-17 12:02:49,484 [INFO] django.server: "POST /thread/9/dislike/ HTTP/1.1" 200 57
+2025-04-17 12:02:51,057 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 12:02:51,072 [INFO] django.server: "GET /thread/10/ HTTP/1.1" 200 17681
+2025-04-17 12:02:51,113 [WARNING] django.request: Not Found: /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif
+2025-04-17 12:02:51,113 [WARNING] django.server: "GET /media/profile_pictures/tumblr_o329krNDbt1uarlylo8_400.gif HTTP/1.1" 404 9214
+2025-04-17 12:02:53,647 [INFO] django.server: "POST /thread/10/like/ HTTP/1.1" 200 54
+2025-04-17 12:02:57,698 [INFO] django.server: "POST /thread/10/dislike/ HTTP/1.1" 200 57
+2025-04-17 12:02:59,241 [INFO] django.server: "GET /thread/11/ HTTP/1.1" 200 17170
+2025-04-17 12:02:59,250 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 12:03:00,506 [INFO] django.server: "POST /thread/11/like/ HTTP/1.1" 200 54
+2025-04-17 12:03:07,303 [INFO] django.server: "POST /thread/11/like/ HTTP/1.1" 200 55
+2025-04-17 12:03:08,326 [INFO] django.server: "POST /thread/11/dislike/ HTTP/1.1" 200 57
+2025-04-17 12:03:09,898 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-17 12:03:09,913 [INFO] django.server: "GET /thread/12/ HTTP/1.1" 200 17199
+2025-04-17 12:03:11,438 [INFO] django.server: "POST /thread/12/like/ HTTP/1.1" 200 54
