@@ -14,6 +14,7 @@ from django.urls import reverse_lazy
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.decorators.csrf import csrf_exempt
 from .q_learning_recommendation import QLearningRecommender 
+from textblob import TextBlob
 import json
 import re
 #test
@@ -240,13 +241,16 @@ class ForumReplyCreateView(View):
         content = request.POST.get('content')
 
         if content:
-            category_name = thread.category.name 
+            category_name = thread.category.name
+            
+            sentiment_score = TextBlob(content).sentiment.polarity
             
             ForumReply.objects.create(
                 thread=thread,
                 user=request.user,
                 content=content,
-                category=category_name
+                category=category_name,
+                sentiment_score=sentiment_score,
             )
 
             # Notify the thread owner (if it's not the same user)

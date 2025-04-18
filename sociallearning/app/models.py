@@ -87,6 +87,7 @@ class ForumReply(models.Model):
     content = models.TextField()
     created_at = models.DateTimeField(auto_now_add=True)
     category = models.CharField(max_length=200)
+    sentiment_score = models.FloatField(default=0)
     
     def __str__(self):
         return self.content
