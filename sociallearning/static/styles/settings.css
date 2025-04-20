@@ -9,6 +9,13 @@ html, body {
     width: 100vw;
 }
 
+input[type="password"]::-ms-reveal,
+input[type="password"]::-webkit-credentials-auto-fill-button,
+input[type="password"]::-webkit-clear-button,
+input[type="password"]::-webkit-inner-spin-button {
+    display: none !important;
+}
+
 body {
     background-image: url('/static/assets/BG1.gif');
     background-size: cover;
@@ -145,12 +152,28 @@ body {
     border-color: rgb(204, 199, 199);
 }
 
+.input-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
 .input-container input {
     width: 87%;
     padding: 22px;
     font-size: 16px;
     border-radius: 20px;
     border-color: rgb(204, 199, 199);
+    padding-right: 80px;
+}
+
+.eye-toggle {
+    position: absolute;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
 }
 
 .submit-button{

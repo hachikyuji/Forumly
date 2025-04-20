@@ -1532,3 +1532,383 @@ django.urls.exceptions.NoReverseMatch: Reverse for 'thread_detail' not found. 't
 2025-04-18 11:30:17,541 [INFO] django.server: "GET /admin/app/forumreply/89/change/ HTTP/1.1" 200 19766
 2025-04-18 11:30:17,608 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 2025-04-18 11:35:24,419 [INFO] django.server: "GET /thread/12/ HTTP/1.1" 200 17149
+2025-04-20 18:30:54,866 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-20 18:33:11,126 [INFO] django.server: "GET / HTTP/1.1" 200 2344
+2025-04-20 18:33:11,362 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 5889
+2025-04-20 18:33:11,612 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:33:11,700 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:33:11,701 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:33:16,723 [INFO] django.server: "GET /register HTTP/1.1" 200 4720
+2025-04-20 18:33:16,812 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 304 0
+2025-04-20 18:33:54,367 [INFO] django.server: "GET /register HTTP/1.1" 200 4720
+2025-04-20 18:33:54,460 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 5889
+2025-04-20 18:33:54,475 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:33:54,834 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:33:54,835 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:34:04,759 [INFO] django.server: "POST /register HTTP/1.1" 200 5010
+2025-04-20 18:34:04,845 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 304 0
+2025-04-20 18:34:14,038 [INFO] django.server: "POST /register HTTP/1.1" 200 5010
+2025-04-20 18:34:14,120 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 5889
+2025-04-20 18:34:14,130 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:34:14,325 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:34:14,326 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:34:19,695 [INFO] django.server: "POST /register HTTP/1.1" 200 5010
+2025-04-20 18:34:19,776 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 5889
+2025-04-20 18:34:19,896 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:34:19,952 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:34:19,953 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:34:24,291 [INFO] django.server: "GET / HTTP/1.1" 200 2344
+2025-04-20 18:34:25,995 [INFO] django.server: "GET /register HTTP/1.1" 200 4720
+2025-04-20 18:34:45,519 [INFO] django.server: "GET /register HTTP/1.1" 200 4720
+2025-04-20 18:34:45,585 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 5889
+2025-04-20 18:34:45,682 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:34:45,804 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:34:45,806 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:35:18,654 [INFO] django.server: "GET /register HTTP/1.1" 200 4721
+2025-04-20 18:35:18,736 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 5889
+2025-04-20 18:35:18,815 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:35:18,992 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:35:18,993 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:35:24,021 [INFO] django.server: "GET /register HTTP/1.1" 200 4721
+2025-04-20 18:35:24,093 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 5889
+2025-04-20 18:35:24,176 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:35:24,305 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:35:24,306 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:40:21,926 [INFO] django.server: "GET /register HTTP/1.1" 200 4957
+2025-04-20 18:40:22,021 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 5889
+2025-04-20 18:40:22,028 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:40:22,328 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:40:22,329 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:41:48,768 [INFO] django.server: "GET /register HTTP/1.1" 200 5593
+2025-04-20 18:41:48,872 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6497
+2025-04-20 18:41:48,933 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:41:49,110 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:41:49,111 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:41:50,320 [INFO] django.server: "GET /register HTTP/1.1" 200 5593
+2025-04-20 18:41:50,394 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6497
+2025-04-20 18:41:50,399 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:41:50,570 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:41:50,571 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:42:08,044 [INFO] django.server: "GET /register HTTP/1.1" 200 5531
+2025-04-20 18:42:08,109 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6497
+2025-04-20 18:42:08,118 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:42:08,381 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:42:08,381 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:42:42,600 [INFO] django.server: "GET /register HTTP/1.1" 200 5183
+2025-04-20 18:42:42,701 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6497
+2025-04-20 18:42:42,706 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:42:42,974 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:42:42,976 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:43:03,695 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:43:03,769 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6497
+2025-04-20 18:43:03,786 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:43:04,033 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:43:04,034 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:43:18,361 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:43:18,445 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:43:18,464 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6523
+2025-04-20 18:43:18,736 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:43:18,737 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:43:27,873 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:43:27,958 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6497
+2025-04-20 18:43:27,962 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:43:28,219 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:43:28,220 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:44:07,395 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:44:07,518 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6489
+2025-04-20 18:44:07,761 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:44:07,820 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:44:07,821 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:44:15,916 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:44:16,003 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:44:16,027 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6300
+2025-04-20 18:44:16,275 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:44:16,276 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:44:33,492 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:44:33,557 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6497
+2025-04-20 18:44:33,560 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:44:33,758 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:44:33,759 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:44:56,258 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:44:56,350 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:44:56,375 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6500
+2025-04-20 18:44:56,558 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:44:56,560 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:45:49,410 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:45:49,501 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:45:49,523 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6543
+2025-04-20 18:45:49,801 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:45:49,802 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:45:57,115 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:45:57,204 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:45:57,217 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6543
+2025-04-20 18:45:57,453 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:45:57,455 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:47:25,070 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:47:25,166 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:47:25,185 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6686
+2025-04-20 18:47:25,517 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:47:25,520 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:47:41,164 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:47:41,258 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:47:41,290 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6637
+2025-04-20 18:47:41,572 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:47:41,573 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:47:53,270 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:47:53,366 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6566
+2025-04-20 18:47:53,368 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:47:53,670 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:47:53,671 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:48:17,744 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:48:17,840 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:48:17,863 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6593
+2025-04-20 18:48:18,188 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:48:18,189 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:48:40,047 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:48:40,144 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:48:40,158 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6616
+2025-04-20 18:48:40,447 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:48:40,448 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:48:45,399 [INFO] django.server: "GET /register HTTP/1.1" 200 5235
+2025-04-20 18:48:45,502 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:48:45,512 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 6616
+2025-04-20 18:48:45,776 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:48:45,777 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:54:40,491 [INFO] django.server: "GET /register HTTP/1.1" 200 5371
+2025-04-20 18:54:40,583 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7295
+2025-04-20 18:54:40,706 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:54:40,876 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:54:40,878 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:54:41,653 [INFO] django.server: "GET /register HTTP/1.1" 200 5371
+2025-04-20 18:54:41,713 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7295
+2025-04-20 18:54:41,721 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:54:41,880 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:54:41,881 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:55:01,726 [INFO] django.server: "GET /register HTTP/1.1" 200 5367
+2025-04-20 18:55:01,802 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7295
+2025-04-20 18:55:01,815 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:55:02,036 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:55:02,038 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:55:02,722 [INFO] django.server: "GET /register HTTP/1.1" 200 5367
+2025-04-20 18:55:02,788 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7295
+2025-04-20 18:55:02,797 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:55:02,962 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:55:02,963 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:55:10,708 [INFO] django.server: "GET /register HTTP/1.1" 200 5368
+2025-04-20 18:55:10,768 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7295
+2025-04-20 18:55:10,772 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:55:10,947 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:55:10,948 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:56:47,811 [INFO] django.server: "GET /register HTTP/1.1" 200 5464
+2025-04-20 18:56:47,902 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7606
+2025-04-20 18:56:48,149 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:56:48,204 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:56:48,205 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:57:11,304 [INFO] django.server: "GET /register HTTP/1.1" 200 5464
+2025-04-20 18:57:11,365 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:57:11,381 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7629
+2025-04-20 18:57:11,586 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:57:11,587 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:57:16,015 [INFO] django.server: "GET /register HTTP/1.1" 200 5464
+2025-04-20 18:57:16,092 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:57:16,104 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7630
+2025-04-20 18:57:16,301 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:57:16,303 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:57:32,149 [INFO] django.server: "GET /register HTTP/1.1" 200 5464
+2025-04-20 18:57:32,245 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:57:32,257 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7630
+2025-04-20 18:57:32,538 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:57:32,539 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 18:57:35,483 [INFO] django.server: "GET /register HTTP/1.1" 200 5464
+2025-04-20 18:57:35,558 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 18:57:35,565 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7630
+2025-04-20 18:57:35,811 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 18:57:35,813 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:00:20,371 [INFO] django.server: "GET /register HTTP/1.1" 200 6362
+2025-04-20 19:00:20,451 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7630
+2025-04-20 19:00:20,457 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:00:20,772 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:00:20,773 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:00:29,242 [INFO] django.server: "GET /register HTTP/1.1" 200 6258
+2025-04-20 19:00:29,318 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7630
+2025-04-20 19:00:29,330 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:00:29,589 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:00:29,591 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:00:36,254 [INFO] django.server: "GET /register HTTP/1.1" 200 5464
+2025-04-20 19:00:36,335 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7630
+2025-04-20 19:00:36,340 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:00:36,666 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:00:36,668 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:05:38,256 [INFO] django.server: "GET /register HTTP/1.1" 200 5464
+2025-04-20 19:05:38,332 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7630
+2025-04-20 19:05:38,337 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:05:38,597 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:05:38,598 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:07:11,028 [INFO] django.server: "GET /register HTTP/1.1" 200 7904
+2025-04-20 19:07:11,099 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:07:11,113 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7832
+2025-04-20 19:07:11,270 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:07:11,271 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:08:12,492 [INFO] django.server: "GET /register HTTP/1.1" 200 8630
+2025-04-20 19:08:12,561 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7832
+2025-04-20 19:08:12,685 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:08:12,736 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:08:12,737 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:08:44,479 [INFO] django.server: "GET /register HTTP/1.1" 200 8630
+2025-04-20 19:08:44,617 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7631
+2025-04-20 19:08:44,788 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:08:44,835 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:08:44,836 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:08:49,379 [INFO] django.server: "GET /register HTTP/1.1" 200 8630
+2025-04-20 19:08:49,464 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7832
+2025-04-20 19:08:49,467 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:08:49,686 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:08:49,688 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:10:15,035 [INFO] django.server: "GET /register HTTP/1.1" 200 8268
+2025-04-20 19:10:15,086 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7832
+2025-04-20 19:10:15,089 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:10:15,311 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:10:15,313 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:11:09,383 [INFO] django.server: "GET /register HTTP/1.1" 200 8542
+2025-04-20 19:11:09,435 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7832
+2025-04-20 19:11:09,439 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:11:09,605 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:11:09,606 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:11:29,963 [INFO] django.server: "GET /register HTTP/1.1" 200 8255
+2025-04-20 19:11:29,997 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7832
+2025-04-20 19:11:29,999 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:11:30,171 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:11:30,172 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:11:55,059 [INFO] django.server: "GET /register HTTP/1.1" 200 8630
+2025-04-20 19:11:55,097 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 7832
+2025-04-20 19:11:55,100 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:11:55,258 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:11:55,259 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:13:48,073 [INFO] django.server: "GET /register HTTP/1.1" 200 8630
+2025-04-20 19:13:48,122 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:13:48,138 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 8061
+2025-04-20 19:13:48,454 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:13:48,455 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:13:57,770 [INFO] django.server: "POST /register HTTP/1.1" 200 8920
+2025-04-20 19:13:57,806 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 304 0
+2025-04-20 19:15:19,803 [INFO] django.server: "POST /register HTTP/1.1" 200 8920
+2025-04-20 19:15:19,839 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 8061
+2025-04-20 19:15:19,846 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:15:20,115 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:15:20,116 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:15:22,341 [INFO] django.server: "GET / HTTP/1.1" 200 2862
+2025-04-20 19:15:46,954 [INFO] django.server: "GET / HTTP/1.1" 200 3236
+2025-04-20 19:15:46,999 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 8061
+2025-04-20 19:15:47,004 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:15:47,222 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:15:47,222 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:15:52,896 [INFO] django.server: "POST / HTTP/1.1" 302 0
+2025-04-20 19:15:53,031 [ERROR] django.request: Internal Server Error: /homepage
+Traceback (most recent call last):
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py", line 94, in homepage
+    user_profile = UserProfile.objects.get(user=request.user)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+app.models.UserProfile.DoesNotExist: UserProfile matching query does not exist.
+2025-04-20 19:15:53,036 [ERROR] django.server: "GET /homepage HTTP/1.1" 500 82829
+2025-04-20 19:16:01,127 [INFO] django.server: "GET /logout HTTP/1.1" 302 0
+2025-04-20 19:16:01,133 [INFO] django.server: "GET / HTTP/1.1" 200 3442
+2025-04-20 19:16:01,169 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 304 0
+2025-04-20 19:16:05,027 [INFO] django.server: "POST / HTTP/1.1" 302 0
+2025-04-20 19:16:05,660 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9287
+2025-04-20 19:16:05,714 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3450
+2025-04-20 19:16:05,715 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:16:05,722 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:16:47,386 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 8897
+2025-04-20 19:16:47,432 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 4678
+2025-04-20 19:17:48,646 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10429
+2025-04-20 19:17:48,691 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 4678
+2025-04-20 19:17:48,692 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:17:48,695 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:17:48,925 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:17:48,927 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:17:49,255 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:17:49,256 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:18:34,036 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10429
+2025-04-20 19:18:34,087 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 4678
+2025-04-20 19:18:34,087 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:18:34,090 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:18:34,227 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:18:34,567 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:18:34,568 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:18:44,345 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10429
+2025-04-20 19:18:44,378 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:18:44,379 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 4678
+2025-04-20 19:18:44,382 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:18:44,499 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:18:44,751 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:18:44,751 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:19:05,469 [INFO] django.server: "GET /logout HTTP/1.1" 302 0
+2025-04-20 19:19:05,477 [INFO] django.server: "GET / HTTP/1.1" 200 3236
+2025-04-20 19:19:05,517 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 304 0
+2025-04-20 19:19:10,482 [INFO] django.server: "POST / HTTP/1.1" 302 0
+2025-04-20 19:19:10,606 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9287
+2025-04-20 19:19:12,869 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10429
+2025-04-20 19:20:16,172 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10429
+2025-04-20 19:20:16,218 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:20:16,225 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:20:16,236 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 4907
+2025-04-20 19:20:16,540 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:20:16,548 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:20:16,927 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:20:16,928 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:21:58,267 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10463
+2025-04-20 19:21:58,314 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 4907
+2025-04-20 19:21:58,314 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:21:58,318 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:21:58,616 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:21:58,964 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:21:58,965 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:23:33,237 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10463
+2025-04-20 19:23:33,281 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:23:33,284 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:23:33,295 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 5157
+2025-04-20 19:23:33,546 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:23:33,904 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:23:33,905 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:23:42,832 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10463
+2025-04-20 19:23:42,881 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:23:42,888 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:23:42,900 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 5157
+2025-04-20 19:23:43,043 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:23:43,306 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:23:43,307 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:23:48,796 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10463
+2025-04-20 19:23:48,830 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:23:48,835 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:23:48,849 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 5157
+2025-04-20 19:23:49,024 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:23:49,201 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:23:49,202 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:23:53,573 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10463
+2025-04-20 19:23:53,609 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:23:53,612 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:23:53,623 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 5157
+2025-04-20 19:23:53,767 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:23:53,948 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:23:53,948 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
+2025-04-20 19:23:56,688 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 10463
+2025-04-20 19:23:56,718 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 6931
+2025-04-20 19:23:56,721 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
+2025-04-20 19:23:56,730 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 5157
+2025-04-20 19:23:56,911 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-20 19:23:57,083 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-20 19:23:57,083 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 8761
