@@ -165,7 +165,7 @@ body {
     border-radius: 20px;
     border-color: rgb(204, 199, 199);
     padding-right: 80px;
-}
+} 
 
 .eye-toggle {
     position: absolute;
@@ -257,4 +257,8 @@ body {
 
 .message svg {
     margin-right: 10px;
+}
+
+.age-container {
+    color: red;
 }

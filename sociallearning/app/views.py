@@ -59,16 +59,22 @@ def register(request):
         username = request.POST.get("username", "").strip()
         password = request.POST.get("password", "").strip()
         age = request.POST.get("age", "").strip()
-
+        
+        validate_age = int(request.POST.get("age"))
+        
         # Validate required fields
         if not username or not password or not age:
             messages.error(request, "All fields are required.")
             return render(request, "register.html")
-
+        
         if not is_valid_password(password):
             messages.error(request, "Password must be at least 8 characters long and include uppercase, lowercase, number, and special character.") 
             return render(request, "register.html")
-            
+        
+        if validate_age < 13:
+            messages.error(request, "Age must be 13 or above.")
+            return render(request, "register.html")
+        
         # Check username uniqueness
         if User.objects.filter(username=username).exists():
             messages.error(request, "Username already exists.")
