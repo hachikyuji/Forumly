@@ -328,7 +328,7 @@ input:focus {
 }
 
 .modal-content {
-    overflow: auto;
+    overflow-y: auto;
     font-family: 'Inter';
 }
 

@@ -57,6 +57,11 @@
                     <a href="/reset_QL">Reset QL</a>
                 </li>
                 {% endif %}
+                {% if request.user.profile.super_admin %}
+                <li>
+                    <a href="/user_data"> User Data </a>
+                </li>
+                {% endif %}
                 <li>
                     <a href="/logout">Logout</a>
                 </li>

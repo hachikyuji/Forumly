@@ -1,0 +1,91 @@
+.user-profiles-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.profile-ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 400px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    animation: fadeOut 0.3s forwards;
+    box-shadow: 0 0 10px rgba(0,0,0,0.25);
+    overflow: auto;
+}
+
+.modal.show {
+    display: block;
+    animation: fadeIn 0.3s forwards;
+}
+
+.modal.show .modal-content {
+    animation: slideIn 0.3s forwards;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: #888;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-button:hover {
+    color: #ff6b6b;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+}

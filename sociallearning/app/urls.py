@@ -46,6 +46,10 @@ urlpatterns = [
     path('notifications/read_all/', views.read_all_notifications, name='read_all_notifications'),
     path('notifications/clear/', views.clear_notifications, name='clear_notifications'),
     path('notifications/mark_read/', views.mark_notification_read, name='mark_notification_read'),
+    
+    #Superadmin
+    path('user_data/', views.UserProfilesListView.as_view(), name='user-data'),
+
 ]
 
 #403 Forbidden Error

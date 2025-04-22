@@ -6,13 +6,16 @@ from django.urls import reverse
 class UserProfile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE, related_name="profile")
     age = models.IntegerField(null=True, blank=True)
-    interests = models.JSONField(default=list, null=True, blank=True)  # List of user interests
-    historical_preferences = models.JSONField(default=list, null=True, blank=True)  # Previous topic preferences
     profile_picture = models.ImageField(upload_to="profile_pictures/", null=True, blank=True)
     category_comment_count = models.JSONField(default=dict)
     category_like_count = models.JSONField(default=dict)
     category_dislike_count = models.JSONField(default=dict)
     admin = models.BooleanField(default=False)
+    super_admin = models.BooleanField(default=False)
+    
+    # Deprecated
+    interests = models.JSONField(default=list, null=True, blank=True)  # List of user interests
+    historical_preferences = models.JSONField(default=list, null=True, blank=True)  # Previous topic preferences
     
     def increment_category_count(self, category_name):
         """Increase the count for a given category"""

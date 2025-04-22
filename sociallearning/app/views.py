@@ -468,3 +468,12 @@ def clear_notifications(request):
         Notification.objects.filter(user=request.user).delete()
         return render(request, 'notification.html')
     return JsonResponse({"error": "Invalid request."}, status=400)
+
+
+@method_decorator(login_required, name='dispatch')
+class UserProfilesListView(ListView):
+    model = UserProfile
+    template_name = "user_data.html"
+    context_object_name = "users"
+    
+   
