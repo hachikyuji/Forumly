@@ -49,6 +49,7 @@ urlpatterns = [
     
     #Superadmin
     path('user_data/', views.UserProfilesListView.as_view(), name='user-data'),
+    path('restrict-user/<int:user_id>/', views.RestrictUserView.as_view(), name='restrict-user'),
 
 ]
 

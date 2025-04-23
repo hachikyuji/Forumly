@@ -407,6 +407,22 @@ input:focus {
     outline: none;
 }
 
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .alert.success {
+    color: #155724;
+  }
+  
+  .alert.error {
+    color: #721c24;
+  }
+  
+
 
 @keyframes fadeIn {
     from { opacity: 0; }

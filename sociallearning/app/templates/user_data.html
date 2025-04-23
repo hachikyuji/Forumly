@@ -9,29 +9,51 @@
   {% include "partials/sidebar.html" %}
 </head>
 <body>
+    {% if messages %}
+        <div class="messages">
+            {% for message in messages %}
+            <div class="alert {{ message.tags }}">
+                {{ message }}
+            </div>
+            {% endfor %}
+        </div>
+    {% endif %}
     <div class="user-profiles">
         <div class="user-profiles-container">
-            <ul class="profile-ul">
-                {% for user in users%}
-                <li>
-                    <div class="profile">
-                        <p class="username"> Username: {{ user.user.username }}</p>
-                        <p class="age"> Age: {{ user.age }} </p>
-                        <button class="profile-btn" onclick="openStatsModal(this)"> QL Statistics </button>
-                            <div class="modal">
-                                <span class="close-button" onclick="closeStatsModal(this)">&times;</span>
-                                <p class="comments"> {{ user.category_comment_count }} </p>
-                                <p class="likes"> {{ user.category_like_count }} </p>
-                                <p class="dislikes"> {{ user.category_dislike_count }} </p>
-                            </div>                        
-                    </div>
-                </li>
-                {% empty %}
-                <li>
-                    <p> No users. </p>
-                </li>
-                {% endfor %}
-            </ul>
+            <form method="get" action={% url 'user-data' %}>
+                <input type="text" name="search" id="searchInput" placeholder="Search usernames..." value="{{ request.GET.search }}">
+            </form>
+                <ul class="profile-ul">
+                    {% for user in users%}
+                    <li class="profile-item">
+                        <div class="profile">
+                            <p class="username"> Username: {{ user.user.username }}</p>
+                            <p class="age"> Age: {{ user.age }} </p>
+
+                            <form method="post" action="{% url 'restrict-user' user.id %}">
+                                {% csrf_token %}
+                                <button type="submit" class="restrict-btn">Restrict</button>
+                            </form>
+
+                            
+                            <button class="profile-btn" onclick="openStatsModal(this)"> QL Statistics </button>
+                                <div class="modal">
+                                    <span class="close-button" onclick="closeStatsModal(this)">&times;</span>
+                                    <p> Username: {{ user.user.username }} </p>
+                                    <p> Last Login: {{ user.user.last_login }} </p>
+                                    <p> Date Joined: {{ user.user.date_joined}} </p>
+                                    <p> Category Dictionary: {{ user.category_comment_count }} </p>
+                                    <p> Like Dictionary: {{ user.category_like_count }} </p>
+                                    <p> Dislike Dictionary: {{ user.category_dislike_count }} </p>
+                                </div>                        
+                        </div>
+                    </li>
+                    {% empty %}
+                    <li>
+                        <p> No users. </p>
+                    </li>
+                    {% endfor %}
+                </ul>
         </div> 
     </div>
 </body>
@@ -46,6 +68,27 @@
         const modal = closeBtn.closest('.modal');
         modal.classList.remove("show");
     }
+
+    function filterUsers() {
+        const input = document.getElementById('searchInput');
+        const filter = input.value.toLowerCase();
+        const listItems = document.querySelectorAll('.profile-item');
     
+        listItems.forEach(item => {
+            const username = item.querySelector('.username').textContent.toLowerCase();
+            if (username.includes(filter)) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+    let searchTimeout;
+    document.getElementById('searchInput').addEventListener('input', function () {
+        clearTimeout(searchTimeout);
+        searchTimeout = setTimeout(() => {
+            this.form.submit();
+        }, 500);
+    });
 </script>
 </html>

@@ -15,6 +15,8 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.decorators.csrf import csrf_exempt
 from .q_learning_recommendation import QLearningRecommender 
 from textblob import TextBlob
+from datetime import timedelta
+from django.utils import timezone
 import json
 import re
 #test
@@ -37,6 +39,16 @@ def user_login(request):
 
         user = authenticate(request, username=username, password=password)
         if user is not None:
+            user_profile, created = UserProfile.objects.get_or_create(user=user)
+            
+            if user_profile.restricted:
+                if user_profile.restricted_expires_at:
+                    readable_time = timezone.localtime(user_profile.restricted_expires_at).strftime('%b %d, %Y at %I:%M %p')
+                    messages.error(request, f"Account restricted until {readable_time}.")
+                else:
+                    messages.error(request, "Account is restricted.")
+                return redirect("login")
+            
             auth_login(request, user)
             messages.success(request, "Login successful!")
             return redirect("homepage")
@@ -475,5 +487,21 @@ class UserProfilesListView(ListView):
     model = UserProfile
     template_name = "user_data.html"
     context_object_name = "users"
-    
-   
+
+    def get_queryset(self):
+        search_query = self.request.GET.get('search', '')
+        if search_query:
+            return UserProfile.objects.filter(user__username__icontains=search_query)
+        return UserProfile.objects.all()
+            
+class RestrictUserView(View):
+    def post(self, request, user_id):
+        user = get_object_or_404(User, id=user_id)
+        user_profile, created = UserProfile.objects.get_or_create(user=user)
+
+        user_profile.restricted = True
+        user_profile.restricted_expires_at = timezone.now() + timedelta(days=1)
+        user_profile.save()
+        
+        messages.success(request, "User restricted for 3 days!")
+        return redirect("user-data")

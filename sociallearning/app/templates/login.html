@@ -21,11 +21,13 @@
                 <h2>Login</h2>
 
                 {% if messages %}
-                    <div class="messages">
-                        {% for message in messages %}
-                            <p class="{{ message.tags }}">{{ message }}</p>
-                        {% endfor %}
+                <div class="messages">
+                    {% for message in messages %}
+                    <div class="alert {{ message.tags }}">
+                        {{ message }}
                     </div>
+                    {% endfor %}
+                </div>
                 {% endif %}
 
                 <div class="input-wrapper">

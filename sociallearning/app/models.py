@@ -12,6 +12,8 @@ class UserProfile(models.Model):
     category_dislike_count = models.JSONField(default=dict)
     admin = models.BooleanField(default=False)
     super_admin = models.BooleanField(default=False)
+    restricted = models.BooleanField(default=False)
+    restricted_expires_at = models.DateTimeField(null=True, blank=True)
     
     # Deprecated
     interests = models.JSONField(default=list, null=True, blank=True)  # List of user interests

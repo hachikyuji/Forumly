@@ -1,7 +1,5 @@
 .user-profiles-container {
-    display: flex;
     gap: 20px;
-    flex-wrap: wrap;
 }
 
 .profile-ul {
@@ -57,6 +55,24 @@
 .close-button:hover {
     color: #ff6b6b;
 }
+
+.alert {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+  
+  .alert.success {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .alert.error {
+    background-color: #f8d7da;
+    color: #721c24;
+  }
+  
 
 @keyframes fadeIn {
     from { opacity: 0; }
