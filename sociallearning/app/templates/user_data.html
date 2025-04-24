@@ -2,11 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>User Data</title>
-    <link rel="stylesheet" href="{% static 'styles/user_data.css' %}">
-  {% include "partials/sidebar.html" %}
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Data</title>
+        <link rel="stylesheet" href="{% static 'styles/user_data.css' %}">
+    {% include "partials/sidebar.html" %}
 </head>
 <body>
     {% if messages %}
@@ -19,33 +19,39 @@
         </div>
     {% endif %}
     <div class="user-profiles">
-        <div class="user-profiles-container">
+        <div class = "search-bar-container">
             <form method="get" action={% url 'user-data' %}>
-                <input type="text" name="search" id="searchInput" placeholder="Search usernames..." value="{{ request.GET.search }}">
+                <input class = "search-bar" type="text" name="search" id="searchInput" placeholder="Search usernames..." value="{{ request.GET.search }}">
             </form>
+        </div>
+        <div class="user-profiles-container">
                 <ul class="profile-ul">
                     {% for user in users%}
                     <li class="profile-item">
                         <div class="profile">
-                            <p class="username"> Username: {{ user.user.username }}</p>
-                            <p class="age"> Age: {{ user.age }} </p>
+                            <div class="profile-info">
+                                <p class="username"> Username: {{ user.user.username }}</p>
+                                <p class="age"> Age: {{ user.age }} </p>
+                            </div>
 
-                            <form method="post" action="{% url 'restrict-user' user.id %}">
-                                {% csrf_token %}
-                                <button type="submit" class="restrict-btn">Restrict</button>
-                            </form>
-
-                            
-                            <button class="profile-btn" onclick="openStatsModal(this)"> QL Statistics </button>
-                                <div class="modal">
-                                    <span class="close-button" onclick="closeStatsModal(this)">&times;</span>
-                                    <p> Username: {{ user.user.username }} </p>
-                                    <p> Last Login: {{ user.user.last_login }} </p>
-                                    <p> Date Joined: {{ user.user.date_joined}} </p>
-                                    <p> Category Dictionary: {{ user.category_comment_count }} </p>
-                                    <p> Like Dictionary: {{ user.category_like_count }} </p>
-                                    <p> Dislike Dictionary: {{ user.category_dislike_count }} </p>
-                                </div>                        
+                            <div class="profile-actions">
+                                <form method="post" action="{% url 'restrict-user' user.id %}">
+                                    {% csrf_token %}
+                                    <button type="submit" class="restrict-btn">Restrict</button>
+                                </form>
+    
+                                
+                                <button class="profile-btn" onclick="openStatsModal(this)"> QL Statistics </button>
+                                    <div class="modal">
+                                        <span class="close-button" onclick="closeStatsModal(this)">&times;</span>
+                                        <p> Username: {{ user.user.username }} </p>
+                                        <p> Last Login: {{ user.user.last_login }} </p>
+                                        <p> Date Joined: {{ user.user.date_joined}} </p>
+                                        <p> Category Dictionary: {{ user.category_comment_count }} </p>
+                                        <p> Like Dictionary: {{ user.category_like_count }} </p>
+                                        <p> Dislike Dictionary: {{ user.category_dislike_count }} </p>
+                                    </div>  
+                            </div>                      
                         </div>
                     </li>
                     {% empty %}

@@ -26,8 +26,8 @@ body {
 
 
 .centered-box {
-    width: 1000px;  
-    height: 650px; 
+    width: 1010px;  
+    height: 680px; 
     background: rgba(240, 240, 240); 
     background-color: rgba(255, 255, 255, 0.8); 
     padding: 15px;
@@ -35,7 +35,7 @@ body {
     border: 5px solid #008CFF; 
     text-align: center;
     margin-left: 230px;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-bottom: 50px;
 }
 
@@ -98,6 +98,7 @@ body {
 .profile-section {
     flex: 1; 
     max-width: 35%;
+    margin-left: 8px;
     margin-top: 25px;
     font-family: 'Inter';
 }
@@ -153,7 +154,7 @@ body {
 }
 
 .input-container input {
-    width: 87%;
+    width: 77%;
     padding: 22px;
     font-size: 16px;
     border-radius: 20px;
@@ -163,7 +164,7 @@ body {
 
 .eye-toggle {
     position: absolute;
-    right: 10px;
+    right: 70px;
     background: none;
     border: none;
     cursor: pointer;
@@ -184,6 +185,7 @@ body {
     margin-top: 10px;
 }
 
+
 .upload-button{
     font-family: 'Inter';
     background-color: #ff6b6b;
@@ -196,6 +198,15 @@ body {
     border-color: rgb(204, 199, 199);
     font-weight: bold;
 }
+
+.submit-button:hover,
+.upload-button:hover{
+    background-color: #ff4c4c;
+    box-shadow: 0px 4px 10px rgba(255, 107, 107, 0.6);
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+
 
 .input-container input:focus {
     border-color: #1e90ff;
@@ -358,10 +369,10 @@ body {
 
 .terms-check {
     display: flex;
-    align-items: center;
+    align-items: right;
     gap: 8px;
-    margin-top: 10px;
-    margin-left: 310px;
+    margin-top: 40px;
+    margin-left: 280px;
     font-size: 0.9rem;
 }
 

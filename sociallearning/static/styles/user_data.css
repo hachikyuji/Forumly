@@ -1,5 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    width: 100vw;
+}
+
+body {
+    background-image: url('/static/assets/BG1.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.search-bar-container {
+    display: flex;
+    justify-content: right;
+    margin-right: 283px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    }
+    
+    .search-bar {
+        width: 300px;
+        padding: 15px 20px;
+        border: 5px solid #008CFF;
+        border-radius: 25px;
+        font-size: 16px;
+        outline: none;
+        transition: all 0.3s ease;
+        background-color: white;
+    }
+    
+    .search-bar:focus {
+        border-color: #ff6b6b;
+        box-shadow: 0 0 5px rgba(233, 72, 86, 0.5);
+    }
+
 .user-profiles-container {
     gap: 20px;
+    width: 1010px;  
+    height: 680px; 
+    background: rgba(240, 240, 240); 
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 15px;
+    border-radius: 20px;
+    border: 5px solid #008CFF; 
+    text-align: center;
+    margin-left: 230px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    overflow-y: auto;
 }
 
 .profile-ul {
@@ -9,24 +64,87 @@
     gap: 20px;
 }
 
+.profile-ul p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #1d1c1c;
+    margin: 5px 0;
+}
+
 .profile {
     display: flex;
-    flex-direction: row;
-    gap: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
-    width: 400px;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid #ff6b6b;
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 900px;
+    margin-left: -10px;
 }
+
+.profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: left;
+}
+
+.profile-actions {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Align buttons to the right */
+    gap: 10px;
+}
+
+
+/* Style for the Restrict button */
+.restrict-btn {
+    padding: 8px 16px;
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.restrict-btn:hover {
+    background-color: #e15757;
+}
+
+/* Style for the QL Statistics button */
+.profile-btn {
+    padding: 8px 16px;
+    background-color: #008CFF;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-left: 10px;
+}
+
+.profile-btn:hover {
+    background-color: #006fcc;
+}
+
 
 .modal {
     display: none;
     position: fixed;
     top: 50%;
-    left: 50%;
+    left: 47%;
     transform: translate(-50%, -50%);
     background: white;
-    padding: 20px;
-    border: 1px solid #ccc;
+    padding: 50px;
+    border: 3px solid #ff6b6b;
+    border-radius: 20px;
     z-index: 1000;
     animation: fadeOut 0.3s forwards;
     box-shadow: 0 0 10px rgba(0,0,0,0.25);
@@ -41,6 +159,12 @@
 .modal.show .modal-content {
     animation: slideIn 0.3s forwards;
 }
+
+.modal p {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+}
+
 
 .close-button {
     position: absolute;
@@ -72,6 +196,7 @@
     background-color: #f8d7da;
     color: #721c24;
   }
+
   
 
 @keyframes fadeIn {

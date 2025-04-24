@@ -23,8 +23,35 @@
     </div>
     {% endif %}
 
+    <!-- Positive‑reward recommendations -->
     <div class="recommendation-container">
-        <h2>Recommended Topics You May Like</h2>
+        <h2>Recommended Topics</h2>
+        <a>Here are suggested topics based on what you've enjoyed.</a>
+        <a>(Powered by Q‑learning)</a>
+    
+        <div class="recommendation-grid">
+            {% if positive_topics %}
+                {% for t in positive_topics %}
+                    <div class="recommendation-card">
+                        <a href="{% url 'forum_thread_detail' t.id %}">
+                            <h3>{{ t.title }}</h3>
+                            <span class="reward-label">Score: {{ t.reward }}</span>
+                            <br><span class="category-label">{{ t.category }}</span>
+                            <!-- <span class="reward-label">Score: {{ t.reward }}</span> -->
+                        </a>
+                    </div>
+                {% endfor %}
+            {% else %}
+                <p>No recommendations based on what you may like yet. Interact more!</p>
+            {% endif %}
+        </div>
+    </div>
+    
+
+
+    <!--General reward recommendations-->
+    <div class="recommendation-container">
+        <h2>Discover Topics You May Like</h2>
         <a>Discover Topics Here!</a> 
          <a>(Powered by Q-learning)</a>
         <div class="recommendation-grid">

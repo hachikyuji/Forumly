@@ -130,4 +130,15 @@ class Notification(models.Model):
 
     def get_thread_url(self):
         return reverse('forum_thread_detail', args=[self.thread.id]) if self.thread else "#"
+    
+class CategoryReward(models.Model):
+    """Holds the most‑recent reward calculated for (user, category)."""
+    user        = models.ForeignKey(User, on_delete=models.CASCADE)
+    category    = models.ForeignKey(ForumCategory, on_delete=models.CASCADE)
+    reward      = models.FloatField(default=0)
+    updated_at  = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        unique_together = ('user', 'category')
+
 

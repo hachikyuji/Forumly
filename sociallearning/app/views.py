@@ -71,9 +71,20 @@ def register(request):
         username = request.POST.get("username", "").strip()
         password = request.POST.get("password", "").strip()
         age = request.POST.get("age", "").strip()
+        age_str = request.POST.get("age")
         
-        validate_age = int(request.POST.get("age"))
-        
+        if age_str:
+            try:
+                validate_age = int(age_str)
+                if validate_age < 0:
+                    raise ValueError("Age cannot be negative")
+            except ValueError:
+                # Handle invalid input, e.g., return an error message or render a form with an error
+                messages.error(request, "All fields are required.")
+                return render(request, "register.html")
+        else:
+            validate_age = None
+
         # Validate required fields
         if not username or not password or not age:
             messages.error(request, "All fields are required.")
@@ -106,30 +117,33 @@ def register(request):
 
     return render(request, "register.html")
 
-# User Home
 @login_required
 def homepage(request):
     user_profile = UserProfile.objects.get(user=request.user)
 
-    # Step 1: Gather Data for Q-Learning Model
+    # ---------- existing ε‑greedy list ----------
     state = q_learning_model.get_state(user_profile, request.user.id)
-
-    # Step 2: Generate Recommendations
     recommended_topics = q_learning_model.recommend_topics(user_profile, request.user.id)
+    general_data = [{
+        "title": topic.title,
+        "category": topic.category.name,
+        "id": topic.id
+    } for topic in recommended_topics]
 
-    # Step 3: Prepare Data for Frontend
-    recommended_data = [
-        {
-            "title": topic.title,
-            "category": topic.category.name,
-            "id": topic.id
-        }
-        for topic in recommended_topics
-    ]
+    # ---------- NEW: positive‑reward list ----------
+    pos_pairs = q_learning_model.get_positive_reward_topics(request.user.id)
+    positive_data = [{
+        "title": topic.title,
+        "category": topic.category.name,
+        "id": topic.id,
+        "reward": round(reward, 2)
+    } for reward, topic in pos_pairs]
 
     return render(request, 'homepage.html', {
-        'recommended_topics': recommended_data
+        'recommended_topics': general_data,
+        'positive_topics':   positive_data,
     })
+
 
 def logoutView(request):
     logout(request)

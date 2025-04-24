@@ -233,7 +233,8 @@
             
                         if (data.disliked) {
                             // Set message to show after next load
-                            sessionStorage.setItem('toastAfterLoad', "You have disliked this content!");
+                            sessionStorage.setItem('toastAfterLoad', "You have disliked the previous content!");
+                            sessionStorage.setItem('toastAfterLoad1', "Next content loaded.");
                             setTimeout(() => {
                                 window.location.href = nextThreadUrl;
                             }, 1500);
@@ -292,9 +293,17 @@
         
         document.addEventListener("DOMContentLoaded", function () {
             const msg = sessionStorage.getItem('toastAfterLoad');
+            const msg1 = sessionStorage.getItem('toastAfterLoad1');
             if (msg) {
                 displayToast(msg);
                 sessionStorage.removeItem('toastAfterLoad');
+            }
+
+            if (msg) {
+                setTimeout(() => {
+                    displayToast(msg1); 
+                    sessionStorage.removeItem('toastAfterLoad1');
+                }, 1000);
             }
         });
         

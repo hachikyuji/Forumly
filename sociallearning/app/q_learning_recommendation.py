@@ -2,7 +2,7 @@ import numpy as np
 import random
 import tensorflow as tf
 from tensorflow import keras
-from app.models import ForumViewHistory, ForumThread, RecommendedTopicHistory, ForumReply, UserProfile
+from app.models import ForumViewHistory, ForumThread, RecommendedTopicHistory, ForumReply, UserProfile, CategoryReward, ForumCategory
 from collections import defaultdict
 import logging
 from datetime import timedelta, datetime
@@ -14,6 +14,7 @@ import base64
 from django.core.exceptions import ObjectDoesNotExist
 import psutil
 from collections import defaultdict
+from django.db.models import Avg  
 
 #Log Rewards
 logger = logging.getLogger('app') 
@@ -73,6 +74,13 @@ class QLearningRecommender:
         like_score = user_profile.category_like_count.get(category_name, 0)
         dislike_score = user_profile.category_dislike_count.get(category_name, 0)
         comment_score = user_profile.category_comment_count.get(category_name, 0)
+        
+        # Get the average sentiment score for replies in the given category only
+        avg_sentiment_score = ForumReply.objects.filter(
+            category=category_name
+        ).aggregate(avg_sentiment=Avg('sentiment_score'))['avg_sentiment'] or 0
+        
+        sentiment_weight = 2.0 #default
 
         # Engagement time from ForumViewHistory
         engagement_time = sum([
@@ -119,14 +127,32 @@ class QLearningRecommender:
         else:
             new_topic_boost = 0.5
             is_new_topic = False
+            
+        if avg_sentiment_score < 0:
+            sentiment_contribution = avg_sentiment_score * sentiment_weight * 3  # amplify negatives
+        else:
+            sentiment_contribution = avg_sentiment_score * sentiment_weight
+            
+        comment_bonus = 1.5 if avg_sentiment_score >= 0 else 0.5  
 
         reward = (
             (like_score * 2) +
-            (comment_score * 1.5) +
+            (comment_score * comment_bonus) +
+            (sentiment_contribution) +
             (normalized_time * satisfaction_ratio * 0.3) -
             ((dislike_score * 4) + penalty * (decay_factor * 1.5))
             * new_topic_boost
         )
+        
+        try:
+            category_obj = ForumCategory.objects.get(name=category_name)
+            CategoryReward.objects.update_or_create(
+                user_id=user_id,
+                category=category_obj,
+                defaults={'reward': reward}
+            )
+        except ForumCategory.DoesNotExist:
+            logger.warning(f"Category '{category_name}' missing; reward not stored.")
 
         # Log topic details if available
         if topic:
@@ -140,6 +166,7 @@ class QLearningRecommender:
                     f"Dislikes: {dislike_score} | Comments: {comment_score} | "
                     f"Engagement Time: {engagement_time} | Viewed Recommendations: {viewed_recommendations} | "
                     f"Penalty: {penalty} | Final Reward: {reward}")
+        logger.info(f"[SENTIMENT] Avg Sentiment for '{category_name}': {avg_sentiment_score} | Weighted Impact: {avg_sentiment_score * sentiment_weight} | Sentiment Contribution: {sentiment_contribution}")
         
         return reward
 
@@ -153,10 +180,75 @@ class QLearningRecommender:
         q_values[0][action] = reward + self.gamma * np.max(next_q_values[0])
 
         self.model.fit(np.array([state]), q_values, verbose=0)
+        
+    def refresh_all_rewards(self, user_profile, user_id):
+        """
+        Re‑compute and persist the reward for every ForumCategory
+        (regardless of what the recommender just showed).
+        """
+        from app.models import ForumCategory
+
+        for cat in ForumCategory.objects.all():
+            # No topic_id context here; pass None or 0 so calculate_reward handles it
+            self.calculate_reward(
+                user_profile=user_profile,
+                user_id=user_id,
+                category_name=cat.name,
+                topic_id=None         # calculate_reward already handles topic not found
+            )
+
+        
+    def get_positive_reward_topics(self, user_id, max_total=12, per_cat=5):
+        """
+        Return a list of (reward, ForumThread) where reward > 0, 
+        ordered by reward desc.
+        """
+        from django.db.models import Prefetch
+
+        positive = (
+            CategoryReward.objects
+            .filter(user_id=user_id, reward__gt=0)
+            .select_related('category')
+            .order_by('-reward')
+        )
+
+        collected = []
+        for cr in positive:
+            # Threads not yet marked viewed by this user
+            threads = (
+                ForumThread.objects
+                .filter(category=cr.category)
+                .exclude(
+                    recommendedtopichistory__user_id=user_id,
+                    recommendedtopichistory__viewed=True
+                )
+                .order_by('-created_at')[:per_cat]
+            )
+            for t in threads:
+                collected.append((cr.reward, t))
+                if len(collected) >= max_total:
+                    break
+            if len(collected) >= max_total:
+                break
+
+        # Final ordering: reward ↓, created_at ↓
+        collected.sort(key=lambda x: (-x[0], -(x[1].created_at.timestamp())))
+
+        # Ensure tracking records exist
+        for _, thread in collected:
+            RecommendedTopicHistory.objects.get_or_create(
+                user_id=user_id,
+                forum_thread=thread
+            )
+
+        return collected[:max_total]
+
 
     def recommend_topics(self, user_profile, user_id):
-        state = self.get_state(user_profile, user_id)
-        action = self.choose_action(state)
+        self.refresh_all_rewards(user_profile, user_id)
+        
+        state   = self.get_state(user_profile, user_id)
+        action  = self.choose_action(state)
 
         # Exclude already viewed topics immediately
         viewed_topic_ids = RecommendedTopicHistory.objects.filter(

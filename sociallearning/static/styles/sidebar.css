@@ -132,7 +132,8 @@
 /* Close Button */
 .close-btn {
     position: absolute;
-    top: 360px;
+    top: 260px;
+    height: 180px;
     right: -38px;
     background-color: black;
     color: white;
