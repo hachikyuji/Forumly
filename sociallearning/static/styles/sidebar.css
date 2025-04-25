@@ -147,6 +147,11 @@
     background-color: #555;
 }
 
+.close-btn.has-notifs {
+    background-color: #fb5f5f;
+    border-radius: 4px;
+}
+
 /* Overlay Effect */
 .sidebar-overlay {
     display: none;
@@ -374,4 +379,28 @@
 
 .toggle-btn:hover {
     background-color: #B4A9A9;
+}
+
+.notif-link {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.notif-text {
+    font-size: 16px;
+}
+
+.notif-count-badge {
+    background-color: red;
+    color: white;
+    font-size: 10px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 5px;
 }

@@ -9,11 +9,15 @@
 
 <div class="sidebar-container {% if is_open %}open{% endif %}">
     <div class="sidebar {% if is_open %}open{% endif %}">
-        <button class="close-btn" id="toggleSidebarBtn" onclick="toggleSidebar()">
+        <button
+            class="close-btn {% if notification_count > 0 %}has-notifs{% endif %}"
+            id="toggleSidebarBtn"
+            onclick="toggleSidebar()"
+        >
             <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 700 960" width="20px" fill="#e8eaed">
-                <path id="toggleIcon" d="{% if is_open %}M391.65-88.35 0-480l391.65-391.65L467.3-796l-316 316 316 316-75.65 75.65Z{% else %}M288-88.35 212.35-164l316-316-316-316L288-871.65 679.65-480 288-88.35Z{% endif %}"/>
+                <path id="toggleIcon" d="{% if is_open %}M391.65-88.35 0-480l391.65-391.65L467.3-796l-316 316 316 316-75.65 75.65Z{% else %}M288-88.35 212.35-164l316-316-316-316L288-871.65 679.65-480 288-88.35Z{% endif %}" />
             </svg>
-        </button>
+        </button>  
 
         <div class="user-info">
             {% if profile_picture %}
@@ -50,7 +54,12 @@
                     <a href="/profile/update">Account Settings</a>
                 </li>
                 <li>
-                    <a href="/notifications">Notifications</a>
+                    <a href="/notifications" class="notif-link">
+                        <span class="notif-text">Notifications</span>
+                        {% if notification_count > 0 %}
+                            <span class="notif-count-badge">{{ notification_count }}</span>
+                        {% endif %}
+                    </a>
                 </li>
                 {% if request.user.profile.admin %}
                 <li>

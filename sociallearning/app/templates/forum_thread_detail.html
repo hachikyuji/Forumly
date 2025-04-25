@@ -71,11 +71,19 @@
                 {% for reply in replies %}
                     <div class="reply-item">
                         <div class="reply-user-info">
-                            <img src="{{ reply.user.profile.profile_picture.url }}" alt="Profile Picture" class="profile-pic">
-                            <div class="user-info-reply">
-                                <span class="user-name">{{ reply.user.username }}</span>  
-                                <span class="reply-date">{{ reply.created_at }}</span>
-                            </div>
+                            {% if reply.user.profile.profile_picture %}
+                                <img src="{{ reply.user.profile.profile_picture.url }}" alt="Profile Picture" class="profile-pic">
+                                <div class="user-info-reply">
+                                    <span class="user-name">{{ reply.user.username }}</span>  
+                                    <span class="reply-date">{{ reply.created_at }}</span>
+                                </div>
+                            {% else %}
+                                <div class="placeholder-pic">👤</div>
+                                <div class="user-info-reply">
+                                    <span class="user-name">{{ reply.user.username }}</span>  
+                                    <span class="reply-date">{{ reply.created_at }}</span>
+                                </div>
+                            {% endif %}
                         </div>
                         <p class="reply-content">{{ reply.content | linebreaksbr}}</p>
                     </div>

@@ -66,6 +66,7 @@ TEMPLATES = [
                 'django.contrib.messages.context_processors.messages',
                 'app.context_processors.user_profile_context',
                 'app.context_processors.forum_categories',
+                'app.context_processors.notification_count',
             ],
         },
     },

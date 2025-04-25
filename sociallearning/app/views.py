@@ -32,6 +32,8 @@ q_learning_model = QLearningRecommender()
 # Create your views here.
 
 # Forms
+from django.utils import timezone
+
 def user_login(request):
     if request.method == "POST":
         username = request.POST.get("username")
@@ -40,15 +42,20 @@ def user_login(request):
         user = authenticate(request, username=username, password=password)
         if user is not None:
             user_profile, created = UserProfile.objects.get_or_create(user=user)
-            
+
             if user_profile.restricted:
-                if user_profile.restricted_expires_at:
-                    readable_time = timezone.localtime(user_profile.restricted_expires_at).strftime('%b %d, %Y at %I:%M %p')
-                    messages.error(request, f"Account restricted until {readable_time}.")
+                if user_profile.restricted_expires_at and timezone.now() > user_profile.restricted_expires_at:
+                    user_profile.restricted = False
+                    user_profile.restricted_expires_at = None
+                    user_profile.save()
                 else:
-                    messages.error(request, "Account is restricted.")
-                return redirect("login")
-            
+                    if user_profile.restricted_expires_at:
+                        readable_time = timezone.localtime(user_profile.restricted_expires_at).strftime('%b %d, %Y at %I:%M %p')
+                        messages.error(request, f"Account restricted until {readable_time}.")
+                    else:
+                        messages.error(request, "Account is restricted.")
+                    return redirect("login")
+
             auth_login(request, user)
             messages.success(request, "Login successful!")
             return redirect("homepage")
@@ -56,6 +63,7 @@ def user_login(request):
             messages.error(request, "Invalid username or password.")
             
     return render(request, 'login.html')
+
 
 def is_valid_password(password):
     return (
