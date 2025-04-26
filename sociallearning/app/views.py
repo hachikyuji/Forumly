@@ -80,6 +80,11 @@ def register(request):
         password = request.POST.get("password", "").strip()
         age = request.POST.get("age", "").strip()
         age_str = request.POST.get("age")
+        acceptTerms = request.POST.get("acceptTerms")
+        
+        if not acceptTerms:
+            messages.error(request, "You must accept the terms and conditions before registering.")
+            return render(request, "register.html")
         
         if age_str:
             try:

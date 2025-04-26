@@ -12588,3 +12588,161 @@ ValueError: The 'profile_picture' attribute has no file associated with it.
 2025-04-25 10:53:05,976 [INFO] django.server: "GET /media/profile_pictures/20250416181419_1.jpg HTTP/1.1" 200 670846
 2025-04-25 10:53:06,082 [WARNING] django.request: Not Found: /favicon.ico
 2025-04-25 10:53:06,083 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-26 21:28:03,206 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-26 21:28:42,602 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-26 21:29:32,266 [INFO] django.server: "GET / HTTP/1.1" 200 3236
+2025-04-26 21:29:32,465 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 8748
+2025-04-26 21:29:32,488 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-26 21:29:32,687 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-26 21:29:32,688 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-26 21:29:42,224 [INFO] django.server: "GET /register HTTP/1.1" 200 13801
+2025-04-26 21:30:25,191 [INFO] django.server: "POST /register HTTP/1.1" 200 14175
+2025-04-26 21:30:59,284 [INFO] django.server: "POST /register HTTP/1.1" 302 0
+2025-04-26 21:30:59,296 [INFO] django.server: "GET / HTTP/1.1" 200 3481
+2025-04-26 21:31:05,281 [INFO] django.server: "GET /register HTTP/1.1" 200 13801
+2025-04-26 21:31:54,068 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-26 21:31:55,560 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-26 21:32:34,268 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-26 21:32:35,508 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-26 21:32:50,851 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-26 21:32:52,089 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-26 21:32:58,238 [INFO] django.server: "GET /admin HTTP/1.1" 301 0
+2025-04-26 21:32:58,261 [INFO] django.server: "GET /admin/ HTTP/1.1" 302 0
+2025-04-26 21:32:58,318 [INFO] django.server: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3681
+2025-04-26 21:32:58,476 [INFO] django.server: "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+2025-04-26 21:32:58,499 [INFO] django.server: "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+2025-04-26 21:32:58,504 [INFO] django.server: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+2025-04-26 21:32:58,506 [INFO] django.server: "GET /static/admin/css/login.css HTTP/1.1" 200 951
+2025-04-26 21:32:58,511 [INFO] django.server: "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+2025-04-26 21:32:58,531 [INFO] django.server: "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+2025-04-26 21:32:58,534 [INFO] django.server: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+2025-04-26 21:33:01,876 [INFO] django.server: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-04-26 21:33:01,899 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 9576
+2025-04-26 21:33:01,934 [INFO] django.server: "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+2025-04-26 21:33:01,945 [INFO] django.server: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+2025-04-26 21:33:01,945 [INFO] django.server: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+2025-04-26 21:33:03,278 [INFO] django.server: "GET /admin/auth/user/ HTTP/1.1" 200 17131
+2025-04-26 21:33:03,318 [INFO] django.server: "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+2025-04-26 21:33:03,333 [INFO] django.server: "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+2025-04-26 21:33:03,341 [INFO] django.server: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+2025-04-26 21:33:03,343 [INFO] django.server: "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+2025-04-26 21:33:03,347 [INFO] django.server: "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+2025-04-26 21:33:03,355 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-26 21:33:03,361 [INFO] django.server: "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+2025-04-26 21:33:03,366 [INFO] django.server: "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+2025-04-26 21:33:03,372 [INFO] django.server: "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+2025-04-26 21:33:03,372 [INFO] django.server: "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+2025-04-26 21:33:03,382 [INFO] django.server: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+2025-04-26 21:33:03,407 [INFO] django.server: "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+2025-04-26 21:33:03,420 [INFO] django.server: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+2025-04-26 21:33:03,448 [INFO] django.server: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+2025-04-26 21:33:03,478 [INFO] django.server: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+2025-04-26 21:33:03,482 [INFO] django.server: "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+2025-04-26 21:33:03,484 [INFO] django.server: "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+2025-04-26 21:33:08,168 [INFO] django.server: "POST /admin/auth/user/ HTTP/1.1" 200 9792
+2025-04-26 21:33:08,220 [INFO] django.server: "GET /static/admin/js/cancel.js HTTP/1.1" 200 884
+2025-04-26 21:33:09,561 [INFO] django.server: "POST /admin/auth/user/ HTTP/1.1" 302 0
+2025-04-26 21:33:09,582 [INFO] django.server: "GET /admin/auth/user/ HTTP/1.1" 200 16817
+2025-04-26 21:33:09,617 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-26 21:33:13,760 [INFO] django.server: "GET / HTTP/1.1" 200 3236
+2025-04-26 21:33:15,542 [INFO] django.server: "GET /register HTTP/1.1" 200 13801
+2025-04-26 21:33:28,305 [ERROR] django.request: Internal Server Error: /register
+Traceback (most recent call last):
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\env\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py", line 86, in register
+    messages.error("You must accept the terms and conditions before registering.")
+TypeError: error() missing 1 required positional argument: 'message'
+2025-04-26 21:33:28,308 [ERROR] django.server: "POST /register HTTP/1.1" 500 71592
+2025-04-26 21:33:43,570 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-26 21:33:44,998 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-26 21:33:52,098 [INFO] django.server: "POST /register HTTP/1.1" 200 14127
+2025-04-26 21:33:52,175 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 8748
+2025-04-26 21:33:52,275 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-26 21:33:52,322 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-26 21:33:52,323 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-26 21:34:04,764 [INFO] django.server: "POST /register HTTP/1.1" 200 14127
+2025-04-26 21:34:09,245 [INFO] django.server: "POST /register HTTP/1.1" 200 14127
+2025-04-26 21:34:09,284 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 8748
+2025-04-26 21:34:09,289 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-26 21:34:09,399 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-26 21:34:09,399 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-26 21:34:14,533 [INFO] django.server: "POST /register HTTP/1.1" 200 14127
+2025-04-26 21:34:14,566 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 8748
+2025-04-26 21:34:14,569 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-26 21:34:14,672 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-26 21:34:14,673 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-26 21:34:16,950 [INFO] django.server: "GET / HTTP/1.1" 200 3236
+2025-04-26 21:34:17,965 [INFO] django.server: "GET /register HTTP/1.1" 200 13801
+2025-04-26 21:34:46,402 [INFO] django.server: "POST /register HTTP/1.1" 200 14127
+2025-04-26 21:42:31,074 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-26 21:42:32,383 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-26 21:42:40,111 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-26 21:42:41,380 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-26 21:43:23,377 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-26 21:44:20,865 [INFO] django.server: "POST /register HTTP/1.1" 200 14240
+2025-04-26 21:44:20,968 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-26 21:44:20,973 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 8748
+2025-04-26 21:44:21,088 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-26 21:44:21,089 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-26 21:44:36,791 [INFO] django.server: "POST /register HTTP/1.1" 200 14240
+2025-04-26 21:44:41,418 [INFO] django.server: "POST /register HTTP/1.1" 200 14240
+2025-04-26 21:44:41,455 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 8748
+2025-04-26 21:44:41,457 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-26 21:44:41,541 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-26 21:44:41,541 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-26 21:44:43,356 [INFO] django.server: "GET / HTTP/1.1" 200 3236
+2025-04-26 21:44:44,615 [INFO] django.server: "GET /register HTTP/1.1" 200 13914
+2025-04-26 21:44:50,642 [INFO] django.server: "POST /register HTTP/1.1" 200 14240
+2025-04-26 21:45:00,087 [INFO] django.server: "POST /register HTTP/1.1" 200 14240
+2025-04-26 21:45:08,311 [INFO] django.server: "GET / HTTP/1.1" 200 3236
+2025-04-26 21:45:09,276 [INFO] django.server: "GET /register HTTP/1.1" 200 13914
+2025-04-26 21:45:17,196 [INFO] django.server: "POST /register HTTP/1.1" 200 14240
+2025-04-26 21:45:58,570 [INFO] django.utils.autoreload: C:\Users\MuringFamily\Desktop\Files\JC\Academics\BSCS 4-3\git tensorflow\Forumly\sociallearning\app\views.py changed, reloading.
+2025-04-26 21:45:59,907 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-26 21:48:08,232 [INFO] django.server: "POST /register HTTP/1.1" 200 14259
+2025-04-26 21:48:08,324 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 200 8748
+2025-04-26 21:48:08,327 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-26 21:48:08,449 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-26 21:48:08,449 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-26 21:48:28,036 [INFO] django.server: "POST /register HTTP/1.1" 200 14259
+2025-04-26 21:48:33,777 [INFO] django.server: "POST /register HTTP/1.1" 302 0
+2025-04-26 21:48:33,790 [INFO] django.server: "GET / HTTP/1.1" 200 3481
+2025-04-26 21:48:38,685 [INFO] django.server: "POST / HTTP/1.1" 302 0
+2025-04-26 21:48:38,714 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-26 21:48:38,714 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-26 21:48:38,715 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-26 21:48:38,724 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-26 21:48:38,725 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-26 21:48:38,725 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-26 21:48:38,734 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-26 21:48:38,734 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-26 21:48:38,734 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-26 21:48:38,746 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-26 21:48:38,747 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-26 21:48:38,747 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-26 21:48:38,755 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-26 21:48:38,756 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-26 21:48:38,756 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-26 21:48:38,766 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-26 21:48:38,766 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-26 21:48:38,766 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-26 21:48:38,777 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-26 21:48:38,777 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.7
+2025-04-26 21:48:38,777 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0.35 | Weighted Impact: 0.7 | Sentiment Contribution: 0.7 | Comment Bonus: 1.5
+2025-04-26 21:48:38,786 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-26 21:48:38,786 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.375
+2025-04-26 21:48:38,787 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0.1875 | Weighted Impact: 0.375 | Sentiment Contribution: 0.375 | Comment Bonus: 1.5
+2025-04-26 21:48:39,514 [INFO] django.server: "GET /homepage HTTP/1.1" 200 14596
+2025-04-26 21:48:39,562 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-26 21:48:39,563 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3475
+2025-04-26 21:48:43,015 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 18355
+2025-04-26 21:48:43,058 [WARNING] django.server: "GET /static/assets/default.png HTTP/1.1" 404 1868
+2025-04-26 21:48:43,059 [INFO] django.server: "GET /static/styles/settings.css HTTP/1.1" 200 7640
+2025-04-26 21:49:05,164 [INFO] django.server: "POST /profile/update HTTP/1.1" 302 0
+2025-04-26 21:49:05,178 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 18543
+2025-04-26 21:49:05,226 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
