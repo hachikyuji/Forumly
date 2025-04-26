@@ -132,8 +132,13 @@ class QLearningRecommender:
             sentiment_contribution = avg_sentiment_score * sentiment_weight * 3  # amplify negatives
         else:
             sentiment_contribution = avg_sentiment_score * sentiment_weight
-            
-        comment_bonus = 1.5 if avg_sentiment_score >= 0 else 0.5  
+        
+        if avg_sentiment_score > 0:
+            comment_bonus = 1.5
+        elif avg_sentiment_score == 0:
+            comment_bonus = 0
+        else:
+            comment_bonus = 0.5
 
         reward = (
             (like_score * 2) +
@@ -166,7 +171,7 @@ class QLearningRecommender:
                     f"Dislikes: {dislike_score} | Comments: {comment_score} | "
                     f"Engagement Time: {engagement_time} | Viewed Recommendations: {viewed_recommendations} | "
                     f"Penalty: {penalty} | Final Reward: {reward}")
-        logger.info(f"[SENTIMENT] Avg Sentiment for '{category_name}': {avg_sentiment_score} | Weighted Impact: {avg_sentiment_score * sentiment_weight} | Sentiment Contribution: {sentiment_contribution}")
+        logger.info(f"[SENTIMENT] Avg Sentiment for '{category_name}': {avg_sentiment_score} | Weighted Impact: {avg_sentiment_score * sentiment_weight} | Sentiment Contribution: {sentiment_contribution} | Comment Bonus: {comment_bonus}")
         
         return reward
 
