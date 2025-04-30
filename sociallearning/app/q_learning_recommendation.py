@@ -294,6 +294,7 @@ class QLearningRecommender:
 
             ForumViewHistory.objects.all().delete()
             RecommendedTopicHistory.objects.all().delete()
+            CategoryReward.objects.all().delete()
 
             # Reset `UserProfile` dictionary fields to empty dicts
             UserProfile.objects.update(
