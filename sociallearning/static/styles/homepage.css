@@ -77,6 +77,13 @@ body {
     margin-left: 61px;
 }
 
+.recommendation-grid:empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+}
+
 .recommendation-card {
     background-color: #ffffff;
     border: 1px solid #e0e0e0;
@@ -116,6 +123,19 @@ body {
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
 }
+
+.no-recommendation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 200px;
+    grid-column: 1 / -1;
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    font-family: 'Inter';
+}
+
 
 /* Responsive layout */
 @media (max-width: 1024px) {

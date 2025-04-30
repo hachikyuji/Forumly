@@ -12746,3 +12746,587 @@ TypeError: error() missing 1 required positional argument: 'message'
 2025-04-26 21:49:05,164 [INFO] django.server: "POST /profile/update HTTP/1.1" 302 0
 2025-04-26 21:49:05,178 [INFO] django.server: "GET /profile/update HTTP/1.1" 200 18543
 2025-04-26 21:49:05,226 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 17:48:25,573 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-30 17:48:47,208 [INFO] django.utils.autoreload: Watching for file changes with StatReloader
+2025-04-30 17:49:00,129 [INFO] django.server: "GET / HTTP/1.1" 200 3236
+2025-04-30 17:49:00,222 [INFO] django.server: "GET /static/styles/forms.css HTTP/1.1" 304 0
+2025-04-30 17:49:00,285 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 304 0
+2025-04-30 17:49:00,354 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 17:49:00,356 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 17:49:02,295 [INFO] django.server: "POST / HTTP/1.1" 302 0
+2025-04-30 17:49:02,331 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:02,332 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:02,332 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:02,344 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:02,344 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:02,345 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:02,363 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:02,363 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:02,363 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:02,374 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:02,375 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:02,375 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:02,385 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:02,386 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:02,386 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:02,399 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:02,400 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:02,400 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:02,419 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:02,420 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:02,420 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:02,432 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:02,432 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:02,432 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:03,312 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9641
+2025-04-30 17:49:03,355 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 304 0
+2025-04-30 17:49:03,362 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 304 0
+2025-04-30 17:49:03,363 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 304 0
+2025-04-30 17:49:47,022 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:47,022 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:47,023 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:47,032 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:47,033 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:47,033 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:47,043 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:47,043 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:47,043 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:47,055 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:47,055 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:47,055 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:47,066 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:47,067 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:47,067 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:47,077 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:47,077 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:47,077 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:47,089 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:47,089 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:47,089 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:47,100 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:49:47,101 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:49:47,101 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:49:47,281 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 17:49:47,442 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 17:49:47,444 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 17:49:47,463 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3524
+2025-04-30 17:49:47,589 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 17:49:47,727 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 17:49:47,728 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 17:50:04,171 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:04,172 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:04,172 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:04,181 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:04,182 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:04,182 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:04,191 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:04,192 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:04,192 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:04,202 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:04,203 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:04,204 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:04,219 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:04,219 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:04,220 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:04,235 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:04,235 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:04,235 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:04,252 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:04,252 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:04,253 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:04,266 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:04,266 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:04,266 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:04,390 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 17:50:04,430 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 17:50:04,432 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 17:50:04,447 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3523
+2025-04-30 17:50:04,578 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 17:50:04,657 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 17:50:04,658 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 17:50:45,250 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:45,250 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:45,251 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:45,261 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:45,261 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:45,262 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:45,272 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:45,272 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:45,272 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:45,285 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:45,286 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:45,287 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:45,297 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:45,298 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:45,298 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:45,308 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:45,308 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:45,308 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:45,317 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:45,318 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:45,319 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:45,330 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:45,330 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:45,330 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:45,441 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 17:50:45,483 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 17:50:45,484 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 17:50:45,502 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3522
+2025-04-30 17:50:45,607 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 17:50:45,715 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 17:50:45,716 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 17:50:49,274 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:49,275 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:49,275 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:49,284 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:49,285 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:49,285 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:49,294 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:49,294 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:49,294 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:49,304 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:49,305 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:49,305 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:49,314 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:49,315 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:49,315 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:49,326 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:49,326 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:49,327 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:49,337 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:49,338 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:49,339 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:49,349 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:49,350 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:49,351 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:49,461 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 17:50:49,503 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 17:50:49,504 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 17:50:49,520 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3523
+2025-04-30 17:50:49,632 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 17:50:49,705 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 17:50:49,706 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 17:50:53,338 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:53,338 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:53,339 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:53,347 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:53,347 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:53,348 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:53,356 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:53,356 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:53,356 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:53,364 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:53,364 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:53,365 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:53,375 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:53,375 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:53,376 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:53,384 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:53,384 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:53,385 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:53,392 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:53,392 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:53,393 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:53,401 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:50:53,401 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:50:53,401 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:50:53,495 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 17:50:53,526 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 17:50:53,527 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 17:50:53,535 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3523
+2025-04-30 17:50:53,607 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 17:50:53,677 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 17:50:53,677 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 17:51:01,851 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:01,852 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:01,852 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:01,862 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:01,862 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:01,863 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:01,873 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:01,874 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:01,874 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:01,883 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:01,884 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:01,884 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:01,892 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:01,893 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:01,893 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:01,904 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:01,904 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:01,905 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:01,914 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:01,914 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:01,914 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:01,923 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:01,923 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:01,924 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:02,032 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 17:51:02,077 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 17:51:02,078 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 17:51:02,091 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3547
+2025-04-30 17:51:02,217 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 17:51:02,298 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 17:51:02,298 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 17:51:26,474 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:26,475 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:26,475 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:26,483 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:26,483 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:26,484 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:26,493 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:26,493 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:26,493 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:26,503 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:26,504 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:26,504 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:26,515 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:26,515 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:26,516 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:26,526 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:26,527 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:26,527 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:26,537 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:26,537 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:26,538 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:26,549 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:26,549 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:26,550 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:26,662 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 17:51:26,701 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 17:51:26,702 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 17:51:26,716 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3504
+2025-04-30 17:51:26,788 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 17:51:26,879 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 17:51:26,879 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 17:51:54,322 [INFO] django.server: "GET /notifications HTTP/1.1" 301 0
+2025-04-30 17:51:54,349 [INFO] django.server: "GET /notifications/ HTTP/1.1" 200 8165
+2025-04-30 17:51:54,403 [INFO] django.server: "GET /static/styles/notification.css HTTP/1.1" 200 3900
+2025-04-30 17:51:59,883 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:59,884 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:59,884 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:59,894 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:59,894 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:59,895 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:59,908 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:59,908 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:59,909 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:59,918 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:59,919 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:59,919 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:59,928 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:59,929 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:59,929 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:59,941 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:59,942 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:59,942 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:59,952 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:59,953 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:59,954 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:51:59,963 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 17:51:59,963 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 17:51:59,964 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 17:52:00,100 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 17:52:00,152 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 304 0
+2025-04-30 18:10:46,223 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:10:46,224 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:10:46,224 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:10:46,231 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:10:46,232 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:10:46,232 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:10:46,244 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:10:46,244 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:10:46,244 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:10:46,253 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:10:46,254 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:10:46,254 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:10:46,266 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:10:46,266 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:10:46,266 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:10:46,275 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:10:46,276 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:10:46,276 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:10:46,285 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:10:46,285 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:10:46,285 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:10:46,295 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:10:46,296 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:10:46,296 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:10:46,418 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 18:10:46,461 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 18:10:46,465 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 18:10:46,474 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3638
+2025-04-30 18:10:46,591 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 18:10:46,709 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 18:10:46,710 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 18:11:19,804 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:11:19,804 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:11:19,805 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:11:19,815 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:11:19,815 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:11:19,815 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:11:19,826 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:11:19,826 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:11:19,826 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:11:19,834 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:11:19,835 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:11:19,835 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:11:19,846 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:11:19,846 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:11:19,847 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:11:19,856 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:11:19,857 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:11:19,857 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:11:19,867 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:11:19,867 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:11:19,867 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:11:19,877 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:11:19,878 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:11:19,878 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:11:19,953 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9862
+2025-04-30 18:11:19,997 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 18:11:20,000 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 18:11:20,015 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3603
+2025-04-30 18:11:20,127 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 18:11:20,239 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 18:11:20,239 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 18:13:21,523 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:21,523 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:21,524 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:21,532 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:21,532 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:21,532 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:21,542 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:21,542 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:21,542 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:21,551 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:21,552 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:21,553 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:21,562 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:21,563 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:21,563 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:21,573 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:21,573 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:21,574 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:21,583 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:21,583 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:21,584 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:21,592 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:21,592 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:21,593 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:21,693 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 18:13:21,730 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 18:13:21,735 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 18:13:21,748 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3810
+2025-04-30 18:13:21,940 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 18:13:22,049 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 18:13:22,050 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 18:13:43,021 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:43,022 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:43,022 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:43,030 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:43,031 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:43,031 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:43,040 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:43,040 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:43,040 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:43,048 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:43,049 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:43,049 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:43,060 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:43,060 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:43,061 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:43,073 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:43,074 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:43,074 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:43,083 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:43,084 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:43,084 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:43,095 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:43,096 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:43,096 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:43,200 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9565
+2025-04-30 18:13:43,246 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 18:13:43,247 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 18:13:43,264 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3836
+2025-04-30 18:13:43,340 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 18:13:43,426 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 18:13:43,427 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 18:13:46,434 [INFO] django.server: "GET /thread/5/ HTTP/1.1" 200 17770
+2025-04-30 18:13:46,480 [INFO] django.server: "GET /static/styles/thread_detail.css HTTP/1.1" 200 7583
+2025-04-30 18:13:48,632 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-30 18:13:50,203 [INFO] django.server: "GET /thread/4/ HTTP/1.1" 200 17566
+2025-04-30 18:13:51,915 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-30 18:13:52,240 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:52,240 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 3 | Viewed Recommendations: 2 | Penalty: 0.10986122886681099 | Final Reward: 0.007722064558220554
+2025-04-30 18:13:52,240 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:52,250 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:52,250 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:52,251 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:52,264 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:52,264 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:52,265 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:52,277 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:52,277 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:52,277 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:52,288 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:52,288 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:52,289 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:52,297 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:52,298 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:52,299 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:52,309 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:52,309 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:52,310 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:52,325 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:13:52,326 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:13:52,326 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:13:52,472 [INFO] django.server: "GET /homepage HTTP/1.1" 200 10967
+2025-04-30 18:13:52,513 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 200 3836
+2025-04-30 18:13:52,517 [INFO] django.server: "GET /static/styles/sidebar.css HTTP/1.1" 200 7426
+2025-04-30 18:13:52,521 [INFO] django.server: "GET /media/profile_pictures/.jfif HTTP/1.1" 200 71026
+2025-04-30 18:13:52,595 [INFO] django.server: "GET /static/assets/BG1.gif HTTP/1.1" 200 414887
+2025-04-30 18:13:52,676 [WARNING] django.request: Not Found: /favicon.ico
+2025-04-30 18:13:52,678 [WARNING] django.server: "GET /favicon.ico HTTP/1.1" 404 9311
+2025-04-30 18:14:18,286 [INFO] django.server: "GET /admin/ HTTP/1.1" 302 0
+2025-04-30 18:14:18,322 [INFO] django.server: "GET /admin/login/?next=/admin/ HTTP/1.1" 200 3681
+2025-04-30 18:14:18,382 [INFO] django.server: "GET /static/admin/css/base.css HTTP/1.1" 304 0
+2025-04-30 18:14:18,384 [INFO] django.server: "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+2025-04-30 18:14:18,388 [INFO] django.server: "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+2025-04-30 18:14:18,389 [INFO] django.server: "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+2025-04-30 18:14:18,391 [INFO] django.server: "GET /static/admin/css/login.css HTTP/1.1" 304 0
+2025-04-30 18:14:18,392 [INFO] django.server: "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+2025-04-30 18:14:18,401 [INFO] django.server: "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+2025-04-30 18:14:22,081 [INFO] django.server: "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+2025-04-30 18:14:22,110 [INFO] django.server: "GET /admin/ HTTP/1.1" 200 9880
+2025-04-30 18:14:22,156 [INFO] django.server: "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+2025-04-30 18:14:22,156 [INFO] django.server: "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+2025-04-30 18:14:22,158 [INFO] django.server: "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+2025-04-30 18:14:22,160 [INFO] django.server: "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+2025-04-30 18:14:28,471 [INFO] django.server: "GET /admin/app/userprofile/ HTTP/1.1" 200 12800
+2025-04-30 18:14:28,532 [INFO] django.server: "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+2025-04-30 18:14:28,533 [INFO] django.server: "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+2025-04-30 18:14:28,533 [INFO] django.server: "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+2025-04-30 18:14:28,533 [INFO] django.server: "GET /static/admin/js/core.js HTTP/1.1" 304 0
+2025-04-30 18:14:28,533 [INFO] django.server: "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+2025-04-30 18:14:28,543 [INFO] django.server: "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+2025-04-30 18:14:28,543 [INFO] django.server: "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+2025-04-30 18:14:28,544 [INFO] django.server: "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+2025-04-30 18:14:28,545 [INFO] django.server: "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+2025-04-30 18:14:28,559 [INFO] django.server: "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+2025-04-30 18:14:28,587 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-30 18:14:28,611 [INFO] django.server: "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+2025-04-30 18:14:30,477 [INFO] django.server: "GET /admin/app/userprofile/23/change/ HTTP/1.1" 200 19845
+2025-04-30 18:14:30,531 [INFO] django.server: "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+2025-04-30 18:14:30,534 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-30 18:14:30,539 [INFO] django.server: "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+2025-04-30 18:14:30,558 [INFO] django.server: "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+2025-04-30 18:14:30,560 [INFO] django.server: "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+2025-04-30 18:14:30,569 [INFO] django.server: "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+2025-04-30 18:14:30,570 [INFO] django.server: "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+2025-04-30 18:14:30,579 [INFO] django.server: "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+2025-04-30 18:14:30,627 [INFO] django.server: "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+2025-04-30 18:14:30,633 [INFO] django.server: "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+2025-04-30 18:14:46,081 [INFO] django.server: "GET /admin/app/userprofile/ HTTP/1.1" 200 12800
+2025-04-30 18:14:52,962 [INFO] django.server: "GET /admin/app/forumviewhistory/ HTTP/1.1" 200 11322
+2025-04-30 18:14:53,014 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-30 18:14:55,780 [INFO] django.server: "GET /admin/app/forumthread/ HTTP/1.1" 200 27753
+2025-04-30 18:14:55,835 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-30 18:14:57,587 [INFO] django.server: "GET /admin/app/userprofile/ HTTP/1.1" 200 12800
+2025-04-30 18:14:57,633 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-30 18:14:59,252 [INFO] django.server: "GET /admin/app/forumreply/ HTTP/1.1" 200 9616
+2025-04-30 18:14:59,301 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-30 18:15:00,335 [INFO] django.server: "GET /admin/app/userprofile/ HTTP/1.1" 200 12800
+2025-04-30 18:15:00,382 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-30 18:15:01,699 [INFO] django.server: "GET /admin/app/forumviewhistory/ HTTP/1.1" 200 11322
+2025-04-30 18:15:01,750 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-30 18:15:09,318 [INFO] django.server: "POST /admin/app/forumviewhistory/ HTTP/1.1" 200 9916
+2025-04-30 18:15:09,362 [INFO] django.server: "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+2025-04-30 18:15:10,379 [INFO] django.server: "POST /admin/app/forumviewhistory/ HTTP/1.1" 302 0
+2025-04-30 18:15:10,401 [INFO] django.server: "GET /admin/app/forumviewhistory/ HTTP/1.1" 200 9812
+2025-04-30 18:15:10,454 [INFO] django.server: "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+2025-04-30 18:15:10,473 [INFO] django.server: "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+2025-04-30 18:15:15,270 [INFO] django.server: "POST /admin/logout/ HTTP/1.1" 200 3559
+2025-04-30 18:15:18,424 [INFO] django.server: "GET / HTTP/1.1" 200 3236
+2025-04-30 18:15:21,403 [INFO] django.server: "POST / HTTP/1.1" 302 0
+2025-04-30 18:15:21,429 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:21,429 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 2 | Penalty: 0.10986122886681099 | Final Reward: -0.20022208960976304
+2025-04-30 18:15:21,430 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:21,441 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:21,441 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:21,441 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:21,450 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:21,451 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:21,451 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:21,462 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:21,463 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:21,463 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:21,475 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:21,476 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:21,476 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:21,485 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:21,486 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:21,486 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:21,497 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:21,497 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:21,498 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:21,510 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:21,510 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:21,511 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:21,635 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9756
+2025-04-30 18:15:21,690 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 304 0
+2025-04-30 18:15:33,462 [INFO] django.server: "GET /thread/7/ HTTP/1.1" 200 17919
+2025-04-30 18:15:36,119 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-30 18:15:36,143 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:36,143 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 2 | Viewed Recommendations: 3 | Penalty: 0.13862943611198905 | Final Reward: -0.06259508928247365
+2025-04-30 18:15:36,143 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:36,153 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:36,153 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:36,154 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:36,163 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:36,164 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:36,164 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:36,173 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:36,174 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:36,174 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:36,187 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:36,187 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:36,188 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:36,197 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:36,197 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:36,198 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:36,206 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:36,207 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:36,207 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:36,217 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:36,217 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:36,217 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:36,242 [INFO] django.server: "GET /homepage HTTP/1.1" 200 9843
+2025-04-30 18:15:36,292 [INFO] django.server: "GET /static/styles/homepage.css HTTP/1.1" 304 0
+2025-04-30 18:15:38,541 [INFO] django.server: "GET /thread/17/ HTTP/1.1" 200 17620
+2025-04-30 18:15:41,825 [INFO] django.server: "POST /track-time/ HTTP/1.1" 200 28
+2025-04-30 18:15:41,845 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:41,845 [INFO] app: [REWARD CALCULATION] Category: Education | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 2 | Viewed Recommendations: 3 | Penalty: 0.13862943611198905 | Final Reward: -0.06259508928247365
+2025-04-30 18:15:41,846 [INFO] app: [SENTIMENT] Avg Sentiment for 'Education': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:41,854 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:41,854 [INFO] app: [REWARD CALCULATION] Category: Gaming | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:41,854 [INFO] app: [SENTIMENT] Avg Sentiment for 'Gaming': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:41,864 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:41,864 [INFO] app: [REWARD CALCULATION] Category: Sports | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 3 | Viewed Recommendations: 1 | Penalty: 0.06931471805599453 | Final Reward: 0.06758185010459467
+2025-04-30 18:15:41,865 [INFO] app: [SENTIMENT] Avg Sentiment for 'Sports': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:41,873 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:41,873 [INFO] app: [REWARD CALCULATION] Category: Music | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:41,874 [INFO] app: [SENTIMENT] Avg Sentiment for 'Music': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:41,885 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:41,885 [INFO] app: [REWARD CALCULATION] Category: Social | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:41,886 [INFO] app: [SENTIMENT] Avg Sentiment for 'Social': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:41,897 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:41,898 [INFO] app: [REWARD CALCULATION] Category: Travel | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:41,898 [INFO] app: [SENTIMENT] Avg Sentiment for 'Travel': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:41,910 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:41,911 [INFO] app: [REWARD CALCULATION] Category: Nature | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:41,912 [INFO] app: [SENTIMENT] Avg Sentiment for 'Nature': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:41,923 [INFO] app: [TOPIC CHECK] Topic ID: None (Not Found) | Days Old: 0 | Is New Topic: True | New Topic Boost: 1.5
+2025-04-30 18:15:41,923 [INFO] app: [REWARD CALCULATION] Category: Others | Likes: 0 | Dislikes: 0 | Comments: 0 | Engagement Time: 0 | Viewed Recommendations: 0 | Penalty: 0.0 | Final Reward: 0.0
+2025-04-30 18:15:41,923 [INFO] app: [SENTIMENT] Avg Sentiment for 'Others': 0 | Weighted Impact: 0.0 | Sentiment Contribution: 0.0 | Comment Bonus: 0
+2025-04-30 18:15:42,050 [INFO] django.server: "GET /homepage HTTP/1.1" 200 11610
