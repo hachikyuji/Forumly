@@ -192,15 +192,36 @@ class QLearningRecommender:
         (regardless of what the recommender just showed).
         """
         from app.models import ForumCategory
+        
+        all_categories = ForumCategory.objects.all()
 
-        for cat in ForumCategory.objects.all():
+        for cat in all_categories:
+            category_obj = ForumCategory.objects.get(name=cat.name)
+            
+            # Skip reward calculation if there's no interaction
+            if (
+                not user_profile.category_like_count.get(cat.name) and
+                not user_profile.category_dislike_count.get(cat.name) and
+                not user_profile.category_comment_count.get(cat.name) and
+                not ForumViewHistory.objects.filter(user_id=user_id, category=category_obj).exists()
+            ):
+                continue  # skip this category
+            
             # No topic_id context here; pass None or 0 so calculate_reward handles it
-            self.calculate_reward(
+            reward = self.calculate_reward(
                 user_profile=user_profile,
                 user_id=user_id,
                 category_name=cat.name,
                 topic_id=None         # calculate_reward already handles topic not found
             )
+            
+            # Only update/create if reward is meaningful
+            if abs(reward) > 0.01:
+                CategoryReward.objects.update_or_create(
+                    user_id=user_id,
+                    category=category_obj,
+                    defaults={'reward': reward}
+                )
 
         
     def get_positive_reward_topics(self, user_id, max_total=12, per_cat=5):
